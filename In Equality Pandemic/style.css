@@ -86,7 +86,7 @@ body {
 /* Setting Nav */
 .navbar {
     width:100vh;    
-    height:50px;
+	height:80px;
     position:fixed;
     -webkit-transform-origin: left top;
 	transform-origin: left top;
@@ -95,7 +95,7 @@ body {
 }
 .nav-link{
 	color: #FFFFFF;
-	font-size: 16px;
+	font-size: 24px;
 }
 /* Layout Zigzag */
 .container {
