@@ -31,16 +31,12 @@ body {
 	background: #4c9cb0;
 	overflow-x: hidden;
 	margin: 0;
+	font-size: 18px;
 	font-family: Arial, Helvetica, sans-serif;
 }
 
 .img-header {
-	padding-top: 17em;
-}
-
-#header-1 {
-	top: 0;
-	position: absolute;
+	padding-top: 16em;
 }
 
 .img-grid-4 img {
@@ -48,15 +44,40 @@ body {
 	height: auto;
 }
 
-.text-header * {
+/* header-1 */
+#header-1 {
+	top: 0;
+	position: absolute;
+	margin-top: -6em;
+}
+
+.text-header-1 * {
 	z-index: 1;
 	font-family: 'Mondwest';
-	font-size: 150px;
+	font-size: 3.5em;
 	line-height: 0.85em;
 }
 
-.text-header span {
+.text-header-1 span {
 	display: block;
+}
+
+/* header-2 */
+#header-2 h1 {
+	padding-left: 2.4em;
+}
+
+.text-header-2 * {
+	z-index: 1;
+	font-family: 'Mondwest';
+	font-size: 3.5em;
+	line-height: 0.85em;
+	margin-top: -2em;
+}
+
+/*background image*/
+.question {
+	background-image: url("img/03_question-bg.png");
 }
 
 /* Color BG */
