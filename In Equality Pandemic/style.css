@@ -1,3 +1,32 @@
+@font-face {
+	font-family: 'ChulaCharasNew';
+	src: url('font/ChulaCharasNewReg.ttf') format('truetype');
+}
+
+@font-face {
+	font-family: 'ChulaCharasNew';
+	src: url('font/ChulaCharasNewBold.ttf') format('truetype');
+	font-weight: bold;
+}
+
+@font-face {
+	font-family: 'ChulaCharasNew';
+	src: url('font/ChulaCharasNewIta.ttf') format('truetype');
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'ChulaCharasNew';
+	src: url('font/ChulaCharasNewBoldIta.ttf') format('truetype');
+	font-weight: bold;
+	font-style: italic;
+}
+
+@font-face {
+	font-family: 'Mondwest';
+	src: url('font/Mondwest-Regular.otf') format('opentype');
+}
+
 * {
 	margin: 0;
 	padding: 0;
@@ -204,10 +233,34 @@ h1 {
 }
 
 .nav-link {
-	font-family: 'Mondwest';
-	color: #ffffff !important;
-	font-size: 1.5em;
+	color: #FFFFFF;
+	font-size: 22px;
+	width: 100px;
 }
+
+.nav-link:hover {
+	transform: translate(10%, 0);
+	transition: all .3s ease-in-out;
+}
+
+a .text-defult {
+	font-family: 'Mondwest';
+}
+
+a .text-new {
+	font-family: 'Mondwest';
+	display: none;
+}
+
+a:hover .text-defult {
+	display: none;
+}
+
+a:hover .text-new {
+	display: inline;
+	color: #4BB083;
+}
+
 
 /* Layout Zigzag */
 .container {
@@ -249,10 +302,9 @@ h1 {
 	background-color: #4CAF50;
 }
 
-img {
-	display: block;
-	height: auto;
-	max-width: 100%;
+.bg-img {
+	width: 100vw;
+	height: 100vh;
 }
 
 @media screen and (max-width: 1000px) {
