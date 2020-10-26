@@ -145,10 +145,24 @@ body {
 	-webkit-transform: rotate(-90deg) translateX(-100%);
 	transform: rotate(-90deg) translateX(-100%);
 }
-
 .nav-link {
 	color: #FFFFFF;
-	font-size: 24px;
+	font-size: 22px;
+	width: 100px;
+}
+.nav-link:hover  {
+	transform: translate(10%,0);
+	transition: all .3s ease-in-out;
+}
+a .text-new { 
+	display: none; 
+}
+a:hover .text-defult { 
+	display: none; 
+}
+a:hover .text-new { 
+	display: inline; 
+	color: #4BB083;
 }
 
 /* Layout Zigzag */
