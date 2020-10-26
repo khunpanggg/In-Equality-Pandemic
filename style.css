@@ -45,7 +45,6 @@ html {
 	/* suppress scroll anchoring to see the effect */
 	overflow-anchor: none;
 	scroll-behavior: smooth;
-	overflow: hidden;
 
 }
 
