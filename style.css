@@ -48,23 +48,6 @@ html {
 
 }
 
-/* Change navbar styling on small viewports */
-/*@media (max-width: 600px) {
-	.navbar {
-		background: transparent;
-		-webkit-transform: none;
-		transform: none;
-	}
-
-	.navbar .navbar-brand {
-		visibility: hidden;
-	}
-
-	.navbar .nav-link {
-		color: #555;
-		font-size: 24px;
-	}
-}*/
 
 section {
 	/* snap align start */
@@ -231,34 +214,28 @@ h1 {
 	transform-origin: left top;
 	-webkit-transform: rotate(-90deg) translateX(-100%);
 	transform: rotate(-90deg) translateX(-100%);
+	flex-direction: row-reverse;
 }
-
 .nav-link {
 	color: #FFFFFF;
 	font-size: 22px;
 	width: 100px;
 }
-
-.nav-link:hover {
-	transform: translate(10%, 0);
+.nav-link:hover  {
+	transform: translate(10%,0);
 	transition: all .3s ease-in-out;
 }
-
-a .text-defult {
-	font-family: 'Mondwest';
+.navbar-nav{
+	margin-left: 30px;
 }
-
-a .text-new {
-	font-family: 'Mondwest';
-	display: none;
+a .text-new { 
+	display: none; 
 }
-
-a:hover .text-defult {
-	display: none;
+a:hover .text-defult { 
+	display: none; 
 }
-
-a:hover .text-new {
-	display: inline;
+a:hover .text-new { 
+	display: inline; 
 	color: #4BB083;
 }
 
@@ -328,13 +305,24 @@ a:hover .text-new {
 		-webkit-transform: none;
 		transform: none;
 	}
-
-	.navbar .navbar-brand {
-		visibility: hidden;
+	/* setting icon navbar toggler to right */
+	.navbar-light{
+		left: 75vw;
 	}
-
-	.navbar .nav-link {
-		color: #555;
-		font-size: 24px;
+	/* setting hidden &#8594; Home */
+	a .text-new { 
+		display: none; 
 	}
-}
+	a:hover .text-defult { 
+		display: inline; 
+		color: #4BB083;
+	}
+	a:hover .text-new { 
+		display: none; 
+	}
+	.navbar-brand{
+		background-color: khaki;
+	}
+	.navbar-nav{
+		margin-left: 0px;
+	}
