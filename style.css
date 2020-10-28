@@ -327,3 +327,41 @@ a:hover .text-new {
 		margin-left: 0px;
 	}
 }
+
+/* Dame Part */
+
+#section9_1{
+	background-color: #F56643;
+	font-size: 18px;
+
+}
+#section9_2{
+	background-color: #F56643;
+	font-size: 18px;
+}
+
+h3{
+	font-size: 32px;
+	font-weight: bold;
+}
+.row.history{
+	position: relative;
+	margin-right: 200px;
+	margin-top: 89.5px;
+}
+.head-history{
+	position: relative;
+	margin-bottom: 19px;
+}
+#section9_1.col-sm{
+	position: relative;
+	margin-left: 200px;
+}
+
+#section9_2.col-sm{
+	position: relative;
+	margin-right: 10px;
+	margin-bottom: 10px;
+}
+
+
