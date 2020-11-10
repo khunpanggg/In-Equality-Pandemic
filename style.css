@@ -173,10 +173,21 @@ h1 {
 	font-size: 190px;
 }
 
+/*sec_22*/
+.img-dltv {
+	display: flex;
+	justify-content: center;
+}
+
+.img-dltv img {
+	width: 50%;
+	height: auto;
+}
+
 /* Text Box */
 .box {
 	width: 495px;
-	height: 595px;
+	height: auto;
 	margin-left: 172px;
 }
 
@@ -199,6 +210,17 @@ h1 {
 .sec_21 {
 	background-size: cover;
 	background-image: url("img/22-25_course/3_course.png");
+}
+
+.img-icon-course {
+	display: flex;
+	justify-items: center;
+	padding-top: 2.5em;
+	padding-bottom: 2.5em;
+}
+
+.img-icon-course img {
+	width: 25%;
 }
 
 .sec_25 {
