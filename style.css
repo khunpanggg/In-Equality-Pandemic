@@ -67,15 +67,27 @@ body {
 
 h1 {
 	font-family: 'Mondwest';
+	font-size: 90px;
 }
 
 .img-header {
-	padding-top: 16em;
+	padding-top: 12em;
 }
 
 .img-grid-4 img {
 	width: 25%;
 	height: auto;
+}
+
+/* Page Question*/
+.question h1 {
+	font-size: 90px;
+	margin: 0;
+	position: absolute;
+	top: 50%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
 }
 
 /* sec_01 */
@@ -88,8 +100,8 @@ h1 {
 .text-header-1 * {
 	z-index: 1;
 	font-family: 'Mondwest';
-	font-size: 3.5em;
-	line-height: 0.85em;
+	font-size: 190px;
+	line-height: 160px;
 }
 
 .text-header-1 span {
@@ -98,20 +110,23 @@ h1 {
 
 /* sec_02 */
 #header-2 h1 {
-	padding-left: 13em;
+	font-weight: bold;
+	margin-left: 583px;
 }
 
 .text-header-2 * {
-	z-index: 1;
-	font-family: 'Mondwest';
-	font-size: 3.5em;
-	line-height: 0.85em;
-	margin-top: -4em;
+	bottom: 160px;
+	font-size: 32px;
+	line-height: 42px;
+}
+
+.sec_02 p {
+	padding-top: 429px;
 }
 
 .sec_02 img {
 	position: absolute;
-	right: 15%;
+	right: 583px;
 	bottom: 0;
 }
 
@@ -130,12 +145,11 @@ h1 {
 }
 
 /* sec_05 */
-.sec_05 h1 {
-	font-size: 5em;
+.sec_05 {
+	padding-top: 243px;
 }
 
-/* sec_06 */
-.sec_06 h1 {
+.sec_05 .row {
 	margin: 0;
 	position: absolute;
 	top: 50%;
@@ -144,10 +158,52 @@ h1 {
 	transform: translate(-50%, -50%)
 }
 
+/* sec_07 */
+.sec_07 h1 {
+	font-size: 190px;
+}
+
+.sec_07 span {
+	padding-top: 114px;
+	position: absolute;
+}
+
+/* sec_13 */
+.sec_13 h1 {
+	font-size: 190px;
+}
+
+/* Text Box */
+.box {
+	width: 495px;
+	height: 595px;
+	margin-left: 172px;
+}
+
 /*background image*/
 .sec_03 {
 	background-size: cover;
 	background-image: url("img/03_question-bg.png");
+}
+
+.sec_15 {
+	background-size: cover;
+	background-image: url("img/15-18_technology/1_technology.png");
+}
+
+.sec_18 {
+	background-size: cover;
+	background-image: url("img/19-21_family/2_family.png");
+}
+
+.sec_21 {
+	background-size: cover;
+	background-image: url("img/22-25_course/3_course.png");
+}
+
+.sec_25 {
+	background-size: cover;
+	background-image: url("img/26-29_time/4_time.png");
 }
 
 /* Color BG */
@@ -192,6 +248,14 @@ h1 {
 	color: #6459B6;
 }
 
+.ee-text {
+	color: #000000;
+}
+
+.text-weigth {
+	font-weight: bold;
+}
+
 .b-darkbule {
 	background: linear-gradient(to top, #242f57, transparent);
 }
@@ -216,26 +280,32 @@ h1 {
 	transform: rotate(-90deg) translateX(-100%);
 	flex-direction: row-reverse;
 }
+
 .nav-link {
 	color: #FFFFFF;
 	font-size: 22px;
 	width: 100px;
 }
-.nav-link:hover  {
-	transform: translate(10%,0);
+
+.nav-link:hover {
+	transform: translate(10%, 0);
 	transition: all .3s ease-in-out;
 }
-.navbar-nav{
+
+.navbar-nav {
 	margin-left: 30px;
 }
-a .text-new { 
-	display: none; 
+
+a .text-new {
+	display: none;
 }
-a:hover .text-defult { 
-	display: none; 
+
+a:hover .text-defult {
+	display: none;
 }
-a:hover .text-new { 
-	display: inline; 
+
+a:hover .text-new {
+	display: inline;
 	color: #4BB083;
 }
 
@@ -305,63 +375,71 @@ a:hover .text-new {
 		-webkit-transform: none;
 		transform: none;
 	}
+
 	/* setting icon navbar toggler to right */
-	.navbar-light{
+	.navbar-light {
 		left: 75vw;
 	}
+
 	/* setting hidden &#8594; Home */
-	a .text-new { 
-		display: none; 
+	a .text-new {
+		display: none;
 	}
-	a:hover .text-defult { 
-		display: inline; 
+
+	a:hover .text-defult {
+		display: inline;
 		color: #4BB083;
 	}
-	a:hover .text-new { 
-		display: none; 
+
+	a:hover .text-new {
+		display: none;
 	}
-	.navbar-brand{
+
+	.navbar-brand {
 		background-color: khaki;
 	}
-	.navbar-nav{
+
+	.navbar-nav {
 		margin-left: 0px;
 	}
 }
 
 /* Dame Part */
 
-#section9_1{
+#section9_1 {
 	background-color: #F56643;
 	font-size: 18px;
 
 }
-#section9_2{
+
+#section9_2 {
 	background-color: #F56643;
 	font-size: 18px;
 }
 
-h3{
+h3 {
 	font-size: 32px;
 	font-weight: bold;
 }
-.row.history{
+
+.row.history {
 	position: relative;
 	margin-right: 200px;
 	margin-top: 89.5px;
 }
-.head-history{
+
+.head-history {
 	position: relative;
 	margin-bottom: 19px;
 }
-#section9_1.col-sm{
+
+#section9_1.col-sm {
 	position: relative;
 	margin-left: 200px;
 }
 
-#section9_2.col-sm{
+#section9_2.col-sm {
 	position: relative;
 	margin-right: 10px;
 	margin-bottom: 10px;
 }
-
-
