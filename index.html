@@ -11,6 +11,17 @@
 	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
 	<link rel="stylesheet" href="style.css">
 	<script type="text/javascript" src="script.js"></script>
+
+	<link rel="stylesheet" type="text/css" href="scroll-h/fullpage.min.css">
+	<link rel="stylesheet" type="text/css" href="scroll-h/examples.css">
+	<script type="text/javascript" src="scroll-h/jquery.js"></script>
+
+	<!--[if IE]>
+		<script type="text/javascript">
+			 var console = { log: function() {} };
+		</script>
+	<![endif]-->
+
 </head>
 
 <body>
@@ -44,10 +55,10 @@
 		</div>
 	</nav>
 	<!-- End Navbar -->
-
+<div id="myContainer">
 	<!-- Start Content -->
 	<!-- Section 1 -->
-	<section id="1" class="sec_01 bg-darkbule">
+	<section id="1" class="section active sec_01 bg-darkbule">
 		<div class="container">
 			<div class="text-header-1" id="header-1">
 				<h1>
@@ -85,7 +96,7 @@
 		</div>
 	</section>
 	<!-- Section 2 -->
-	<section id="2" class="sec_02 bg-darkbule">
+	<section id="2" class="section sec_02 bg-darkbule">
 		<div class="container">
 			<div class="text-header-2" id="header-2">
 				<h1>
@@ -115,11 +126,11 @@
 	</section>
 
 	<!-- Section 3 -->
-	<section id="3" class="sec_03">
+	<section id="3" class="section sec_03">
 
 	</section>
 	<!-- Section 4 -->
-	<section id="4" class="sec_04 bg-darkbule">
+	<section id="4" class="section sec_04 bg-darkbule">
 		<div class="container">
 			<div class="bg-cream">
 				<div class="row">
@@ -138,7 +149,7 @@
 		</div>
 	</section>
 	<!-- Section 5 -->
-	<section id="5" class="sec_05 bg-cream">
+	<section id="5" class="section sec_05 bg-cream">
 		<div class="container">
 			<div class="row">
 				<div class="col-md">
@@ -156,24 +167,77 @@
 		</div>
 	</section>
 	<!-- Section 6 -->
-	<section id="6" class="sec_06 bg-darkbule question">
+	<section id="6" class="section sec_06 bg-darkbule question">
 		<div class="container text-center">
 			<h1 class="display-1 text-orage">NEW Normal<br>OLD Problem</h1>
 		</div>
 	</section>
 	<!-- Section 7 horizontal-scroll -->
-	<section id="7" class="sec_07 bg-cream">
-		<div class="container">
-			<div class="row">
-				<div class="col">
-					<h1 class="display-1 text-darkbule">A Brief<br>History of</h1><span
-						class="text-darkbule text-weigth">ประวัติศาสตร์วงการการศึกษาไทยและความเหลื่อมล้ำ</span>
+	<section id="7" class="section sec_07 bg-cream">
+		<div class="slide">
+			<div class="container">
+				<div class="row">
+					<div class="col">
+						<h1 class="display-1 text-darkbule">A Brief<br>History of</h1><span
+							class="text-darkbule text-weigth">ประวัติศาสตร์วงการการศึกษาไทยและความเหลื่อมล้ำ</span>
+					</div>
 				</div>
 			</div>
 		</div>
+		<!-- Section 8 horizontal-scroll -->
+		<section id="8" class="slide sec_08 bg-cream">
+
+		</section>
+		<!-- Section 9 horizontal-scroll -->
+		<section id="9" class="slide sec_09 bg-darkbule">
+			<!-- <div class="container">
+				<div class="row history">
+				<div class="col-sm" id="section9_1">
+					<h3>ยุคปฏิรูปการศึกษา</h3><br>
+					ในสมัยของรัชกาลที่ 5&nbsp;&nbsp;ได้มีการเลิกทาสและปรับปรุงประเทศให้ทัดเทียมกับนานาประเทศ&nbsp;จึงมีการจัดระบบการศึกษาอย่างมีระเบียบแบบแผน&nbsp;มีโรงเรียนเกิดขึ้นในวังและในวัด&nbsp;รวมถึงมีการตั้งโรงเรียนสำหรับสตรีขึ้นในพระบรมมหาราชวังด้วย&nbsp;เกิดพระราชบัญญัติประถมศึกษาบังคับให้เด็กอายุ&nbsp;7-8&nbsp;อยู่เรียนฟรีจนครบอายุ 14 ปี และมีการก่อตั้งมหาวิทยาลัยแห่งแรกขึ้น
+				</div>
+				<div class="col-sm" id="section9_2">
+					ปัญหาความเหลื่อมล้ำ<br><br>ด้านชนชั้น<br>แม้การศึกษาของสตรีกับเพศ<br>ชายจะเริ่มเท่าเทียมขึ้น แต่การ<br>ศึกษายังคงกระจุกอยู่ในเมือง<br>ไม่กระจายไปตามชนบท
+				</div>
+				
+				</div>
+			</div> -->
+			<div class="container-fluid" style="height: 100vh; width: 100%;">
+				<div class="row h-50 bg-dark">
+					<div class="col-2 bg-danger">
+
+					</div>
+					<div class="col-5 bg-info"></div>
+					<div class="col-5 bg-success">
+						<div class="card mt-0 bg-dark" style="height: 75%; width: 50%; margin-left: 20%;"></div>
+					</div>
+				</div>
+				<div class="row h-50 bg-warning">
+					<div class="col-2 bg-success">
+						<div class="bg-dark" style="width: 95%; height: 40%; border-radius: 25%;"></div>
+					</div>
+					<div class="col-5 bg-warning"></div>
+					<div class="col-5 bg-info">
+					</div>
+				</div>
+			</div>
+
+		</section>
+		<!-- Section 10 horizontal-scroll -->
+		<section id="10" class="slide sec_10 bg-cream">
+
+		</section>
+		<!-- Section 11 horizontal-scroll -->
+		<section id="11" class="slide sec_11 bg-cream">
+
+		</section>
+		<!-- Section 12 horizontal-scroll -->
+		<section id="12" class="slide sec_12 bg-cream">
+
+		</section>
 	</section>
 	<!-- Section 13 -->
-	<section id="13" class="sec_13 bg-mint">
+	<section id="13" class="section sec_13 bg-mint">
 		<div class="container">
 			<div class="row">
 				<div class="col">
@@ -183,69 +247,16 @@
 		</div>
 	</section>
 
-	<!-- Section 8 horizontal-scroll -->
-	<section id="8" class="sec_08 bg-cream">
 
-	</section>
-	<!-- Section 9 horizontal-scroll -->
-	<section id="9" class="sec_09 bg-darkbule">
-		<!-- <div class="container">
-			<div class="row history">
-			  <div class="col-sm" id="section9_1">
-				<h3>ยุคปฏิรูปการศึกษา</h3><br>
-				ในสมัยของรัชกาลที่ 5&nbsp;&nbsp;ได้มีการเลิกทาสและปรับปรุงประเทศให้ทัดเทียมกับนานาประเทศ&nbsp;จึงมีการจัดระบบการศึกษาอย่างมีระเบียบแบบแผน&nbsp;มีโรงเรียนเกิดขึ้นในวังและในวัด&nbsp;รวมถึงมีการตั้งโรงเรียนสำหรับสตรีขึ้นในพระบรมมหาราชวังด้วย&nbsp;เกิดพระราชบัญญัติประถมศึกษาบังคับให้เด็กอายุ&nbsp;7-8&nbsp;อยู่เรียนฟรีจนครบอายุ 14 ปี และมีการก่อตั้งมหาวิทยาลัยแห่งแรกขึ้น
-			  </div>
-			  <div class="col-sm" id="section9_2">
-				ปัญหาความเหลื่อมล้ำ<br><br>ด้านชนชั้น<br>แม้การศึกษาของสตรีกับเพศ<br>ชายจะเริ่มเท่าเทียมขึ้น แต่การ<br>ศึกษายังคงกระจุกอยู่ในเมือง<br>ไม่กระจายไปตามชนบท
-			  </div>
-			  
-			</div>
-		  </div> -->
-		<div class="container-fluid" style="height: 100vh; width: 100%;">
-			<div class="row h-50 bg-dark">
-				<div class="col-2 bg-danger">
 
-				</div>
-				<div class="col-5 bg-info"></div>
-				<div class="col-5 bg-success">
-					<div class="card mt-0 bg-dark" style="height: 75%; width: 50%; margin-left: 20%;"></div>
-				</div>
-			</div>
-			<div class="row h-50 bg-warning">
-				<div class="col-2 bg-success">
-					<div class="bg-dark" style="width: 95%; height: 40%; border-radius: 25%;"></div>
-				</div>
-				<div class="col-5 bg-warning"></div>
-				<div class="col-5 bg-info">
-				</div>
-			</div>
-		</div>
-
-	</section>
-	<!-- Section 10 horizontal-scroll -->
-	<section id="10" class="sec_10 bg-cream">
-
-	</section>
-	<!-- Section 11 horizontal-scroll -->
-	<section id="11" class="sec_11 bg-cream">
-
-	</section>
-	<!-- Section 12 horizontal-scroll -->
-	<section id="12" class="sec_12 bg-cream">
-
-	</section>
-	<!-- Section 13 horizontal-scroll -->
-	<section id="13" class="sec_13 bg-cream">
-
-	</section>
 	<!-- Section 14 -->
-	<section id="14" class="sec_14 bg-darkbule question">
+	<section id="14" class="section sec_14 bg-darkbule question">
 		<div class="container text-center">
 			<h1 class="display-1 text-orage">Now learning or<br>Now loading?</h1>
 		</div>
 	</section>
 	<!-- Section 15 -->
-	<section id="15" class="sec_15 bg-darkbule">
+	<section id="15" class="section sec_15 bg-darkbule">
 		<div class="bg-cream box p-5">
 			<h1 class="text-orage">TECH-
 				NOLOGY</h1>
@@ -261,17 +272,17 @@
 		</div>
 	</section>
 	<!-- Section 16 -->
-	<section id="16" class="sec_16 bg-mint">
+	<section id="16" class="section sec_16 bg-mint">
 
 	</section>
 	<!-- Section 17 -->
-	<section id="17" class="sec_17 bg-darkbule question">
+	<section id="17" class="section sec_17 bg-darkbule question">
 		<div class="container text-center">
 			<h1 class="display-1 text-orage">Afford or Effort ?</h1>
 		</div>
 	</section>
 	<!-- Section 18 -->
-	<section id="18" class="sec_18 bg-darkbule">
+	<section id="18" class="section sec_18 bg-darkbule">
 		<div class="bg-cream box p-5">
 			<h1 class="text-orage">FAMILY</h1>
 			<p class="text-orage text-weigth">ครอบครัว</p>
@@ -289,17 +300,17 @@
 		</div>
 	</section>
 	<!-- Section 19 -->
-	<section id="19" class="sec_19 bg-cream">
+	<section id="19" class="section sec_19 bg-cream">
 
 	</section>
 	<!-- Section 20 -->
-	<section id="20" class="sec_20 bg-darkbule question">
+	<section id="20" class="section sec_20 bg-darkbule question">
 		<div class="container text-center">
 			<h1 class="display-1 text-orage">Free Course or<br>Course Fee ?</h1>
 		</div>
 	</section>
 	<!-- Section 21 -->
-	<section id="21" class="sec_21 bg-darkbule">
+	<section id="21" class="section sec_21 bg-darkbule">
 		<div class="bg-cream box p-5">
 			<h1 class="text-orage">COURSE</h1>
 			<p class="text-orage text-weigth">หลักสูตร</p>
@@ -315,24 +326,24 @@
 		</div>
 	</section>
 	<!-- Section 22 -->
-	<section id="22" class="bg-darkbule">
+	<section id="22" class="section sec_22 bg-darkbule">
 		<div class="img-dltv">
 			<img src="/img/22-25_course/course-dltv.png">
 		</div>
 	</section>
 	<!-- Section 23 -->
-	<section id="23" class="bg-cream">
+	<section id="23" class="section sec_23 bg-cream">
 
 	</section>
 	<!-- Section 24 -->
-	<section id="24" class="sec_24 bg-darkbule question">
+	<section id="24" class="section sec_24 bg-darkbule question">
 		<div class="container text-center">
 			<h1 class="display-1 text-orage">More Time or<br>
 				More Tired ?</h1>
 		</div>
 	</section>
 	<!-- Section 25 -->
-	<section id="25" class="sec_25 bg-cream">
+	<section id="25" class="section sec_25 bg-cream">
 		<div class="bg-cream box p-5">
 			<h1 class="text-orage">TIME</h1>
 			<p class="text-orage text-weigth">เวลา</p>
@@ -346,25 +357,26 @@
 		</div>
 	</section>
 	<!-- Section 26 -->
-	<section id="26" class="bg-darkbule">
+	<section id="26" class="section bg-darkbule">
 
 	</section>
 	<!-- Section 27 -->
-	<section id="27" class="bg-mint">
+	<section id="27" class="section bg-mint">
 
 	</section>
 	<!-- Section 28 -->
-	<section id="28" class="bg-darkbule">
+	<section id="28" class="section bg-darkbule">
 
 	</section>
 	<!-- Section 29 -->
-	<section id="29" class="bg-darkbule">
+	<section id="29" class="section bg-darkbule">
 
 	</section>
 	<!-- Section 30 -->
-	<section id="30" class="bg-mint">
+	<section id="30" class="section bg-mint">
 
 	</section>
+</div>
 	<!-- footer 31-->
 	<footer class="jumbotron text-center bg-purple" style="margin-bottom:0;">
 		<p>
@@ -373,6 +385,37 @@
 		</p>
 	</footer>
 	<script src="script.js"></script>
+
+	<script type="text/javascript" src="scroll-h/fullpage.scrollHorizontally.min.js"></script>
+	<script type="text/javascript" src="scroll-h/fullpage.extensions.min.js"></script>
+	<script type="text/javascript">
+
+		jQuery(function($) {
+
+			$('#myContainer').fullpage({
+				slidesNavigation: true,
+				scrollHorizontally: true,
+				//scrollHorizontallyKey: 'YWx2YXJvdHJpZ28uY29tX01mU2MyTnliMnhzU0c5eWFYcHZiblJoYkd4NVNRcg==',
+				afterSlideLoad: function(section, origin, destination, direction){
+					console.log({
+						section: section,
+						origin: origin,
+						destination: destination,
+						direction: direction
+					});
+				},
+				onSlideLeave: function(section, origin, destination, direction){
+					console.log({
+						section: section,
+						origin: origin,
+						destination: destination,
+						direction: direction
+					});
+				}
+			});
+
+			});
+	</script>
 </body>
 
 </html>
