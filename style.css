@@ -48,15 +48,6 @@ html {
 
 }
 
-
-section {
-	/* snap align start */
-	scroll-snap-align: center;
-	display: block;
-	position: relative;
-	min-height: 100vh;
-}
-
 body {
 	background: #4c9cb0;
 	min-height: 1000px;
