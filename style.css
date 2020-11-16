@@ -56,6 +56,10 @@ body {
 	font-size: 18px;
 }
 
+#myContainer {
+	margin-left: 80px;
+}
+
 h1 {
 	font-family: 'Mondwest';
 	font-size: 90px;
@@ -112,12 +116,11 @@ h1 {
 }
 
 .sec_02 p {
-	padding-top: 429px;
+	padding-top: 300px;
 }
 
 .sec_02 img {
 	position: absolute;
-	right: 583px;
 	bottom: 0;
 }
 
@@ -171,8 +174,18 @@ h1 {
 }
 
 .img-dltv img {
-	width: 50%;
+	width: 100%;
 	height: auto;
+}
+
+/*sec_27*/
+.sec_27 .container {
+	margin: 0;
+	position: absolute;
+	top: 70%;
+	left: 50%;
+	margin-right: -50%;
+	transform: translate(-50%, -50%)
 }
 
 /* Text Box */
@@ -217,6 +230,11 @@ h1 {
 .sec_25 {
 	background-size: cover;
 	background-image: url("img/26-29_time/4_time.png");
+}
+
+.sec_28 {
+	background-size: cover;
+	background-image: url("img/new normal but not normalize.png");
 }
 
 /* Color BG */
