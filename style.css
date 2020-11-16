@@ -104,7 +104,20 @@ h1 {
 	font-weight: bold;
 	margin-left: 583px;
 }
-
+/* sec_16 */
+#header-3 h1 {
+	font-weight: bold;
+	
+}
+.text-header-3 * {
+	font-size: 32px;
+	line-height: 42px;
+}
+.text-header-4 * {
+	font-size: 32px;
+	line-height: 40px;
+}
+/* end sec_16  */
 .text-header-2 * {
 	bottom: 160px;
 	font-size: 32px;
@@ -282,6 +295,7 @@ h1 {
 }
 
 
+
 /* Setting Nav */
 .navbar {
 	width: 100vh;
@@ -455,4 +469,8 @@ h3 {
 	position: relative;
 	margin-right: 10px;
 	margin-bottom: 10px;
+}
+
+.p-2 my-flex-item{
+	width: 2000px;
 }
