@@ -1,0 +1,534 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+     :root {
+        --scrollbar-size: 0px;
+    }
+    
+    *,
+     :after,
+     :before {
+        box-sizing: border-box;
+    }
+    
+    .viewport {
+        overflow: hidden;
+        position: fixed;
+        height: 100%;
+        width: 100%;
+        top: 0;
+        left: 0;
+        right: 0;
+        bottom: 0;
+    }
+    
+    body {
+        overflow-x: hidden;
+        overflow-y: scroll;
+        padding: 0;
+        margin: 0;
+        font-family: "Courier New", Courier, monospace;
+    }
+    
+    body *:not(.change_color_page) {
+        color: #fbe8ee;
+        transition: color 0.5s ease-in-out, border-color 0.5s ease;
+        border-color: #fbe8ee;
+    }
+    
+    body.darkbule *:not(.change_color_page) {
+        color: #0a0a0a;
+        transition: color 0.5s ease-in-out, border-color 0.5s ease;
+        border-color: #0a0a0a;
+    }
+    
+    .change_color_page {
+        position: fixed;
+        display: block;
+        top: 0;
+        left: 0;
+        width: 100vw;
+        height: 100vh;
+        background-color: #0a0a0a;
+        transition: background-color 0.5s ease;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+    }
+    
+    .change_color_page.darkbule {
+        background-color: #fbe8ee;
+    }
+    
+    .header {
+        position: fixed;
+        top: 0;
+        left: 0;
+        width: 100%;
+        height: 50px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        transition: all 0.5s ease-in-out;
+        background-color: #fbe8ee;
+    }
+    
+    .header.darkbule {
+        background-color: #0a0a0a;
+    }
+    
+    .scrollbar-test {
+        position: absolute;
+        visibility: hidden;
+        overflow: scroll;
+        width: 100px;
+        height: 100px;
+        top: -99999px;
+        left: -99999px;
+        pointer-events: none;
+        user-select: none;
+    }
+    
+    .fixed-content {
+        position: absolute;
+        display: block;
+        top: 0;
+        left: 0;
+        right: var(--scrollbar-size, 0px);
+        bottom: 0;
+        z-index: 2;
+        pointer-events: none;
+    }
+    
+    .scroll-container {
+        position: absolute;
+        overflow: hidden;
+        z-index: 10;
+        backface-visibility: hidden;
+        transform-style: preserve-3d;
+        width: 100%;
+    }
+    
+    .content {
+        overflow: hidden;
+        position: relative;
+        width: 100%;
+    }
+    
+    .spacer {
+        background: transparent;
+    }
+    
+    .single-item {
+        flex: 0 0 100vw;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 70px;
+    }
+    
+    .single-item.left {
+        justify-content: flex-start;
+    }
+    
+    .single-item p {
+        width: 300px;
+        height: 300px;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        border-width: 2px;
+        border-style: solid;
+    }
+    
+    .horizontal-scroll-wrapper {
+        position: relative;
+    }
+    
+    .horizontal-scroll {
+        display: flex;
+    }
+    
+    .horizontal-scroll .single-item {
+        flex: 0 0 100vw;
+    }
+    
+    .horizontal-scroll .single-item p {
+        width: 600px;
+        height: 600px;
+        max-width: 80%;
+        max-height: 80%;
+    }
+</style>
+
+<body>
+    <div class="change_color_page"></div>
+    <header></header>
+    <div class="viewport">
+        <div class="scroll-container">
+            <div class="content">
+                <div class="single-item active" data-color="darkbule">
+                    <p>1</p>
+                </div>
+                <div class="single-item" data-color="orage">
+                    <p data-depth="-7" data-direction="y">2</p>
+                </div>
+                <div class="single-item" data-color="darkbule">
+                    <p class="item_to_move">3</p>
+                </div>
+                <div class="single-item" data-color="orage">
+                    <p data-depth="-3" data-direction="y">4</p>
+                </div>
+                <div class="single-item" data-color="darkbule">
+                    <p data-depth="-3" data-direction="y">5</p>
+                </div>
+                <div class="horizontal-scroll-wrapper" data-color="orage">
+                    <div class="horizontal-scroll">
+                        <div class="single-item">
+                            <p><span data-depth-hor="-3" data-direction="left">6</span></p>
+                        </div>
+                        <div class="single-item">
+                            <p><span data-depth-hor="-3" data-direction="left">7</span></p>
+                        </div>
+                        <div class="single-item">
+                            <p><span data-depth-hor="-3" data-direction="left">8</span></p>
+                        </div>
+                        <div class="single-item">
+                            <p><span data-depth-hor="-3" data-direction="left">9</span></p>
+                        </div>
+                        <div class="single-item">
+                            <p><span data-depth-hor="-3" data-direction="left">10</span></p>
+                        </div>
+                    </div>
+                </div>
+                <div class="single-item" data-color="darkbule">
+                    <p data-depth="-3" data-direction="y">11</p>
+                </div>
+                <div class="single-item" data-color="orage">
+                    <p data-depth="-3" data-direction="y">12</p>
+                </div>
+                <div class="single-item left" data-color="darkbule">
+                    <p data-depth="15" data-direction="x">13</p>
+                </div>
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+    //https://codepen.io/osublake/pen/e72106811a34efcccff91a03568cc790.js?v=3
+
+    class SmoothScroll {
+        constructor(options) {
+
+            this.endThreshold = 0.05;
+            this.requestId = null;
+            this.maxDepth = 10;
+            this.viewHeight = 0;
+            this.halfViewHeight = 0;
+            this.maxDistance = 0;
+            this.viewWidth = 0;
+            this.halfViewWidth = 0;
+            this.maxDistanceWidth = 0;
+            this.scrollHeight = 0;
+            this.endScroll = 0;
+            this.returnCurrentScroll = 0;
+            this.currentScroll = 0;
+            this.scrollTransform = 0;
+            this.horizontalScroll = 0;
+            this.resizeRequest = 1;
+            this.scrollRequest = 0;
+            this.scrollItems = [];
+            this.lastTime = -1;
+            this.maxElapsedMS = 100;
+            this.targetFPMS = 0.06;
+
+            // this.scrollBody = options.scrollBody;
+            // this.scrollSpacer = options.scrollSpacer;
+
+            this.target = options.target;
+
+            this.scrollEase = options.scrollEase != null ? options.scrollEase : 0.1;
+            this.maxOffset = options.maxOffset != null ? options.maxOffset : 500;
+
+            this.horizontalScrollWrapper = options.horizontalScrollWrapper;
+
+            this.horizontalScrollTarget = options.horizontalScrollTarget;
+
+            this._horziontalSetHeihgt();
+
+            this.childElements = this._childElements();
+
+            this.rectHorStart = this.horizontalScrollWrapper.getBoundingClientRect();
+
+            this.horzItemStart = {
+                top: this.rectHorStart.top,
+                bottom: this.rectHorStart.bottom,
+                height: this.rectHorStart.height
+            }
+
+            this.addItems();
+
+            window.addEventListener("resize", this._onResize);
+            window.addEventListener("scroll", this._onScroll);
+            //this.scrollBody.addEventListener("scroll", this._onScroll);
+
+            this._update();
+        }
+
+        _childElements = (event) => {
+            const childElementsNode = this.target.querySelectorAll("*[data-color]");
+            return childElementsNode;
+        }
+
+        _horizonstalScrollRect = (event) => {
+            const horzintalRect = this.horizontalScrollTarget.getBoundingClientRect();
+            return horzintalRect;
+        }
+
+        _lastScrollRect = (event) => {
+            const lastScrollRect = this.horizontalScrollTarget.lastElementChild.getBoundingClientRect();
+            return lastScrollRect;
+        }
+
+        _horziontalSetHeihgt = (event) => {
+            let horScrHeight = 0;
+            if (
+                this.horizontalScrollTarget !== null &&
+                this.horizontalScrollWrapper !== null
+            ) {
+                const lastScrollRect = this._lastScrollRect();
+                horScrHeight = this.horizontalScrollTarget.scrollWidth - lastScrollRect.width + this._horizonstalScrollRect().height;
+                this.horizontalScrollWrapper.style.height = horScrHeight + "px";
+            }
+        }
+
+        _onResize = (event) => {
+            this.resizeRequest++;
+            if (!this.requestId) {
+                this.lastTime = performance.now();
+                this.requestId = requestAnimationFrame(this._update);
+            }
+        };
+
+        _onScroll = (event) => {
+            this.scrollRequest++;
+            if (!this.requestId) {
+                this.lastTime = performance.now();
+                this.requestId = requestAnimationFrame(this._update);
+            }
+        };
+
+        _horizonstalScroll = (scrollY, dt) => {
+            if (this.horizontalScrollWrapper !== null) {
+                const rectHor = this.horizontalScrollWrapper.getBoundingClientRect();
+                const lastScrollRect = this._lastScrollRect();
+
+                const itemHor = {
+                    target: this.horizontalScrollTarget,
+                    targetRect: this._horizonstalScrollRect(),
+                    top: rectHor.top,
+                    bottom: rectHor.bottom + scrollY,
+                    topScroll: rectHor.top + scrollY,
+                    horizonstalMove: 0,
+                };
+
+                itemHor.horizonstalMove += this.currentScroll - this.horzItemStart.top;
+                if (scrollY >= this.horzItemStart.top && scrollY <= this.horzItemStart.bottom - itemHor.targetRect.height) {
+                    itemHor.target.style.position = 'fixed';
+                    itemHor.target.style.transform = `translate3d(-${itemHor.horizonstalMove}px,0px,0px)`;
+
+                    //this._paralaxHorizontal(dt);
+
+                    if (lastScrollRect.x <= (lastScrollRect.width / 2)) {
+                        this.scrollTransform = this.horzItemStart.bottom - itemHor.targetRect.height;
+                        itemHor.target.style.top = this.horzItemStart.bottom - itemHor.targetRect.height + 'px';
+                    } else {
+                        this.scrollTransform = this.horzItemStart.top;
+                        itemHor.target.style.top = this.horzItemStart.top + 'px';
+                    }
+                }
+            }
+        };
+
+        _changeColorBody = (event) => {
+
+            if (this.childElements.length > 0) {
+                this.childElements.forEach(child => {
+                    const wrapper = document.querySelector('.change_color_page');
+                    const childRect = child.getBoundingClientRect();
+                    const childAttr = child.getAttribute('data-color');
+                    const listColor = ["darkbule", "orage", "cream", "mint", "purple"];
+                    const i = 0;
+                    if (childRect.y <= this.halfViewHeight && childRect.bottom >= this.halfViewHeight) {
+
+                        for (i in 4, i++) {
+                            if (childAttr == listColor[i]) {
+                                if (!document.body.classList.contains(listColor[i])) {
+                                    document.body.classList.add(listColor[i]);
+                                }
+                                if (!wrapper.classList.contains(listColor[i])) {
+                                    wrapper.classList.add(listColor[i]);
+                                }
+                            } else {
+                                if (document.body.classList.contains(listColor[i])) {
+                                    document.body.classList.remove(listColor[i]);
+                                }
+                                if (wrapper.classList.contains(listColor[i])) {
+                                    wrapper.classList.remove(listColor[i]);
+                                }
+                            }
+                        }
+                    }
+                });
+            }
+
+        }
+
+        _update = (currentTime = performance.now()) => {
+            let elapsedMS = currentTime - this.lastTime;
+
+            if (elapsedMS > this.maxElapsedMS) {
+                elapsedMS = this.maxElapsedMS;
+            }
+
+            const deltaTime = elapsedMS * this.targetFPMS;
+            const dt = 1 - Math.pow(1 - this.scrollEase, deltaTime);
+
+            const resized = this.resizeRequest > 0;
+            const scrollY = window.pageYOffset;
+            //const scrollY = this.scrollBody.scrollTop;
+
+            if (resized) {
+                this._horziontalSetHeihgt();
+                const height = this.target.clientHeight;
+                document.body.style.height = height + "px";
+                //this.scrollSpacer.style.height = height + "px";
+                this.scrollHeight = height;
+                this.viewHeight = window.innerHeight;
+                this.halfViewHeight = this.viewHeight / 2;
+                this.maxDistance = this.viewHeight * 2;
+                this.resizeRequest = 0;
+                this.viewWidth = window.innerWidth;
+                this.halfViewWidth = this.viewWidth / 2;
+                this.maxDistanceWidth = this.viewWidth * 2;
+            }
+
+            this.endScroll = scrollY;
+            // this.scrollTransform += (scrollY - this.scrollTransform) * this.scrollEase;
+            this.scrollTransform += (scrollY - this.scrollTransform) * dt;
+            this.currentScroll += (scrollY - this.currentScroll) * dt;
+
+            if (Math.abs(scrollY - this.currentScroll) < this.endThreshold || resized) {
+                this.currentScroll = scrollY;
+                this.scrollRequest = 0;
+            }
+
+            if (
+                Math.abs(scrollY - this.scrollTransform) < this.endThreshold ||
+                resized
+            ) {
+                this.scrollTransform = scrollY;
+                this.scrollRequest = 0;
+            }
+
+            ///change color section
+            this._changeColorBody();
+
+            ///horizontal scroll
+            this._horizonstalScroll(this.currentScroll, dt);
+
+            // const scrollOrigin = scrollY + this.halfViewHeight;
+            const scrollOrigin = this.currentScroll + this.viewHeight;
+
+            this.target.style.transform = `translate3d(0px,-${this.scrollTransform}px,0px)`;
+
+            //items
+            for (let i = 0; i < this.scrollItems.length; i++) {
+                const item = this.scrollItems[i];
+
+                const distance = scrollOrigin - item.top;
+                const offsetRatio = distance / this.maxDistance;
+
+                item.endOffset = Math.round(
+                    this.maxOffset * item.depthRatio * offsetRatio
+                );
+
+                if (Math.abs(item.endOffset - item.currentOffset < this.endThreshold)) {
+                    item.currentOffset = item.endOffset;
+                } else {
+                    // item.currentOffset += (item.endOffset - item.currentOffset) * this.scrollEase;
+                    item.currentOffset += (item.endOffset - item.currentOffset) * dt;
+                }
+                if (item.direction == "y") {
+                    item.target.style.transform = `translate3d(0px,${item.currentOffset}px,0px)`;
+                } else if (item.direction == "x") {
+                    item.target.style.transform = `translate3d(${item.currentOffset}px,0px,0px)`;
+                }
+            }
+
+            this.lastTime = currentTime;
+
+            this.requestId =
+                this.scrollRequest > 0 ? requestAnimationFrame(this._update) : null;
+        };
+
+        addItems() {
+            this.scrollItems = [];
+            const elements = document.querySelectorAll("*[data-depth]");
+            for (let i = 0; i < elements.length; i++) {
+                const element = elements[i];
+                const depth = +element.getAttribute("data-depth");
+                const direction_item = element.getAttribute("data-direction");
+                const rect_item = element.getBoundingClientRect();
+                const item = {
+                    rect: rect_item,
+                    target: element,
+                    top: rect_item.top + window.pageYOffset,
+                    //top: rect_item.top + this.scrollBody.scrollTop,
+                    depth: depth,
+                    depthRatio: depth / this.maxDepth,
+                    currentOffset: 0,
+                    endOffset: 0,
+                    direction: direction_item
+                };
+                this.scrollItems.push(item);
+            }
+            return this;
+        }
+
+        currentScrollReturn() {
+            return this.currentScroll;
+        }
+    }
+
+    document.documentElement.style.setProperty(
+        "--scrollbar-size",
+        getScrollbarSize() + "px"
+    );
+
+    var scroller = new SmoothScroll({
+        // scrollBody: document.querySelector(".scroll-content"),
+        // scrollSpacer: document.querySelector(".spacer"),
+        target: document.querySelector(".scroll-container"), // element container to scroll
+        scrollEase: 0.05,
+        horizontalScrollWrapper: document.querySelector(".horizontal-scroll-wrapper"),
+        horizontalScrollTarget: document.querySelector(".horizontal-scroll")
+    });
+
+    function getScrollbarSize() {
+        var div = document.createElement("div");
+        div.classList.add("scrollbar-test");
+        document.body.appendChild(div);
+        var size = div.offsetWidth - div.scrollWidth;
+        document.body.removeChild(div);
+        return size;
+    }
+</script>
+
+</html>
