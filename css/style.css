@@ -1,3 +1,13 @@
+้html {
+    /* Enable Safari touch scrolling physics which is needed for scroll snap */
+    -webkit-overflow-scrolling: touch;
+    scroll-snap-type: y mandatory;
+    /* suppress scroll anchoring to see the effect  */
+    overflow-anchor: none;
+    scroll-behavior: smooth;
+}
+
+
 /* body {
     margin: 0;
     background-color: antiquewhite;
@@ -74,13 +84,10 @@ body {
     padding: 0;
     margin: 0;
     font-family: "ChulaCharasNew";
-    /* Enable Safari touch scrolling physics which is needed for scroll snap */
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: y mandatory;
-    /* suppress scroll anchoring to see the effect  */
-    overflow-anchor: none;
-    scroll-behavior: smooth;
 }
+
+
+/* โค้ดเปลี่ยนสีข้อความเมื่อพื้นหลังตามคลาสที่วางไว้ */
 
 body *:not(.change_color_page) {
     color: #fbe8ee;
@@ -88,11 +95,17 @@ body *:not(.change_color_page) {
     border-color: #fbe8ee;
 }
 
+
+/* โค้ดเปลี่ยน สีข้อความ เมื่อพื้นหลังตามคลาสที่วางไว้ */
+
 body.darkbule *:not(.change_color_page) {
     color: #f8f4f4;
     transition: color 0.5s ease-in-out, border-color 0.5s ease;
     border-color: #cfc7c7;
 }
+
+
+/* โค้ดเปลี่ยน สีพื้นหลัง เมื่อพื้นหลังตามคลาสที่วางไว้ */
 
 .change_color_page {
     position: fixed;
@@ -174,6 +187,9 @@ body.darkbule *:not(.change_color_page) {
     background: linear-gradient(to top, #6459B6, transparent);
 }
 
+
+/* อันนี้ไม่รู้ไว้ทำอะไร */
+
 .header {
     position: fixed;
     top: 0;
@@ -190,6 +206,9 @@ body.darkbule *:not(.change_color_page) {
 .header.darkbule {
     background-color: #0a0a0a;
 }
+
+
+/* อันนี้น่าจะเกี่ยวกับโค้ด js ไม่มีแสดงใน index.html */
 
 .scrollbar-test {
     position: absolute;
@@ -233,6 +252,9 @@ body.darkbule *:not(.change_color_page) {
     background: transparent;
 }
 
+
+/* ใช้แทน Section */
+
 .single-item {
     flex: 0 0 100vw;
     height: 100vh;
@@ -244,7 +266,7 @@ body.darkbule *:not(.change_color_page) {
     /* scroll-snap-align: start;
     scroll-snap-stop: normal; */
     /* snap align start */
-    scroll-snap-align: center;
+    /* scroll-snap-align: center; */
     position: relative;
 }
 
@@ -252,9 +274,13 @@ body.darkbule *:not(.change_color_page) {
     justify-content: flex-start;
 }
 
+
+/* p คือแสดงเส้นขอบเนื้อหา เปลี่ยนเป็นอย่างอื่นได้แล้วแต่ **จะย่อขยายสัดส่วนจะไม่เปลี่ยนจะเท่าเดิม */
+
 .single-item p {
     width: 80vw;
-    height: 80vh;
+    /* ความสูงต้องใช้ vw เท่านั้น */
+    height: 50vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -274,11 +300,15 @@ body.darkbule *:not(.change_color_page) {
     flex: 0 0 100vw;
 }
 
+
+/* p คือแสดงเส้นขอบเนื้อหา เปลี่ยนเป็นอย่างอื่นได้แล้วแต่ **จะย่อขยายสัดส่วนจะไม่เปลี่ยนจะเท่าเดิม */
+
 .horizontal-scroll .single-item p {
     width: 100vw;
-    height: 100vh;
+    /* แก้ความสูงเอา แต่อย่าแก้หน่วย vw */
+    height: 60vw;
     max-width: 100vw;
-    max-height: 100vh;
+    max-height: 60vw;
 }
 
 .container {
@@ -554,10 +584,10 @@ a:hover .text-new {
 
 @media screen and (max-width: 800px) {
     .single-item p {
-        height: 80vw;
+        height: 50vw;
     }
     .horizontal-scroll .single-item p {
-        height: 80vw;
-        max-height: 100vw;
+        height: 50vw;
+        max-height: 50vw;
     }
 }
