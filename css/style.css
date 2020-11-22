@@ -588,24 +588,30 @@ a:hover .text-new {
         -webkit-transform: none;
         transform: none;
     }
+
     /* setting icon navbar toggler to right */
     .navbar-light {
         left: 75vw;
     }
+
     /* setting hidden &#8594; Home */
     a .text-new {
         display: none;
     }
+
     a:hover .text-defult {
         display: inline;
         color: #4BB083;
     }
+
     a:hover .text-new {
         display: none;
     }
+
     .navbar-brand {
         background-color: khaki;
     }
+
     .navbar-nav {
         margin-left: 0px;
     }
@@ -620,16 +626,19 @@ a:hover .text-new {
         /* เวลาย่อตัวอักษรลด */
         font-size: 10%;
     }
+
     /* section 2 */
     .single-item section span {
         /* เวลาย่อตัวอักษรลด */
         font-size: 30%;
     }
+
     .single-item section img {
         /* width: 20vw; */
         height: 30vw;
         width: 25vw;
     }
+
     /*  END Section 2 */
     .horizontal-scroll .single-item section {
         height: 50vw;
