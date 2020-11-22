@@ -2,7 +2,7 @@ $(window).scroll(parallaxScrolling);
 
 function parallaxScrolling() {
     var scrolled = $(window).scrollTop();
-    $('.layer1').css('top', (0 - (scrolled * .77)) + 'px');
+    $('.layer1').css('top', (0 - (scrolled * .88)) + 'px');
     $('.layer2').css('top', (0 - scrolled) + 'px');
     $('.layer3').css('top', (0 - (scrolled * .77)) + 'px');
     $('.layer4').css('top', (0 - (scrolled * .88)) + 'px');

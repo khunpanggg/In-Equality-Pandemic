@@ -61,18 +61,27 @@ section {
     scroll-snap-align: start;
 }
 
+
+/* ตั้งค่า ตำแหน่งข้อความ ทำเป็นตัวอย่าง */
+
+.row {
+    padding-top: 200px;
+    margin: 200px;
+    position: absolute;
+}
+
 .layer1,
 .layer2,
 .layer3,
 .layer4,
 .layer5 {
-    height: 100vh;
     position: fixed;
     transition: all .2s linear;
 }
 
 #fig1 {
-    width: 100%;
+    width: 100vw;
+    height: 800px;
     position: absolute;
     /* background: url(/img/SDGs/01.png); */
     top: 2000px;
