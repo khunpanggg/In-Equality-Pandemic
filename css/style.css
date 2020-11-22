@@ -1,4 +1,4 @@
-้html {
+html {
     /* Enable Safari touch scrolling physics which is needed for scroll snap */
     -webkit-overflow-scrolling: touch;
     scroll-snap-type: y mandatory;
@@ -62,8 +62,8 @@ the-content {
 }
 
 *,
- :after,
- :before {
+:after,
+:before {
     box-sizing: border-box;
 }
 
@@ -90,18 +90,71 @@ body {
 /* โค้ดเปลี่ยนสีข้อความเมื่อพื้นหลังตามคลาสที่วางไว้ */
 
 body *:not(.change_color_page) {
-    color: #fbe8ee;
-    transition: color 0.5s ease-in-out, border-color 0.5s ease;
-    border-color: #fbe8ee;
+    /*color: #fbe8ee;*/
+    transition: color 0.5s ease-in-out;
+    /*border-color: #fbe8ee;*/
 }
 
 
 /* โค้ดเปลี่ยน สีข้อความ เมื่อพื้นหลังตามคลาสที่วางไว้ */
 
 body.darkbule *:not(.change_color_page) {
-    color: #f8f4f4;
-    transition: color 0.5s ease-in-out, border-color 0.5s ease;
-    border-color: #cfc7c7;
+    /*color: #f8f4f4;*/
+    transition: color 0.5s ease-in-out;
+    /*border-color: #cfc7c7;*/
+}
+
+/*Pre loader*/
+.pace {
+    pointer-events: none;
+    user-select: none;
+    z-index: 2;
+    position: fixed;
+    margin: auto;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    width: 400px;
+    height: 3px;
+    border: 1px;
+    overflow: hidden;
+    background: #4BB093;
+}
+
+.pace .pace-progress {
+    box-sizing: border-box;
+    transform: translate3d(0, 0, 0);
+    max-width: 400px;
+    position: absolute;
+    z-index: 2;
+    display: block;
+    top: 0;
+    right: 100%;
+    height: 100%;
+    width: 100%;
+    background: gray;
+}
+
+.pace.pace-inactive {
+    display: none;
+}
+
+#preloader {
+    width: 100%;
+    height: 100vh;
+    background: #101010;
+    overflow: hidden;
+    position: fixed;
+    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
+}
+
+.p-load {
+    position: absolute;
+    top: 40%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    color: #fff;
 }
 
 
@@ -186,27 +239,6 @@ body.darkbule *:not(.change_color_page) {
 .b-purple {
     background: linear-gradient(to top, #6459B6, transparent);
 }
-
-
-/* อันนี้ไม่รู้ไว้ทำอะไร */
-
-.header {
-    position: fixed;
-    top: 0;
-    left: 0;
-    width: 100%;
-    height: 50px;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    transition: all 0.5s ease-in-out;
-    background-color: #fbe8ee;
-}
-
-.header.darkbule {
-    background-color: #0a0a0a;
-}
-
 
 /* อันนี้น่าจะเกี่ยวกับโค้ด js ไม่มีแสดงใน index.html */
 
@@ -353,7 +385,7 @@ body.darkbule *:not(.change_color_page) {
 #header-1 {
     top: 0;
     position: absolute;
-    margin-top: -6em;
+    margin-top: 3vw;
 }
 
 .text-header-1 * {
@@ -556,24 +588,30 @@ a:hover .text-new {
         -webkit-transform: none;
         transform: none;
     }
+
     /* setting icon navbar toggler to right */
     .navbar-light {
         left: 75vw;
     }
+
     /* setting hidden &#8594; Home */
     a .text-new {
         display: none;
     }
+
     a:hover .text-defult {
         display: inline;
         color: #4BB083;
     }
+
     a:hover .text-new {
         display: none;
     }
+
     .navbar-brand {
         background-color: khaki;
     }
+
     .navbar-nav {
         margin-left: 0px;
     }
@@ -586,6 +624,7 @@ a:hover .text-new {
     .single-item p {
         height: 50vw;
     }
+
     .horizontal-scroll .single-item p {
         height: 50vw;
         max-height: 50vw;
