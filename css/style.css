@@ -293,7 +293,6 @@ body.darkbule *:not(.change_color_page) {
     display: flex;
     align-items: center;
     justify-content: center;
-    font-size: 70px;
     /* scroll-snap */
     /* scroll-snap-align: start;
     scroll-snap-stop: normal; */
@@ -309,7 +308,7 @@ body.darkbule *:not(.change_color_page) {
 
 /* p คือแสดงเส้นขอบเนื้อหา เปลี่ยนเป็นอย่างอื่นได้แล้วแต่ **จะย่อขยายสัดส่วนจะไม่เปลี่ยนจะเท่าเดิม */
 
-.single-item p {
+.single-item section {
     width: 80vw;
     /* ความสูงต้องใช้ vw เท่านั้น */
     height: 50vw;
@@ -335,7 +334,7 @@ body.darkbule *:not(.change_color_page) {
 
 /* p คือแสดงเส้นขอบเนื้อหา เปลี่ยนเป็นอย่างอื่นได้แล้วแต่ **จะย่อขยายสัดส่วนจะไม่เปลี่ยนจะเท่าเดิม */
 
-.horizontal-scroll .single-item p {
+.horizontal-scroll .single-item section {
     width: 100vw;
     /* แก้ความสูงเอา แต่อย่าแก้หน่วย vw */
     height: 60vw;
@@ -404,22 +403,9 @@ body.darkbule *:not(.change_color_page) {
 
 #header-2 h1 {
     font-weight: bold;
-    margin-left: 583px;
 }
 
-.text-header-2 * {
-    bottom: 160px;
-    font-size: 32px;
-    line-height: 42px;
-}
-
-.sec_02 p {
-    padding-top: 429px;
-}
-
-.sec_02 img {
-    position: absolute;
-    right: 583px;
+.img-sec02 img {
     bottom: 0;
 }
 
@@ -621,11 +607,11 @@ a:hover .text-new {
 /* On screens that are 600px or less, set the background color to olive */
 
 @media screen and (max-width: 800px) {
-    .single-item p {
+    .single-item section {
         height: 50vw;
     }
 
-    .horizontal-scroll .single-item p {
+    .horizontal-scroll .single-item section {
         height: 50vw;
         max-height: 50vw;
     }
