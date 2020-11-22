@@ -48,17 +48,76 @@ html {
 
 body {
     background: #4c9cb0;
-    min-height: 1000px;
+    height: 2900px;
     overflow-x: hidden;
     margin: 0;
     font-size: 18px;
 }
 
-.section {
+section {
     width: 100vw;
     height: 100vh;
-    display: flex;
+    display: block;
 }
+
+.layer1,
+.layer2,
+.layer3,
+.layer4,
+.layer5 {
+    position: fixed;
+    transition: all .2s linear;
+}
+
+#fig1 {
+    width: 100%;
+    position: absolute;
+    top: 1800px;
+}
+
+#fig2 {
+    width: 100vw;
+    position: absolute;
+    top: 1400px;
+}
+
+#fig3 {
+    width: 100vw;
+    position: absolute;
+    top: 880px;
+    margin-bottom: 50px;
+}
+
+#fig4 {
+    width: 100vw;
+    position: absolute;
+    top: 655px;
+}
+
+#32 {
+    z-index: 5;
+}
+
+#33 {
+    z-index: 4;
+}
+
+#34 {
+    z-index: 3;
+}
+
+#35 {
+    z-index: 2;
+}
+
+#36 {
+    z-index: 1;
+}
+
+
+/* img {
+    position: absolute;
+} */
 
 
 /* Color Text */

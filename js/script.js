@@ -326,7 +326,7 @@ paceOptions = {
     eventLag: false
 };
 
-Pace.on('done', function () {
+Pace.on('done', function() {
     $('.p').delay(500).animate({ top: '30%', opacity: '0' }, 3000, $.bez([0.19, 1, 0.22, 1]));
 
 
