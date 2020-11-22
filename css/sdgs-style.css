@@ -75,7 +75,7 @@ section {
     width: 100%;
     position: absolute;
     /* background: url(/img/SDGs/01.png); */
-    top: 1800px;
+    top: 2000px;
     z-index: 1;
 }
 
@@ -83,7 +83,7 @@ section {
     width: 100vw;
     position: absolute;
     /* background: url(/img/SDGs/02.png); */
-    top: 1400px;
+    top: 1500px;
     z-index: 2;
 }
 
