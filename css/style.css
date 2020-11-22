@@ -287,12 +287,17 @@ body.darkbule *:not(.change_color_page) {
     background: transparent;
 }
 
+.row {
+    width: 100vw;
+    height: 35vw;
+}
+
 
 /* ใช้แทน Section */
 
 .single-item {
     flex: 0 0 100vw;
-    height: 100vh;
+    height: 75vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -340,9 +345,9 @@ body.darkbule *:not(.change_color_page) {
 .horizontal-scroll .single-item section {
     width: 100vw;
     /* แก้ความสูงเอา แต่อย่าแก้หน่วย vw */
-    height: 60vw;
-    max-width: 100vw;
-    max-height: 60vw;
+    height: 75vw;
+    /* max-width: 100vw;
+    max-height: 75vw; */
 }
 
 .container {
@@ -588,30 +593,24 @@ a:hover .text-new {
         -webkit-transform: none;
         transform: none;
     }
-
     /* setting icon navbar toggler to right */
     .navbar-light {
         left: 75vw;
     }
-
     /* setting hidden &#8594; Home */
     a .text-new {
         display: none;
     }
-
     a:hover .text-defult {
         display: inline;
         color: #4BB083;
     }
-
     a:hover .text-new {
         display: none;
     }
-
     .navbar-brand {
         background-color: khaki;
     }
-
     .navbar-nav {
         margin-left: 0px;
     }
@@ -622,27 +621,19 @@ a:hover .text-new {
 
 @media screen and (max-width: 800px) {
     .single-item section {
-        height: 50vw;
+        height: 75vw;
         /* เวลาย่อตัวอักษรลด */
         font-size: 10%;
     }
-
     /* section 2 */
     .single-item section span {
         /* เวลาย่อตัวอักษรลด */
         font-size: 30%;
     }
-
     .single-item section img {
         /* width: 20vw; */
         height: 30vw;
         width: 25vw;
-    }
-
-    /*  END Section 2 */
-    .horizontal-scroll .single-item section {
-        height: 50vw;
-        max-height: 50vw;
     }
 }
 
