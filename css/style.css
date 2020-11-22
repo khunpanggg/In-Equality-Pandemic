@@ -104,7 +104,9 @@ body.darkbule *:not(.change_color_page) {
     /*border-color: #cfc7c7;*/
 }
 
+
 /*Pre loader*/
+
 .pace {
     pointer-events: none;
     user-select: none;
@@ -239,6 +241,7 @@ body.darkbule *:not(.change_color_page) {
 .b-purple {
     background: linear-gradient(to top, #6459B6, transparent);
 }
+
 
 /* อันนี้น่าจะเกี่ยวกับโค้ด js ไม่มีแสดงใน index.html */
 
@@ -574,30 +577,24 @@ a:hover .text-new {
         -webkit-transform: none;
         transform: none;
     }
-
     /* setting icon navbar toggler to right */
     .navbar-light {
         left: 75vw;
     }
-
     /* setting hidden &#8594; Home */
     a .text-new {
         display: none;
     }
-
     a:hover .text-defult {
         display: inline;
         color: #4BB083;
     }
-
     a:hover .text-new {
         display: none;
     }
-
     .navbar-brand {
         background-color: khaki;
     }
-
     .navbar-nav {
         margin-left: 0px;
     }
@@ -609,10 +606,40 @@ a:hover .text-new {
 @media screen and (max-width: 800px) {
     .single-item section {
         height: 50vw;
+        /* เวลาย่อตัวอักษรลด */
+        font-size: 10%;
     }
-
+    /* section 2 */
+    .single-item section span {
+        /* เวลาย่อตัวอักษรลด */
+        font-size: 30%;
+    }
+    .single-item section img {
+        /* width: 20vw; */
+        height: 30vw;
+        width: 25vw;
+    }
+    /*  END Section 2 */
     .horizontal-scroll .single-item section {
         height: 50vw;
         max-height: 50vw;
     }
+}
+
+.col-2 {
+    /* width: 2vw; */
+    height: 25vw;
+}
+
+.col-6 {
+    /* width: 30vw; */
+    height: 25vw;
+    border: #F56643;
+    border-width: 2px;
+    border-style: solid;
+}
+
+.col-5 {
+    /* width: 20vw; */
+    height: 25vw;
 }
