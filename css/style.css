@@ -30,31 +30,31 @@ the-content {
 
 @font-face {
     font-family: 'ChulaCharasNew';
-    src: url('font/ChulaCharasNewReg.ttf') format('truetype');
+    src: url('../font/ChulaCharasNewReg.ttf') format('truetype');
 }
 
 @font-face {
     font-family: 'ChulaCharasNew';
-    src: url('font/ChulaCharasNewBold.ttf') format('truetype');
+    src: url('../font/ChulaCharasNewBold.ttf') format('truetype');
     font-weight: bold;
 }
 
 @font-face {
     font-family: 'ChulaCharasNew';
-    src: url('font/ChulaCharasNewIta.ttf') format('truetype');
+    src: url('../font/ChulaCharasNewIta.ttf') format('truetype');
     font-style: italic;
 }
 
 @font-face {
     font-family: 'ChulaCharasNew';
-    src: url('font/ChulaCharasNewBoldIta.ttf') format('truetype');
+    src: url('../font/ChulaCharasNewBoldIta.ttf') format('truetype');
     font-weight: bold;
     font-style: italic;
 }
 
 @font-face {
     font-family: 'Mondwest';
-    src: url('font/Mondwest-Regular.otf') format('opentype');
+    src: url('../font/Mondwest-Regular.otf') format('opentype');
 }
 
 :root {
@@ -106,11 +106,29 @@ body.darkbule *:not(.change_color_page) {
 
 
 /*Pre loader*/
+.preloader {
+    width: 100%;
+    position: fixed;
+    /* content: 'x'; */
+    background: #242f57;
+    z-index: 10000;
+    min-height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
 
-.pace {
+.preloader h1 {
+    color: #4BB093;
+    text-align: center;
+    font-family: 'Mondwest';
+}
+
+
+.bar {
     pointer-events: none;
     user-select: none;
-    z-index: 2;
+    z-index: 2000;
     position: fixed;
     margin: auto;
     top: 0;
@@ -118,47 +136,26 @@ body.darkbule *:not(.change_color_page) {
     right: 0;
     bottom: 0;
     width: 400px;
+    border: 0px;
     height: 3px;
-    border: 1px;
     overflow: hidden;
     background: #4BB093;
 }
 
-.pace .pace-progress {
+.bar .bar-progress {
     box-sizing: border-box;
     transform: translate3d(0, 0, 0);
     max-width: 400px;
-    position: absolute;
-    z-index: 2;
+    position: fixed;
+    z-index: 2000;
     display: block;
+    position: absolute;
     top: 0;
     right: 100%;
     height: 100%;
     width: 100%;
-    background: gray;
+    background: grey;
 }
-
-.pace.pace-inactive {
-    display: none;
-}
-
-#preloader {
-    width: 100%;
-    height: 100vh;
-    background: #101010;
-    overflow: hidden;
-    position: fixed;
-    transition-timing-function: cubic-bezier(0.19, 1, 0.22, 1);
-}
-
-.p-load {
-    position: absolute;
-    top: 40%;
-    left: 50%;
-    transform: translate(-50%, -50%);
-    color: #fff;
-}
-
 
 /* โค้ดเปลี่ยน สีพื้นหลัง เมื่อพื้นหลังตามคลาสที่วางไว้ */
 
@@ -199,6 +196,19 @@ body.darkbule *:not(.change_color_page) {
     background-color: #6459B6;
 }
 
+/*text-header*/
+.text-header-2 {
+    z-index: 1;
+    font-family: 'Mondwest';
+    font-size: 90px;
+    text-align: center;
+}
+
+.text-header-3 {
+    z-index: 1;
+    font-family: 'Mondwest';
+    font-size: 190px;
+}
 
 /* Color Text */
 
@@ -318,8 +328,8 @@ body.darkbule *:not(.change_color_page) {
     display: flex;
     align-items: center;
     justify-content: center;
-    border-width: 2px;
-    border-style: solid;
+    /*border-width: 2px;
+    border-style: solid;*/
 }
 
 .horizontal-scroll-wrapper {
@@ -343,6 +353,7 @@ body.darkbule *:not(.change_color_page) {
     height: 60vw;
     max-width: 100vw;
     max-height: 60vw;
+
 }
 
 .container {
@@ -358,16 +369,6 @@ body.darkbule *:not(.change_color_page) {
     width: 25%;
     height: auto;
 }
-
-
-/* Text Box */
-
-.box {
-    width: 495px;
-    height: auto;
-    margin-left: 172px;
-}
-
 
 /* Page Question*/
 
@@ -385,7 +386,7 @@ body.darkbule *:not(.change_color_page) {
 /* sec_01 */
 
 #header-1 {
-    top: 0;
+    top: -10vh;
     position: absolute;
     margin-top: 3vw;
 }
@@ -426,10 +427,6 @@ body.darkbule *:not(.change_color_page) {
 
 /* sec_04 */
 
-.sec_04 .column-66 {
-    height: 80vh;
-}
-
 .sec_04 h1 {
     font-size: 5.5em;
 }
@@ -438,6 +435,17 @@ body.darkbule *:not(.change_color_page) {
     color: #000000;
 }
 
+.box_sec04 {
+    background-color: #F1D9C4;
+    max-width: 882px;
+    max-height: 2391.42px;
+    margin: 0;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    margin-right: -50%;
+    transform: translate(-50%, -50%);
+}
 
 /* sec_05 */
 
@@ -451,7 +459,7 @@ body.darkbule *:not(.change_color_page) {
     top: 50%;
     left: 50%;
     margin-right: -50%;
-    transform: translate(-50%, -50%)
+    transform: translate(-50%, -50%);
 }
 
 
@@ -482,7 +490,7 @@ body.darkbule *:not(.change_color_page) {
 }
 
 .img-dltv img {
-    width: 50%;
+    width: 100%;
     height: auto;
 }
 
@@ -491,50 +499,66 @@ body.darkbule *:not(.change_color_page) {
 
 .box {
     width: 495px;
-    height: auto;
-    margin-left: 172px;
+    height: 671px;
+    background-color: #F1D9C4;
 }
 
 
 /*background image*/
 
 #sec_03 {
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
     background-image: url("/img/03_question-bg.png");
-    width: 100vw;
-    height: 100vh;
 }
 
 #sec_15 {
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/img/15-18_technology/1_technology.png");
+    background-image: url("/img/15-18 technology/1_technology.png");
 }
 
 #sec_18 {
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/img/19-21_family/2_family.png");
+    background-image: url("/img/19-21 family/2_family.png");
 }
 
 #sec_21 {
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/img/22-25_course/3_course.png");
+    background-image: url("/img/22-25 course/3_course.png");
 }
 
 .img-icon-course {
-    display: flex;
-    justify-items: center;
     padding-top: 2.5em;
     padding-bottom: 2.5em;
+    display: flex;
+    justify-content: center;
 }
 
 .img-icon-course img {
-    width: 25%;
+    width: 300px;
 }
 
 #sec_25 {
+    background-position: center;
+    background-repeat: no-repeat;
     background-size: cover;
-    background-image: url("/img/26-29_time/4_time.png");
+    background-image: url("/img/26-29 time/4_time.png");
 }
+
+#sec_27 {
+    background-position: center;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-image: url("/img/new normal but not normalize.png");
+}
+
 
 
 /* Setting Nav */
@@ -579,7 +603,6 @@ a:hover .text-new {
     color: #4BB083;
 }
 
-
 /* Change navbar styling on small viewports */
 
 @media (max-width: 600px) {
@@ -615,6 +638,10 @@ a:hover .text-new {
     .navbar-nav {
         margin-left: 0px;
     }
+
+    .viewport {
+        margin: 0 !important;
+    }
 }
 
 
@@ -623,43 +650,78 @@ a:hover .text-new {
 @media screen and (max-width: 800px) {
     .single-item section {
         height: 50vw;
-        /* เวลาย่อตัวอักษรลด */
-        font-size: 10%;
-    }
-
-    /* section 2 */
-    .single-item section span {
-        /* เวลาย่อตัวอักษรลด */
-        font-size: 30%;
+        font-size: 10;
     }
 
     .single-item section img {
-        /* width: 20vw; */
         height: 30vw;
         width: 25vw;
     }
 
-    /*  END Section 2 */
     .horizontal-scroll .single-item section {
         height: 50vw;
         max-height: 50vw;
     }
 }
 
-.col-2 {
-    /* width: 2vw; */
-    height: 25vw;
+/* sticker */
+.sticker-green {
+    background-color: #4BB093;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
 }
 
-.col-6 {
-    /* width: 30vw; */
-    height: 25vw;
-    border: #F56643;
-    border-width: 2px;
-    border-style: solid;
+.sticker-orange {
+    background-color: #F56A48;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
 }
 
-.col-5 {
-    /* width: 20vw; */
-    height: 25vw;
+/* calender */
+.text-month::before {
+    content: "FEB";
+    animation: animate infinite 16s;
+    transition: width 3s ease 1s;
+}
+
+@keyframes animate {
+
+    0% {
+        content: "FEB";
+    }
+
+    75% {
+        content: "SEP";
+    }
+}
+
+/* font-size */
+.font-18 {
+    font-size: 1.125rem;
+}
+
+.font-21 {
+    font-size: 1.3125rem;
+}
+
+.font-24 {
+    font-size: 1.5rem;
+}
+
+.font-32 {
+    font-size: 2rem;
+}
+
+.font-56 {
+    font-size: 3.5rem;
+}
+
+.font-90 {
+    font-size: 5.625rem;
+}
+
+.font-190 {
+    font-size: 11.875rem;
 }

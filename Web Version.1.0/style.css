@@ -392,11 +392,13 @@ a:hover .text-new {
 }
 
 @media screen and (max-width: 1000px) {
+
     .column-66,
     .column-33 {
         width: 100%;
         text-align: center;
     }
+
     img {
         margin: auto;
     }
@@ -411,24 +413,30 @@ a:hover .text-new {
         -webkit-transform: none;
         transform: none;
     }
+
     /* setting icon navbar toggler to right */
     .navbar-light {
         left: 75vw;
     }
+
     /* setting hidden &#8594; Home */
     a .text-new {
         display: none;
     }
+
     a:hover .text-defult {
         display: inline;
         color: #4BB083;
     }
+
     a:hover .text-new {
         display: none;
     }
+
     .navbar-brand {
         background-color: khaki;
     }
+
     .navbar-nav {
         margin-left: 0px;
     }
