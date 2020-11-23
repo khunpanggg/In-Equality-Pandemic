@@ -1,120 +1,112 @@
 <!DOCTYPE html>
-<html lang="en">
-
-<head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/jquery/2.1.3/jquery.min.js"></script>
-</head>
+<html>
 <style>
-    body {
-        height: 7000px;
-        margin: 0 auto;
-        max-width: 1600px;
-        width: 100%;
+    #myProgress1 {
+        width: 3%;
+        background-color: #ddd;
     }
     
-    .layer1,
-    .layer2,
-    .layer3 {
-        position: fixed;
-        width: 100;
-        transition: all .2s linear;
+    #myProgress2 {
+        width: 3%;
+        background-color: #ddd;
     }
     
-    .layer1 {
-        z-index: 2;
+    #myProgress3 {
+        width: 42%;
+        background-color: #ddd;
     }
     
-    .layer2 {
-        z-index: 3;
+    #myProgress4 {
+        width: 51%;
+        background-color: #ddd;
     }
     
-    .layer3 {
-        z-index: 1;
+    #myBar1 {
+        width: 0%;
+        height: 30px;
+        background-color: #4c56af;
     }
     
-    .layer4 {
-        z-index: 4;
+    #myBar2 {
+        width: 0%;
+        height: 30px;
+        background-color: #af4c99;
     }
     
-    .layer5 {
-        z-index: 5;
+    #myBar3 {
+        width: 0%;
+        height: 30px;
+        background-color: #af4c4c;
     }
     
-    #fig1 {
-        height: 100vh;
-        width: 100%;
-        background-image: url("img/SDGs/01.png");
-        position: absolute;
-        top: 800px;
+    #myBar4 {
+        width: 0%;
+        height: 30px;
+        background-color: #4CAF50;
     }
+    /* Create four equal columns that floats next to each other */
     
-    #fig2 {
-        height: 100vh;
-        width: 100vw;
-        background-image: url("img/SDGs/02.png");
-        position: absolute;
-        top: 1400px;
-    }
-    
-    #fig3 {
-        height: 100vh;
-        width: 100vw;
-        background-image: url("img/SDGs/03.png");
-        position: absolute;
-        top: 100px;
-        margin-bottom: 50px;
-    }
-    
-    #fig4 {
-        height: 100vh;
-        width: 100vw;
-        background-image: url("img/SDGs/04.png");
-        position: absolute;
-        top: 180vh;
-        margin-bottom: 50px;
-    }
-    
-    #fig5 {
-        height: 100vh;
-        width: 100vw;
-        background-image: url("img/SDGs/05.png");
-        position: absolute;
-        top: 90vh;
-        margin-bottom: 50px;
+    .row:after {
+        content: "";
+        display: table;
     }
 </style>
 
 <body>
-    <div class="layer1">
-        <div id="fig1"></div>
-    </div>
-    <div class="layer2">
-        <div id="fig2"></div>
-    </div>
-    <div class="layer3">
-        <div id="fig3"></div>
-    </div>
-    <div class="layer4">
-        <div id="fig4"></div>
-    </div>
-    <div class="layer5">
-        <div id="fig5"></div>
-    </div>
-</body>
-<script>
-    $(window).scroll(parallaxScrolling);
+    <table style="width: 100%;">
+        <tr class="colBar1">
+            <td id="myProgress1">
+                <div id="myBar1"></div>
+            </td>
 
-    function parallaxScrolling() {
-        var scrolled = $(window).scrollTop();
-        $('.layer1').css('top', (0 - (scrolled * .77)) + 'px');
-        $('.layer2').css('top', (0 - (scrolled * .88)) + 'px');
-        $('.layer3').css('top', (0 - (scrolled * .44)) + 'px');
-        $('.layer4').css('top', (0 - (scrolled * .22)) + 'px');
-        $('.layer5').css('top', (0 - (scrolled * .55)) + 'px');
-    }
-</script>
+            <td id="myProgress2">
+                <div id="myBar2"></div>
+            </td>
+
+            <td id="myProgress3">
+                <div id="myBar3"></div>
+            </td>
+
+            <td id="myProgress4">
+                <div id="myBar4"></div>
+            </td>
+        </tr>
+    </table>
+    <br>
+    <button onclick="move()">Click Me</button>
+
+
+
+
+    <script>
+        var i = 0;
+
+        function move() {
+            if (i == 0) {
+                i = 1;
+                var elem1 = document.getElementById("myBar1");
+                var elem2 = document.getElementById("myBar2");
+                var elem3 = document.getElementById("myBar3");
+                var elem4 = document.getElementById("myBar4");
+                var width = 1;
+                var id = setInterval(frame, 10);
+
+                function frame() {
+                    if (width >= 100) {
+                        clearInterval(id);
+                        i = 0;
+                    } else {
+                        width++;
+                        elem1.style.width = width + "%";
+                        elem2.style.width = width + "%";
+                        elem3.style.width = width + "%";
+                        elem4.style.width = width + "%";
+                    }
+                }
+            }
+        }
+    </script>
+
+</body>
 
 </html>
