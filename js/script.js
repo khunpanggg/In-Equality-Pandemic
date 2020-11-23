@@ -335,4 +335,3 @@ function getScrollbarSize() {
     document.body.removeChild(div);
     return size;
 }
-//Preloader
