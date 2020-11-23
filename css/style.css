@@ -242,6 +242,9 @@ body.darkbule *:not(.change_color_page) {
     background: linear-gradient(to top, #6459B6, transparent);
 }
 
+.b-darkbule { 
+         background-color: #242f57;
+        }
 
 /* อันนี้น่าจะเกี่ยวกับโค้ด js ไม่มีแสดงใน index.html */
 
@@ -421,6 +424,15 @@ body.darkbule *:not(.change_color_page) {
     height: 500px;
     display: flex;
     align-items: center;
+    
+}
+
+.text-page-slide {
+    color: #F1D9C4;
+    
+    margin-top: 10%;
+
+
 }
 
 
@@ -486,6 +498,49 @@ body.darkbule *:not(.change_color_page) {
     height: auto;
 }
 
+/* 5 */
+.webmadewell {
+    background-color: #f5f5f8;
+    background: linear-gradient(0deg, #f5f5f0 50%, #ffffff 50%);
+    background-size: 100%;
+    background-position: center;
+  }
+  .intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+  }
+  .intro h3 {
+    color:#ffffff;
+    background-color:#ccccc6;
+    display:inline-block;
+    padding: 8px 16px;
+    border-radius:20px;
+  }
+  .section {
+    position: relative;
+    display: flex;
+    height: 200vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+  }
+  .column {
+    width: 120px;
+    height: 120px;
+    background-color: #828282;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+  }
+  .parallax_scroll {
+    background-color: #f58232;
+  }
+  
 
 /* Text Box */
 
