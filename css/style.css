@@ -10,7 +10,7 @@ html {
 
 /* body {
     margin: 0;
-    background-color: antiquewhite;
+    background--4or: antiquewhite;
 }
 
 the-wrapper {
@@ -874,4 +874,9 @@ div#box5 {
     width: 0%;
     height: 30px;
     background-color: #6459B6;
+}
+
+.dgdes {
+    background-color: #6459B6;
+    height: 50vw;
 }
