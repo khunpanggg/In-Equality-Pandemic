@@ -195,6 +195,25 @@ body.darkbule *:not(.change_color_page) {
     background-color: #6459B6;
 }
 
+
+/* Color BG */
+
+.bg-darkbule {
+    background-color: #242f57;
+}
+
+.bg-orage {
+    background-color: #F56643;
+}
+
+.bg-cream {
+    background-color: #F1D9C4;
+}
+
+.bg-mint {
+    background-color: #4BB083;
+}
+
 .bg-purple {
     background-color: #6459B6;
 }
@@ -222,6 +241,10 @@ body.darkbule *:not(.change_color_page) {
     color: #6459B6;
 }
 
+.text-white {
+    color: #ffffff;
+}
+
 .ee-text {
     color: #000000;
 }
@@ -240,6 +263,10 @@ body.darkbule *:not(.change_color_page) {
 
 .b-purple {
     background: linear-gradient(to top, #6459B6, transparent);
+}
+
+.b-darkbule {
+    background-color: #242f57;
 }
 
 
@@ -428,6 +455,11 @@ body.darkbule *:not(.change_color_page) {
     align-items: center;
 }
 
+.text-page-slide {
+    color: #F1D9C4;
+    margin-top: 10%;
+}
+
 
 /* sec_04 */
 
@@ -489,6 +521,56 @@ body.darkbule *:not(.change_color_page) {
 .img-dltv img {
     width: 50%;
     height: auto;
+}
+
+
+/* 5 */
+
+.webmadewell {
+    background-color: #f5f5f8;
+    background: linear-gradient(0deg, #f5f5f0 50%, #ffffff 50%);
+    background-size: 100%;
+    background-position: center;
+}
+
+.intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.intro h3 {
+    color: #ffffff;
+    background-color: #ccccc6;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    height: 200vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    width: 120px;
+    height: 120px;
+    background-color: #828282;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.parallax_scroll {
+    background-color: #f58232;
 }
 
 
@@ -614,92 +696,182 @@ a:hover .text-new {
     .navbar-nav {
         margin-left: 0px;
     }
-}
-
-
-/* On screens that are 600px or less, set the background color to olive */
-
-@media screen and (max-width: 800px) {
-    .single-item section {
-        height: 75vw;
-        /* เวลาย่อตัวอักษรลด */
-        font-size: 10%;
-    }
-    /* section 2 */
-    .single-item section span {
-        /* เวลาย่อตัวอักษรลด */
-        font-size: 30%;
-    }
-    .single-item section img {
-        /* width: 20vw; */
-        height: 30vw;
-        width: 25vw;
+    div#box1,
+    div#box2,
+    div#box3,
+    div#box4,
+    div#box5 {
+        transform: none !important;
+        -ms-transform: none !important;
+        margin: 10px;
     }
 }
 
-.col-2 {
-    /* width: 2vw; */
-    height: 25vw;
+div#box1 {
+    transform-origin: center;
+    -ms-transform: rotate(-20deg);
+    /* IE 9 */
+    transform: rotate(-20deg);
+    /* Standard syntax */
 }
 
-.col-6 {
-    /* width: 30vw; */
-    height: 25vw;
-    border: #f56642;
-    border-width: 2px;
-    border-style: solid;
+div#box2 {
+    transform-origin: center;
+    -ms-transform-origin: 100% 700%;
+    /* IE 9 */
+    transform-origin: 100% 700%;
+    -ms-transform: rotate(5deg);
+    /* IE 9 */
+    transform: rotate(5deg);
+    /* Standard syntax */
 }
 
-.col-5 {
-    /* width: 20vw; */
-    height: 25vw;
+div#box3 {
+    transform-origin: center;
+    -ms-transform-origin: 350% 2200%;
+    /* IE 9 */
+    transform-origin: 350% 2200%;
+    -ms-transform: rotate(10deg);
+    /* IE 9 */
+    transform: rotate(10deg);
+    /* Standard syntax */
 }
 
-/* ส่วนกราฟ 20-21 */
-tr.dgpgraph {
-    border-bottom: #f1d9c4 5px solid;
-    background-color: #6459b6;
+div#box4 {
+    transform-origin: center;
+    transform: translate(50%);
+    -ms-transform: translate(50%);
 }
 
-tr.dgograph {
-    background-color: #f56642;
+div#box5 {
+    transform-origin: center;
+    -ms-transform: rotate(-21deg);
+    /* IE 9 */
+    transform: rotate(-21deg);
+    /* Standard syntax */
+    -ms-transform-origin: 80% 550%;
+    /* IE 9 */
+    transform-origin: 80% 550%;
 }
 
-table.dg {
+.frame {
+    margin: auto;
+}
+
+.textbox {
+    padding-top: 1.1vw;
+    width: max-content;
+    height: 6.5vw;
+    padding-left: 0.95vw;
+    font-size: 1.5vw;
+    justify-content: center;
+    text-align: center;
+}
+
+.textbox div {
+    margin-top: 1.25vw;
+    /* float: left; */
+    margin-right: 0.85vw;
+}
+
+.iconBox {
+    width: auto;
+    height: 4vw;
+    float: right;
+    margin-top: 0.25vw;
+    margin-bottom: 0.95vw;
+    margin-right: 2.5vw;
+}
+
+
+/* section 5 */
+
+.sideContent {
+    height: 75vw;
+}
+
+.side1,
+.side2 {
+    position: relative;
+    width: 50vw;
+    height: 75vw;
+}
+
+.sideLeft {
+    position: fixed;
+    padding-top: 15vw;
+    padding-left: 10vw;
+    float: left;
+}
+
+.sideLeft img {
+    width: 40vw;
+}
+
+#s2 {
+    display: none;
+}
+
+.subSide {
+    width: 50vw;
+    height: 75vw;
+    position: fixed;
+}
+
+
+/* graph bar */
+
+#myProgress1 {
+    width: 3%;
+    background-color: #ddd;
+}
+
+#myProgress2 {
+    width: 3%;
+    background-color: #ddd;
+}
+
+#myProgress3 {
+    width: 42%;
+    background-color: #ddd;
+}
+
+#myProgress4 {
+    width: 51%;
+    background-color: #ddd;
+}
+
+#myProgress {
+    width: 1%;
+    background-color: #ddd;
+}
+
+#myBar {
     width: 100%;
+    height: 30px;
+    background-color: #F56643;
 }
 
-tr.food {
-    height: 35.7vh;
+#myBar1 {
+    width: 0%;
+    height: 30px;
+    background-color: #6459B6;
 }
 
-tr.other {
-    height: 28.7vh;
+#myBar2 {
+    width: 0%;
+    height: 30px;
+    background-color: #6459B6;
 }
 
-tr.car {
-    height: 2.1vh;
+#myBar3 {
+    width: 0%;
+    height: 30px;
+    background-color: #6459B6;
 }
 
-tr.health {
-    height: 2.1vh;
+#myBar4 {
+    width: 0%;
+    height: 30px;
+    background-color: #6459B6;
 }
-
-tr.edu {
-    height: 1.4vh;
-}
-
-/* .flex-container {
-    background-color: aqua;
-} */
-
-@keyframes example {
-    0%   {}
-    20%  {height: 1.4vh;}
-    40%  {height: 3.5vh;}
-    60%  {height: 5.6vh;}
-    80% {height: 34.3vh;}
-    100% {height: 70vh;}
-  }
-
-/* จบส่วนกราฟ */

@@ -7,6 +7,23 @@ document.onscroll = (event) => {
     document.querySelector("#header-1").style.top = Math.min(viewportY / 50, 20) + "vw";
 
 }
+$(window).on("load", function() {
+    $(window).scroll(function() {
+        var windowBottom = $(this).scrollTop() + $(this).innerHeight();
+        $(".fade").each(function() {
+            /* Check the location of each desired element */
+            var objectBottom = $(this).offset().top + $(this).outerHeight();
+
+            /* If the element is completely within bounds of the window, fade it in */
+            if (objectBottom < windowBottom) { //object comes into view (scrolling down)
+                if ($(this).css("opacity") == 0) { $(this).fadeTo(500, 1); }
+            } else { //object goes out of view (scrolling up)
+                if ($(this).css("opacity") == 1) { $(this).fadeTo(500, 0); }
+            }
+        });
+
+    }).scroll(); //invoke scroll-handler on page-load
+});
 
 //https://codepen.io/osublake/pen/e72106811a34efcccff91a03568cc790.js?v=3
 
@@ -326,7 +343,7 @@ paceOptions = {
     eventLag: false
 };
 
-Pace.on('done', function () {
+Pace.on('done', function() {
     $('.p').delay(500).animate({ top: '30%', opacity: '0' }, 3000, $.bez([0.19, 1, 0.22, 1]));
 
 
@@ -339,15 +356,3 @@ Pace.on('done', function () {
         ease: Expo.easeInOut
     })
 });
-
-// ส่วนกราฟ
-// var i, fin;
-// fin = 70;
-// for (i = 0; i < fin; i++) {
-//      = array[index];
-
-// }
-// function low_battery() {
-//     document.getElementById("myH1").style.height = ;
-//   }
-// จบส่วนกราฟ
