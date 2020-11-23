@@ -6,7 +6,7 @@ $(document).ready(function() {
         if (st > lastScrollTop) {
             // downscroll code
             console.log(1)
-            if (st > 25) {
+            if (st > 1) {
                 $("#s2").slideDown("slow");
             } else {
 
