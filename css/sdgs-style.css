@@ -65,8 +65,9 @@ section {
 /* ตั้งค่า ตำแหน่งข้อความ ทำเป็นตัวอย่าง */
 
 .row {
-    padding-top: 200px;
-    margin: 200px;
+    /* padding-top: 200px; */
+    margin-top: 100px;
+    margin-left: 150px;
     position: absolute;
 }
 
@@ -147,6 +148,9 @@ section {
 .text-purple {
     color: #6459B6;
 }
+.text-white {
+    color: #ffffff;
+}
 
 .ee-text {
     color: #000000;
@@ -155,6 +159,32 @@ section {
 .text-weigth {
     font-weight: bold;
 }
+
+.text-header-1 * {
+    z-index: 1;
+    font-family: 'Mondwest';
+    font-size: 190px;
+    line-height: 160px;
+}
+
+.text-header-1 span {
+    display: block;
+}
+
+.text-svgs-sub {
+    font-family: 'Mondwest';
+    
+
+}
+
+.sdgs p{
+    display: block;
+    margin-left: 25%;
+    bottom: 0px;
+    
+}
+
+
 
 
 /* Color BG */
