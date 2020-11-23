@@ -140,23 +140,23 @@
                         <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
                         <section class="item_to_move">
                             <div class="frame">
-                                <div id="box1" class="row textbox bg-darkbule text-white" style="transform-origin: 0% 450%; -ms-transform-origin: 0% 750%;">
+                                <div id="box1" class="row fade textbox bg-darkbule text-white" style="transform-origin: 0% 450%; -ms-transform-origin: 0% 750%;">
                                     <div class="col">ทำไมคนรวยยิ่งรวย คนจนยิ่งจน</div>
                                     <img src="./img/icon/iconQ.png" class="iconBox">
                                 </div>
-                                <div id="box2" class="row textbox bg-cream">
+                                <div id="box2" class="row fade textbox bg-cream">
                                     <div class="col">ยิ่งเรียนยิ่งรวย</div>
                                     <img src="./img/icon/iconQ.png" class="iconBox">
                                 </div>
-                                <div id="box3" class="row textbox bg-cream">
+                                <div id="box3" class="row fade textbox bg-cream">
                                     <div class="col">บ้านไกลก็เรียนได้</div>
                                     <img src="./img/icon/iconQ.png" class="iconBox">
                                 </div>
-                                <div id="box4" class="row textbox bg-darkbule text-white">
+                                <div id="box4" class="row fade textbox bg-darkbule text-white">
                                     <div class="col">ทุกคนเข้าถึงการศึกษาได้เพียงปลายนิ้ว</div>
                                     <img src="./img/icon/iconQ.png" class="iconBox">
                                 </div>
-                                <div id="box5" class="row textbox bg-cream">
+                                <div id="box5" class="row fade textbox bg-cream">
                                     <div class="col">เหลื่อมล้ำออนไลน์</div>
                                     <img src="./img/icon/iconQ.png" class="iconBox">
                                 </div>
@@ -185,29 +185,45 @@
                     <div class="single-item" data-color="cream">
                         <!-- Start Content Section 5 -->
                         <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-
-                        <section data-depth="-3" data-direction="y">
-
-
-                            <div class="section">
-                                
-                                <div class="column ">
-                                    <div >
+                        <div class="row sideContent" data-depth="-3" data-direction="y">
+                            <div class="side1 bg-mint">
+                                <div class="sideLeft">
+                                    <div>
                                         <img src="/img/05_should this be normal_/abnormal-1.gif" width="100%">
                                         <p class="text-darkbule text-center">
                                             ครูรุ่นเก่าที่งงกับการใช้อุปกรณ์
                                         </p>
                                     </div>
-                                    
+
+                                </div>
+                            </div>
+                            <div class="side2">
+                                <div id="s1" class="subSide bg-orage">2.1</div>
+                                <div id="s2" class="subSide bg-purple">2.2</div>
+                            </div>
+                        </div>
+
+
+
+                        <!-- <div class="section">
+
+                                <div class="column ">
+                                    <div>
+                                        <img src="/img/05_should this be normal_/abnormal-1.gif" width="100%">
+                                        <p class="text-darkbule text-center">
+                                            ครูรุ่นเก่าที่งงกับการใช้อุปกรณ์
+                                        </p>
+                                    </div>
+
                                 </div>
                                 <div class="column parallax_scroll">
                                     <h1 class="text-orage">Should<br>this be<br>Normal?</h1>
                                     <p class="text-darkbule">สถานการณ์เหล่านี้ ควรเป็นปกติจริงหรือ?</p>
-                                  </div>
-                              </div>
-                              
+                                </div>
+                            </div> -->
 
-                            <!-- <div class="row">
+
+                        <!-- <div class="row">
                                 <div class="col-md-6" id="mask-pick">
 
                                     
@@ -217,7 +233,7 @@
                                     
                                 </div>
                             </div> -->
-                        </section>
+
 
                     </div>
                     <div class="single-item" data-color="cream">
@@ -343,38 +359,28 @@
                                                     <tr>
                                                         <td>
                                                             <img src="./img/icon/23_icon-tv.png" alt="" width="60">
-                                                            <img src="./img/icon/23_icon-tv.png" alt="" width="60"
-                                                                height="60">
-                                                            <img src="./img/icon/17_icon-mobile.png" alt="" width="60"
-                                                                height="60">
-                                                            <img src="./img/icon/17_icon-mobile.png" alt="" width="60"
-                                                                height="60"> <br>
+                                                            <img src="./img/icon/23_icon-tv.png" alt="" width="60" height="60">
+                                                            <img src="./img/icon/17_icon-mobile.png" alt="" width="60" height="60">
+                                                            <img src="./img/icon/17_icon-mobile.png" alt="" width="60" height="60"> <br>
                                                         </td>
 
                                                     </tr>
 
                                                     <tr>
                                                         <td>
-                                                            <img src="./img/icon/17_icon-mobile.png" alt="" width="60"
-                                                                height="60">
-                                                            <img src="./img/icon/17_icon-mobile.png" alt="" width="60"
-                                                                height="60">
-                                                            <img src="./img/icon/17_icon-tablet.png" alt="" width="60"
-                                                                height="60">
-                                                            <img src="./img/icon/17_icon-tablet.png" alt="" width="60"
-                                                                height="60">
+                                                            <img src="./img/icon/17_icon-mobile.png" alt="" width="60" height="60">
+                                                            <img src="./img/icon/17_icon-mobile.png" alt="" width="60" height="60">
+                                                            <img src="./img/icon/17_icon-tablet.png" alt="" width="60" height="60">
+                                                            <img src="./img/icon/17_icon-tablet.png" alt="" width="60" height="60">
                                                         </td>
 
                                                     </tr>
 
                                                     <tr>
                                                         <td>
-                                                            <img src="./img/icon/23_icon-computer.png" alt="" width="60"
-                                                                height="60">
-                                                            <img src="./img/icon/23_icon-computer.png" alt="" width="60"
-                                                                height="60">
-                                                            <img src="./img/icon/17_icon-wifi.png" alt="" width="60"
-                                                                height="60">
+                                                            <img src="./img/icon/23_icon-computer.png" alt="" width="60" height="60">
+                                                            <img src="./img/icon/23_icon-computer.png" alt="" width="60" height="60">
+                                                            <img src="./img/icon/17_icon-wifi.png" alt="" width="60" height="60">
                                                         </td>
 
                                                     </tr>
@@ -426,8 +432,7 @@
                                     <div class="col-md-12">
                                         <div id="carouselExampleIndicators" class="carousel slide" data-ride="carousel">
                                             <ol class="carousel-indicators">
-                                                <li data-target="#carouselExampleIndicators" data-slide-to="0"
-                                                    class="active">
+                                                <li data-target="#carouselExampleIndicators" data-slide-to="0" class="active">
                                                 </li>
                                                 <li data-target="#carouselExampleIndicators" data-slide-to="1"></li>
                                                 <li data-target="#carouselExampleIndicators" data-slide-to="2"></li>
@@ -439,22 +444,15 @@
                                                     <div class="b-darkbule">
                                                         <div class="row">
                                                             <div class="col-md-6">
-                                                                <img src="/img/15-18_technology/statistics - phone/unable-access-1.gif"
-                                                                    width="100%">
+                                                                <img src="/img/15-18_technology/statistics - phone/unable-access-1.gif" width="100%">
                                                             </div>
                                                             <div class="col-md-6">
 
-                                                                <p class="text-page-slide">โทรทัศน์์ <br><br>
-
-                                                                    การเรียนผ่านช่องการศึกษาทางไกลหรือ DLTV
+                                                                <p class="text-page-slide">โทรทัศน์์ <br><br> การเรียนผ่านช่องการศึกษาทางไกลหรือ DLTV
                                                                     <br>ทำให้โทรทัศน์เป็นหนึ่งในอุปกรณ์รับสารในการ
-                                                                    <br>เรียนยุคนี้
-                                                                    หากครอบครัวนั้นมีเด็กที่ต้องเรียนผ่าน<br> DLTV
-                                                                    มากกว่า 1 คนและอยู่คนละระดับชั้นกัน <br>
-                                                                    สำหรับครอบครัวที่มีฐานะที่มีโทรทัศน์มากกว่า 1
-                                                                    <br>เครื่องก็จะไม่เกิดปัญหาใด
-                                                                    แต่หากครอบครัวใดที่ <br>มีโทรทัศน์เพียงเครื่องเดียว
-                                                                    จะทำให้ไม่สามารถ <br>เรียนได้ในเวลาพร้อมๆ กัน</p>
+                                                                    <br>เรียนยุคนี้ หากครอบครัวนั้นมีเด็กที่ต้องเรียนผ่าน
+                                                                    <br> DLTV มากกว่า 1 คนและอยู่คนละระดับชั้นกัน <br> สำหรับครอบครัวที่มีฐานะที่มีโทรทัศน์มากกว่า 1
+                                                                    <br>เครื่องก็จะไม่เกิดปัญหาใด แต่หากครอบครัวใดที่ <br>มีโทรทัศน์เพียงเครื่องเดียว จะทำให้ไม่สามารถ <br>เรียนได้ในเวลาพร้อมๆ กัน</p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -464,19 +462,16 @@
                                                     <div class="b-darkbule">
                                                         <div class="row">
                                                             <div class="col-md-6">
-                                                                <img src="/img/15-18_technology/statistics - phone/unable-access-2.gif"
-                                                                    width="100%">
+                                                                <img src="/img/15-18_technology/statistics - phone/unable-access-2.gif" width="100%">
                                                             </div>
                                                             <div class="col-md-6">
 
-                                                                <p class="text-page-slide">มือถือ<br><br>
+                                                                <p class="text-page-slide">มือถือ<br><br> แม้จะเป็นอุปกรณ์พื้นฐานที่ทุกคนในยุคนี้ต้องมีกัน
 
 
-                                                                    แม้จะเป็นอุปกรณ์พื้นฐานที่ทุกคนในยุคนี้ต้องมีกัน<br>อย่างน้อย
-                                                                    1 เครื่อง
-                                                                    แต่จากสถิติแล้ว กลุ่มครอบ<br>ครัวยากจน 10 ครอบครัว
-                                                                    จะมีมือถือเพียง<br>แแค่ 2-4 เครื่องเท่านั้น
-                                                                    บางครอบครัวจึงไม่สามารถเข้า<br>ถึงการศึกษาผ่านออนไลน์ได้
+                                                                    <br>อย่างน้อย 1 เครื่อง แต่จากสถิติแล้ว กลุ่มครอบ<br>ครัวยากจน 10 ครอบครัว จะมีมือถือเพียง
+                                                                    <br>แแค่ 2-4 เครื่องเท่านั้น บางครอบครัวจึงไม่สามารถเข้า
+                                                                    <br>ถึงการศึกษาผ่านออนไลน์ได้
                                                                 </p>
                                                             </div>
                                                         </div>
@@ -486,19 +481,16 @@
                                                     <div class="b-darkbule">
                                                         <div class="row">
                                                             <div class="col-md-6">
-                                                                <img src="/img/15-18_technology/statistics - phone/unable-access-3.gif"
-                                                                    width="100%">
+                                                                <img src="/img/15-18_technology/statistics - phone/unable-access-3.gif" width="100%">
                                                             </div>
                                                             <div class="col-md-6">
 
-                                                                <p class="text-page-slide"> คอมพิวเตอร์และ
-                                                                    tablet<br><br>
-                                                                    แม้จะมีโครงการแจกคอมพิวเตอร์และ Tablet เพื่อ
-                                                                    <br>การศึกษาจากภาครัฐ
-                                                                    แต่เด็กนักเรียนกลับใช้งาน<br>ได้อย่างไม่เต็มประสิทธิภาพ
-                                                                    เนื่องจากเครื่องที่จัด<br>ซื้อมีสเปกต่ำ
-                                                                    ทำให้แท็บเล็ตอืด ช้า แบตเตอรี่หมด<br>เร็ว
-                                                                    สุดท้ายแล้วโครงการนี้จึงถูกพับเก็บไปในที่สุด</p>
+                                                                <p class="text-page-slide"> คอมพิวเตอร์และ tablet
+                                                                    <br><br> แม้จะมีโครงการแจกคอมพิวเตอร์และ Tablet เพื่อ
+                                                                    <br>การศึกษาจากภาครัฐ แต่เด็กนักเรียนกลับใช้งาน
+                                                                    <br>ได้อย่างไม่เต็มประสิทธิภาพ เนื่องจากเครื่องที่จัด
+                                                                    <br>ซื้อมีสเปกต่ำ ทำให้แท็บเล็ตอืด ช้า แบตเตอรี่หมด<br>เร็ว สุดท้ายแล้วโครงการนี้จึงถูกพับเก็บไปในที่สุด
+                                                                </p>
                                                             </div>
                                                         </div>
                                                     </div>
@@ -507,30 +499,25 @@
                                                     <div class="b-darkbule">
                                                         <div class="row">
                                                             <div class="col-md-6">
-                                                                <img src="/img/15-18_technology/statistics - phone/unable-access-4.gif"
-                                                                    width="100%">
+                                                                <img src="/img/15-18_technology/statistics - phone/unable-access-4.gif" width="100%">
                                                             </div>
                                                             <div class="col-md-6">
 
-                                                                <p class="text-page-slide"> สัญญาณ Internet<br><br>
-
-                                                                    นอกจากอุปกรณ์ที่พร้อมแล้ว
-                                                                    ยังต้องมีสัญญาณที่<br>ดีและเสถียรพอด้วย
-                                                                    ปัญหาจึงตกอยู่ที่กลุ่มคนชาย<br>vขอบดังเดิม
-                                                                    ครอบครัวที่ฐานะไม่ดีพอที่จะจ่ายค่า<br>สัญญาณอินเทอร์เน็ต
-                                                                    และกลุ่มคนที่อยู่ห่างไกล<br>จากความเจริญ</p>
+                                                                <p class="text-page-slide"> สัญญาณ Internet<br><br> นอกจากอุปกรณ์ที่พร้อมแล้ว ยังต้องมีสัญญาณที่
+                                                                    <br>ดีและเสถียรพอด้วย ปัญหาจึงตกอยู่ที่กลุ่มคนชาย
+                                                                    <br>vขอบดังเดิม ครอบครัวที่ฐานะไม่ดีพอที่จะจ่ายค่า
+                                                                    <br>สัญญาณอินเทอร์เน็ต และกลุ่มคนที่อยู่ห่างไกล
+                                                                    <br>จากความเจริญ</p>
                                                             </div>
                                                         </div>
                                                     </div>
                                                 </div>
                                             </div>
-                                            <a class="carousel-control-prev" href="#carouselExampleIndicators"
-                                                role="button" data-slide="prev">
+                                            <a class="carousel-control-prev" href="#carouselExampleIndicators" role="button" data-slide="prev">
                                                 <span class="carousel-control-prev-icon" aria-hidden="true"></span>
                                                 <span class="sr-only">Previous</span>
                                             </a>
-                                            <a class="carousel-control-next" href="#carouselExampleIndicators"
-                                                role="button" data-slide="next">
+                                            <a class="carousel-control-next" href="#carouselExampleIndicators" role="button" data-slide="next">
                                                 <span class="carousel-control-next-icon" aria-hidden="true"></span>
                                                 <span class="sr-only">Next</span>
                                             </a>
@@ -562,7 +549,35 @@
                     <div class="single-item" data-color="cream">
                         <!-- Start Content Section 20 -->
                         <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                        <p data-depth="-3" data-direction="y">20</p>
+                        <!-- <p data-depth="-3" data-direction="y">20 กราฟ</p> -->
+                        <div data-depth="-3" data-direction="y">
+                            <div class="dg" style="width: 40px; height: 70vh; animation-name: example; animation-duration: 2s;">
+                                <table class="dg">
+                                    <tr class="dgpgraph food">
+                                        <td class="dg food"></td>
+                                    </tr>
+                                    <tr class="dgpgraph other">
+                                        <td class="dg other"></td>
+                                    </tr>
+                                    <tr class="dgpgraph car">
+                                        <td class="dg car"></td>
+                                    </tr>
+                                    <tr class="dgpgraph health">
+                                        <td class="dg health"></td>
+                                    </tr>
+                                    <tr class="dgograph edu">
+                                        <td class="dg edu"></td>
+                                    </tr>
+                                </table>
+                            </div>
+
+                            <div style="width: 20%; background-color: brown; margin: 50px; height: 50%;">
+                                table
+                            </div>
+                            <div style="width: 20%; background-color: brown; margin: 50px; height: 50%;">
+                                table
+                            </div>
+                        </div>
                     </div>
                     <div class="single-item" data-color="cream" id="sec_21">
                         <!-- Start Content Section 21 -->
@@ -631,6 +646,6 @@
 
     <script type="text/javascript" src="./js/script.js"></script>
     <script type="text/javascript" src="./js/pace.js"></script>
-    <script type="text/javascript" src="./js/page5_2"></script>
+    <script type="text/javascript" src="./js/page5_2.js"></script>
 
 </html>
