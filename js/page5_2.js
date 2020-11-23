@@ -1,25 +1,24 @@
 $(document).ready(function() {
-    //parallax scroll
-    $(window).on("load scroll", function() {
-        var parallaxElement = $(".parallax_scroll"),
-            parallaxQuantity = parallaxElement.length;
-        window.requestAnimationFrame(function() {
-            for (var i = 0; i < parallaxQuantity; i++) {
-                var currentElement = parallaxElement.eq(i),
-                    windowTop = $(window).scrollTop(),
-                    elementTop = currentElement.offset().top,
-                    elementHeight = currentElement.height(),
-                    viewPortHeight = window.innerHeight * 0.5 - elementHeight * 0.5,
-                    scrolled = windowTop - elementTop + viewPortHeight;
-                if (i >= parallaxQuantity / 2) {
-                    display: "none"
-                };
-                currentElement.css({
-                    transform: "translate3d(0," + scrolled * -0.75 + "px, 0)",
+    var lastScrollTop = 0;
 
+    $(window).scroll(function(event) {
+        var st = $(this).scrollTop();
+        if (st > lastScrollTop) {
+            // downscroll code
+            console.log(1)
+            if (st > 25) {
+                $("#s2").slideDown("slow");
+            } else {
 
-                });
             }
-        });
+
+        } else {
+            // upscroll code
+            console.log(2)
+            $("#s2").slideUp("slow");
+
+        }
+        lastScrollTop = st;
+        console.log(st)
     });
 });
