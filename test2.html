@@ -17,13 +17,29 @@
 <style>
     .side1,
     .side2 {
-        width: 500px;
-        height: 500px;
+        position: relative;
+        width: 50vw;
+        height: 75vw;
+    }
+    
+    .sideLeft {
+        position: fixed;
+        padding-top: 15vw;
+        padding-left: 10vw;
+        float: left;
+    }
+    
+    .sideLeft img {
+        width: 40vw;
+    }
+    
+    #s2 {
+        display: none;
     }
     
     .subSide {
-        width: 500px;
-        height: 500px;
+        width: 50vw;
+        height: 75vw;
         position: fixed;
     }
 </style>
@@ -31,33 +47,46 @@
 <body>
     <div class="row">
         <div class="side1 bg-darkbule">
-            1
+            <div class="sideLeft">
+                <div>
+                    <img src="/img/05_should this be normal_/abnormal-1.gif" width="100%">
+                    <p class="text-darkbule text-center">
+                        ครูรุ่นเก่าที่งงกับการใช้อุปกรณ์
+                    </p>
+                </div>
+
+            </div>
         </div>
         <div class="side2 bg-mint">
             <div id="s1" class="subSide bg-orage">2.1</div>
-            <div id="s2" class="subSide bg-cream">2.1</div>
+            <div id="s2" class="subSide bg-cream">2.2</div>
         </div>
     </div>
 </body>
 <script>
     $(document).ready(function() {
-        //parallax scroll
-        $(window).on("load scroll", function() {
-            // var parallaxElement = $(".parallax_scroll"),
-            //     parallaxQuantity = parallaxElement.length;
-            // window.requestAnimationFrame(function() {
-            //     for (var i = 0; i < parallaxQuantity; i++) {
-            //         if (i > (parallaxQuantity / 2)) {
-            $("#s2").animate({
-                height: 'toggle'
-            });
-            // } else {
+        var lastScrollTop = 0;
 
-            // }
+        $(window).scroll(function(event) {
+            var st = $(this).scrollTop();
+            if (st > lastScrollTop) {
+                // downscroll code
+                console.log(1)
+                if (st > 100) {
 
+                    $("#s2").slideDown("slow");
+                } else {
 
-            //     }
-            // });
+                }
+
+            } else {
+                // upscroll code
+                console.log(2)
+                $("#s2").slideUp("slow");
+
+            }
+            lastScrollTop = st;
+            console.log(st)
         });
     });
 </script>
