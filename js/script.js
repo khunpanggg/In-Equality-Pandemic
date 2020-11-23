@@ -326,7 +326,7 @@ paceOptions = {
     eventLag: false
 };
 
-Pace.on('done', function() {
+Pace.on('done', function () {
     $('.p').delay(500).animate({ top: '30%', opacity: '0' }, 3000, $.bez([0.19, 1, 0.22, 1]));
 
 
@@ -339,3 +339,15 @@ Pace.on('done', function() {
         ease: Expo.easeInOut
     })
 });
+
+// ส่วนกราฟ
+// var i, fin;
+// fin = 70;
+// for (i = 0; i < fin; i++) {
+//      = array[index];
+
+// }
+// function low_battery() {
+//     document.getElementById("myH1").style.height = ;
+//   }
+// จบส่วนกราฟ
