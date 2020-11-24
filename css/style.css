@@ -106,6 +106,7 @@ body.darkbule *:not(.change_color_page) {
 
 
 /*Pre loader*/
+
 .preloader {
     width: 100%;
     position: fixed;
@@ -123,7 +124,6 @@ body.darkbule *:not(.change_color_page) {
     text-align: center;
     font-family: 'Mondwest';
 }
-
 
 .bar {
     pointer-events: none;
@@ -156,6 +156,7 @@ body.darkbule *:not(.change_color_page) {
     width: 100%;
     background: grey;
 }
+
 
 /* โค้ดเปลี่ยน สีพื้นหลัง เมื่อพื้นหลังตามคลาสที่วางไว้ */
 
@@ -196,7 +197,9 @@ body.darkbule *:not(.change_color_page) {
     background-color: #6459B6;
 }
 
+
 /*text-header*/
+
 .text-header-2 {
     z-index: 1;
     font-family: 'Mondwest';
@@ -209,6 +212,7 @@ body.darkbule *:not(.change_color_page) {
     font-family: 'Mondwest';
     font-size: 190px;
 }
+
 
 /* Color Text */
 
@@ -353,7 +357,6 @@ body.darkbule *:not(.change_color_page) {
     height: 60vw;
     max-width: 100vw;
     max-height: 60vw;
-
 }
 
 .container {
@@ -369,6 +372,7 @@ body.darkbule *:not(.change_color_page) {
     width: 25%;
     height: auto;
 }
+
 
 /* Page Question*/
 
@@ -446,6 +450,7 @@ body.darkbule *:not(.change_color_page) {
     margin-right: -50%;
     transform: translate(-50%, -50%);
 }
+
 
 /* sec_05 */
 
@@ -560,7 +565,6 @@ body.darkbule *:not(.change_color_page) {
 }
 
 
-
 /* Setting Nav */
 
 .navbar {
@@ -603,6 +607,7 @@ a:hover .text-new {
     color: #4BB083;
 }
 
+
 /* Change navbar styling on small viewports */
 
 @media (max-width: 600px) {
@@ -611,38 +616,30 @@ a:hover .text-new {
         -webkit-transform: none;
         transform: none;
     }
-
     /* setting icon navbar toggler to right */
     .navbar-light {
         left: 75vw;
     }
-
     /* setting hidden &#8594; Home */
     a .text-new {
         display: none;
     }
-
     a:hover .text-defult {
         display: inline;
         color: #4BB083;
     }
-
     a:hover .text-new {
         display: none;
     }
-
     .navbar-brand {
         background-color: khaki;
     }
-
     .navbar-nav {
         margin-left: 0px;
     }
-
     .viewport {
         margin: 0 !important;
     }
-
     div#box1,
     div#box2,
     div#box3,
@@ -662,19 +659,19 @@ a:hover .text-new {
         height: 50vw;
         font-size: 10;
     }
-
     .single-item section img {
         height: 30vw;
         width: 25vw;
     }
-
     .horizontal-scroll .single-item section {
         height: 50vw;
         max-height: 50vw;
     }
 }
 
+
 /* sticker */
+
 .sticker-green {
     background-color: #4BB093;
     border-radius: 50%;
@@ -689,7 +686,9 @@ a:hover .text-new {
     height: 46px;
 }
 
+
 /* calender */
+
 .text-month::before {
     content: "FEB";
     animation: animate infinite 16s;
@@ -697,17 +696,17 @@ a:hover .text-new {
 }
 
 @keyframes animate {
-
     0% {
         content: "FEB";
     }
-
     75% {
         content: "SEP";
     }
 }
 
+
 /* font-size */
+
 .font-18 {
     font-size: 1.125rem;
 }
@@ -804,13 +803,14 @@ div#box5 {
 }
 
 .iconBox {
-    width: auto;
-    height: 4vw;
+    width: 4vw !important;
+    height: 4vw !important;
     float: right;
     margin-top: 0.25vw;
     margin-bottom: 0.95vw;
     margin-right: 2.5vw;
 }
+
 
 /* Color BG */
 
@@ -849,7 +849,6 @@ div#box5 {
 .bg-mint {
     background-color: #4BB083;
 }
-
 
 
 /* Color Text */
@@ -906,6 +905,7 @@ div#box5 {
     padding-top: 2vw;
     display: block;
 }
+
 
 /* section 5 */
 
