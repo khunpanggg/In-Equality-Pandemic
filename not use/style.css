@@ -192,6 +192,25 @@ body.darkbule *:not(.change_color_page) {
     background-color: #6459B6;
 }
 
+
+/* Color BG */
+
+.bg-darkbule {
+    background-color: #242f57;
+}
+
+.bg-orage {
+    background-color: #F56643;
+}
+
+.bg-cream {
+    background-color: #F1D9C4;
+}
+
+.bg-mint {
+    background-color: #4BB083;
+}
+
 .bg-purple {
     background-color: #6459B6;
 }
@@ -232,6 +251,10 @@ body.darkbule *:not(.change_color_page) {
     color: #6459B6;
 }
 
+.text-white {
+    color: #ffffff;
+}
+
 .ee-text {
     color: #000000;
 }
@@ -250,6 +273,10 @@ body.darkbule *:not(.change_color_page) {
 
 .b-purple {
     background: linear-gradient(to top, #6459B6, transparent);
+}
+
+.b-darkbule {
+    background-color: #242f57;
 }
 
 
@@ -297,12 +324,17 @@ body.darkbule *:not(.change_color_page) {
     background: transparent;
 }
 
+.row {
+    width: 100vw;
+    height: 35vw;
+}
+
 
 /* ใช้แทน Section */
 
 .single-item {
     flex: 0 0 100vw;
-    height: 100vh;
+    height: 75vw;
     display: flex;
     align-items: center;
     justify-content: center;
@@ -350,10 +382,9 @@ body.darkbule *:not(.change_color_page) {
 .horizontal-scroll .single-item section {
     width: 100vw;
     /* แก้ความสูงเอา แต่อย่าแก้หน่วย vw */
-    height: 60vw;
-    max-width: 100vw;
-    max-height: 60vw;
-
+    height: 75vw;
+    /* max-width: 100vw;
+    max-height: 75vw; */
 }
 
 .container {
@@ -424,6 +455,11 @@ body.darkbule *:not(.change_color_page) {
     align-items: center;
 }
 
+.text-page-slide {
+    color: #F1D9C4;
+    margin-top: 10%;
+}
+
 
 /* sec_04 */
 
@@ -492,6 +528,56 @@ body.darkbule *:not(.change_color_page) {
 .img-dltv img {
     width: 100%;
     height: auto;
+}
+
+
+/* 5 */
+
+.webmadewell {
+    background-color: #f5f5f8;
+    background: linear-gradient(0deg, #f5f5f0 50%, #ffffff 50%);
+    background-size: 100%;
+    background-position: center;
+}
+
+.intro {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    text-align: center;
+}
+
+.intro h3 {
+    color: #ffffff;
+    background-color: #ccccc6;
+    display: inline-block;
+    padding: 8px 16px;
+    border-radius: 20px;
+}
+
+.section {
+    position: relative;
+    display: flex;
+    height: 200vh;
+    flex-direction: row;
+    align-items: center;
+    justify-content: center;
+}
+
+.column {
+    width: 120px;
+    height: 120px;
+    background-color: #828282;
+    color: #ffffff;
+    display: flex;
+    align-items: center;
+    text-align: center;
+    padding: 20px;
+}
+
+.parallax_scroll {
+    background-color: #f58232;
 }
 
 
@@ -654,8 +740,24 @@ a:hover .text-new {
     }
 }
 
+div#box1 {
+    transform-origin: center;
+    -ms-transform: rotate(-20deg);
+    /* IE 9 */
+    transform: rotate(-20deg);
+    /* Standard syntax */
+}
 
-/* On screens that are 600px or less, set the background color to olive */
+div#box2 {
+    transform-origin: center;
+    -ms-transform-origin: 100% 700%;
+    /* IE 9 */
+    transform-origin: 100% 700%;
+    -ms-transform: rotate(5deg);
+    /* IE 9 */
+    transform: rotate(5deg);
+    /* Standard syntax */
+}
 
 @media screen and (max-width: 800px) {
     .single-item section {
@@ -736,25 +838,6 @@ a:hover .text-new {
     font-size: 11.875rem;
 }
 
-div#box1 {
-    transform-origin: center;
-    -ms-transform: rotate(-20deg);
-    /* IE 9 */
-    transform: rotate(-20deg);
-    /* Standard syntax */
-}
-
-div#box2 {
-    transform-origin: center;
-    -ms-transform-origin: 100% 700%;
-    /* IE 9 */
-    transform-origin: 100% 700%;
-    -ms-transform: rotate(5deg);
-    /* IE 9 */
-    transform: rotate(5deg);
-    /* Standard syntax */
-}
-
 div#box3 {
     transform-origin: center;
     -ms-transform-origin: 350% 2200%;
@@ -812,100 +895,6 @@ div#box5 {
     margin-right: 2.5vw;
 }
 
-/* Color BG */
-
-.bg-darkbule {
-    background-color: #242f57;
-}
-
-.bg-orage {
-    background-color: #F56643;
-}
-
-.bg-cream {
-    background-color: #F1D9C4;
-}
-
-.bg-mint {
-    background-color: #4BB083;
-}
-
-.bg-purple {
-    background-color: #6459B6;
-}
-
-.bg-darkbule {
-    background-color: #242f57;
-}
-
-.bg-orage {
-    background-color: #F56643;
-}
-
-.bg-cream {
-    background-color: #F1D9C4;
-}
-
-.bg-mint {
-    background-color: #4BB083;
-}
-
-
-
-/* Color Text */
-
-.text-darkbule {
-    color: #242f57;
-}
-
-.text-orage {
-    color: #F56643;
-}
-
-.text-mint {
-    color: #4BB083;
-}
-
-.text-cream {
-    color: #F1D9C4;
-}
-
-.text-purple {
-    color: #6459B6;
-}
-
-.ee-text {
-    color: #000000;
-}
-
-.text-weigth {
-    font-weight: bold;
-}
-
-.text-white {
-    color: #FFFFFF;
-}
-
-.b-darkbule {
-    background: linear-gradient(to top, #242f57, transparent);
-}
-
-.b-mint {
-    background: linear-gradient(to top, #4BB083, transparent);
-}
-
-.b-purple {
-    background: linear-gradient(to top, #6459B6, transparent);
-}
-
-.text-head {
-    z-index: 1;
-    font-family: 'Mondwest';
-    font-size: 68px;
-    text-align: center;
-    padding-top: 2vw;
-    display: block;
-}
 
 /* section 5 */
 
@@ -917,32 +906,21 @@ div#box5 {
 .side2 {
     position: relative;
     width: 50vw;
-    height: 50vw;
+    height: 75vw;
 }
 
 .sideLeft {
     position: fixed;
-    padding-top: 0vw;
+    padding-top: 15vw;
     padding-left: 10vw;
     float: left;
 }
 
 .sideLeft img {
-    width: 30vw;
-}
-
-.sideRight {
-    position: fixed;
-    padding-top: 10vw;
-    padding-left: 10vw;
-    float: left;
+    width: 40vw;
 }
 
 #s2 {
-    display: none;
-}
-
-#s3 {
     display: none;
 }
 
@@ -950,4 +928,62 @@ div#box5 {
     width: 50vw;
     height: 75vw;
     position: fixed;
+}
+
+
+/* graph bar */
+
+#myProgress1 {
+    width: 3%;
+    background-color: #ddd;
+}
+
+#myProgress2 {
+    width: 3%;
+    background-color: #ddd;
+}
+
+#myProgress3 {
+    width: 42%;
+    background-color: #ddd;
+}
+
+#myProgress4 {
+    width: 51%;
+    background-color: #ddd;
+}
+
+#myProgress {
+    width: 1%;
+    background-color: #ddd;
+}
+
+#myBar {
+    width: 100%;
+    height: 30px;
+    background-color: #F56643;
+}
+
+#myBar1 {
+    width: 0%;
+    height: 30px;
+    background-color: #6459B6;
+}
+
+#myBar2 {
+    width: 0%;
+    height: 30px;
+    background-color: #6459B6;
+}
+
+#myBar3 {
+    width: 0%;
+    height: 30px;
+    background-color: #6459B6;
+}
+
+#myBar4 {
+    width: 0%;
+    height: 30px;
+    background-color: #6459B6;
 }
