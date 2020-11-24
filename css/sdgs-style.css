@@ -62,6 +62,21 @@ section {
 }
 
 
+/* sticker */
+.sticker-green {
+    background-color: #4BB093;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+}
+
+.sticker-orange {
+    background-color: #F56A48;
+    border-radius: 50%;
+    width: 46px;
+    height: 46px;
+}
+
 /* ตั้งค่า ตำแหน่งข้อความ ทำเป็นตัวอย่าง */
 
 .row {
@@ -85,7 +100,7 @@ section {
     height: 800px;
     position: absolute;
     /* background: url(/img/SDGs/01.png); */
-    top: 2000px;
+    top: 2100px;
     z-index: 1;
 }
 
@@ -148,6 +163,7 @@ section {
 .text-purple {
     color: #6459B6;
 }
+
 .text-white {
     color: #ffffff;
 }
@@ -173,15 +189,15 @@ section {
 
 .text-svgs-sub {
     font-family: 'Mondwest';
-    
+
 
 }
 
-.sdgs p{
+.sdgs p {
     display: block;
     margin-left: 25%;
     bottom: 0px;
-    
+
 }
 
 
@@ -266,24 +282,30 @@ a:hover .text-new {
         -webkit-transform: none;
         transform: none;
     }
+
     /* setting icon navbar toggler to right */
     .navbar-light {
         left: 75vw;
     }
+
     /* setting hidden &#8594; Home */
     a .text-new {
         display: none;
     }
+
     a:hover .text-defult {
         display: inline;
         color: #4BB083;
     }
+
     a:hover .text-new {
         display: none;
     }
+
     .navbar-brand {
         background-color: khaki;
     }
+
     .navbar-nav {
         margin-left: 0px;
     }
