@@ -4,7 +4,7 @@ html {
     scroll-snap-type: y mandatory;
     /* suppress scroll anchoring to see the effect  */
     overflow-anchor: none;
-    scroll-behavior: smooth;
+    scroll-behavior: smooth !important;
 }
 
 
@@ -616,30 +616,38 @@ a:hover .text-new {
         -webkit-transform: none;
         transform: none;
     }
+
     /* setting icon navbar toggler to right */
     .navbar-light {
         left: 75vw;
     }
+
     /* setting hidden &#8594; Home */
     a .text-new {
         display: none;
     }
+
     a:hover .text-defult {
         display: inline;
         color: #4BB083;
     }
+
     a:hover .text-new {
         display: none;
     }
+
     .navbar-brand {
         background-color: khaki;
     }
+
     .navbar-nav {
         margin-left: 0px;
     }
+
     .viewport {
         margin: 0 !important;
     }
+
     div#box1,
     div#box2,
     div#box3,
@@ -659,10 +667,12 @@ a:hover .text-new {
         height: 50vw;
         font-size: 10;
     }
+
     .single-item section img {
         height: 30vw;
         width: 25vw;
     }
+
     .horizontal-scroll .single-item section {
         height: 50vw;
         max-height: 50vw;
@@ -699,6 +709,7 @@ a:hover .text-new {
     0% {
         content: "FEB";
     }
+
     75% {
         content: "SEP";
     }
