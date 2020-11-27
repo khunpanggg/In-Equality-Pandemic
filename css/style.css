@@ -945,3 +945,36 @@ div#box5 {
 .whattospend {
     margin-left: 24%;
 }
+
+.textspend {
+    margin-top: -68.5vh;
+    margin-left: 50vw;
+    border: 10px;
+}
+
+.budget {
+    color: #4BB083;
+    font-size: 40px;
+    vertical-align: top;
+    height: 130px;
+}
+
+.spendpurple {
+    color: #6459B6;
+    font-size: 40px;
+}
+
+.spendorange {
+    color: #F56642;
+    font-size: 40px;
+}
+
+.fstrow {
+    vertical-align: top;
+}
+
+.whatthebox {
+    background-color: #4bb093;
+    width: 450px;
+    margin-left: 600px;
+}
