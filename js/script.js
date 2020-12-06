@@ -1,3 +1,7 @@
+function play() {
+    var audio = document.getElementById("audio ");
+    audio.play();
+}
 // JavaScript Document
 document.onscroll = (event) => {
 
