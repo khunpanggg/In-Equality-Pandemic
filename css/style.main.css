@@ -64,7 +64,9 @@ section {
 
 @media (min-width: 576px) {
   section {
+    width: calc(100% - 80px);
     margin: 0;
+    padding: 3rem 5rem;
   }
 }
 
@@ -227,8 +229,8 @@ a:hover .text-new {
 div[class*="sticker-"] {
   position: absolute;
   border-radius: 50%;
-  width: 46px;
-  height: 46px;
+  width: 44px;
+  height: 44px;
   z-index: 1 !important;
 }
 
@@ -261,6 +263,11 @@ div[class*="sticker-"] {
 
 
 @media (min-width: 576px) {
+  #header-1 {
+    position: absolute;
+    margin-top: 0;
+  }
+
   #section-1 .img-grid img {
     width: 25%;
   }
@@ -306,15 +313,15 @@ div[class*="sticker-"] {
   display: flex;
   align-items: center;
   justify-content: space-around;
-  width: 80%;
-  max-width: 320px;
+  max-width: 400px;
   text-align: center;
-  padding: 3px;
+  padding: 3px 5px;
   font-size: 1.25rem;
 }
 
 #section-3 .textbox span {
-  width: 60%;
+  width: 70%;
+  min-width: 160px;
 }
 
 #section-3 .textbox img {
@@ -346,38 +353,52 @@ div[class*="sticker-"] {
 }
 
 #section-3 div#box5 {
-  -ms-transform: rotate(-17deg);
-  transform: rotate(-17deg);
+  -ms-transform: rotate(-16deg);
+  transform: rotate(-16deg);
+}
+
+#section-3 div#box5::before {
+  content: ' ';
+  position: absolute;
+  border-radius: 50%;
+  width: 33px;
+  height: 33px;
+  top: -22px;
+  left: 5%;
+  background: var(--orange);
+  z-index: 11 !important;
 }
 
 
 @media (min-width: 576px) {
   #section-3 div#box1 {
     transform-origin: center;
+    transform: translateX(-85%) translateY(35%) rotate(-12deg);
+    -ms-transform: translateX(-85%) translateY(35%) rotate(-12deg);
   }
 
   #section-3 div#box2 {
     transform-origin: center;
-    -ms-transform-origin: 100% -700%;
-    transform-origin: 100% -700%;
+    transform: translateX(-60%) translateY(30%) rotate(4deg);
+    -ms-transform: translateX(-60%) translateY(30%) rotate(4deg);
   }
 
   #section-3 div#box3 {
     transform-origin: center;
-    -ms-transform-origin: 350% 2200%;
-    transform-origin: 350% 2200%;
+    transform: translateX(80%) translateY(-120%) rotate(18deg);
+    -ms-transform: translateX(80%) translateY(-120%) rotate(18deg);
   }
 
   #section-3 div#box4 {
     transform-origin: center;
-    transform: translate(50%);
-    -ms-transform: translate(50%);
+    transform: translateX(75%) translateY(-10%) rotate(0deg);
+    -ms-transform: translateX(75%) translateY(-10%) rotate(0deg);
   }
 
   #section-3 div#box5 {
     transform-origin: center;
-    -ms-transform-origin: 80% 550%;
-    transform-origin: 80% 550%;
+    transform: translateX(-75%) translateY(-60%) rotate(-17deg);
+    -ms-transform: translateX(-75%) translateY(-60%) rotate(-17deg);
   }
 }
 
@@ -439,6 +460,10 @@ div[class*="sticker-"] {
   height: auto;
 }
 
+#section-5 #slide-section-5 #slide-selector div[id^="s5-btn-"].active {
+  color: var(--orange);
+}
+
 #section-5 #slide-section-5 #slide-selector {
   display: flex;
   justify-content: center;
@@ -457,11 +482,18 @@ div[class*="sticker-"] {
 
 
 /* section 16 */
-
 #section-16 .icon-grid img {
   display: block;
   width: 60px;
   height: 60px;
+}
+
+/* section 18 */
+#section-18 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/img/19-21 family/2_family.png");
 }
 
 /* section 19 */
@@ -523,12 +555,11 @@ div[class*="sticker-"] {
 
 
 /* section 21 */
-
 #section-21 {
   background-position: center;
   background-repeat: no-repeat;
   background-size: cover;
-  background-image: url("/img/19-21 family/2_family.png");
+  background-image: url("/img/22-25 course/3_course.png");
 }
 
 #section-21 .img-icons-course {
@@ -561,6 +592,15 @@ div[class*="sticker-"] {
     width: 30%;
   }
 }
+
+/* section 25 */
+#section-25 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/img/26-29 time/4_time.png");
+}
+
 
 /* section 26 */
 #section-26 {

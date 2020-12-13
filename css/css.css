@@ -1,0 +1,379 @@
+@font-face {
+  font-family: "ChulaCharasNew";
+  src: url("font/ChulaCharasNewReg.ttf") format("truetype");
+}
+
+@font-face {
+  font-family: "ChulaCharasNew";
+  src: url("font/ChulaCharasNewBold.ttf") format("truetype");
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: "ChulaCharasNew";
+  src: url("font/ChulaCharasNewIta.ttf") format("truetype");
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "ChulaCharasNew";
+  src: url("font/ChulaCharasNewBoldIta.ttf") format("truetype");
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: "Mondwest";
+  src: url("../font/Mondwest-Regular.otf") format("opentype");
+}
+
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+html {
+  padding: 0;
+  margin: 0;
+  /* Enable Safari touch scrolling physics which is needed for scroll snap */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: y proximity;
+  /* suppress scroll anchoring to see the effect */
+  /* overflow-anchor: none; */
+  scroll-behavior: smooth;
+}
+
+body {
+  background: #242f57;
+  height: 375 vw;
+  overflow-x: hidden;
+  margin: 0;
+  /* font-size: 1.758vw; */
+  font-size: min(1.125rem, 18px);
+  color: #ffffff;
+}
+
+section {
+  overflow: hidden;
+  width: 100vw;
+  max-width: 1024px;
+  /* height: 768px; */
+  min-height: 667px;
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  scroll-snap-align: start;
+}
+.row {
+    position: relative;
+    margin: auto;
+}
+/* Setting Nav */
+.navbar {
+  font-family: 'Mondwest';
+  width: 100vh;
+  height: min(5.859vw,60px);
+  position: fixed;
+  background-color: #6459b6;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: rotate(-90deg) translateX(-100%);
+  transform: rotate(-90deg) translateX(-100%);
+  flex-direction: row-reverse;
+  z-index: 1000;
+}
+
+.nav-link {
+  color: #ffffff !important;
+  /* font-size: 22px; */
+  font-size: min(1.3333333333333333rem, 24px);
+  width: 100px;
+}
+
+.nav-link:hover {
+  transform: translate(10%, 0);
+  transition: all 0.3s ease-in-out;
+}
+
+.navbar-nav {
+  margin-left: 30px;
+}
+
+a .text-new {
+  display: none;
+}
+
+a:hover .text-defult {
+  display: none;
+}
+
+a:hover .text-new {
+  display: inline;
+  color: #4bb083;
+}
+/* Change navbar styling on small viewports */
+
+@media (max-width: 668px) {
+  .navbar {
+    background: transparent;
+    -webkit-transform: none;
+    transform: none;
+  }
+  /* setting icon navbar toggler to right */
+  .navbar-dark {
+    left: 75vw;
+  }
+  .nav-link{
+    text-shadow: 2px 2px #1c2442;
+  }
+  /* setting hidden &#8594; Home */
+  a .text-new {
+    display: none;
+  }
+
+  a:hover .text-defult {
+    display: inline;
+    color: #4bb083;
+  }
+
+  a:hover .text-new {
+    display: none;
+  }
+
+  .navbar-brand {
+    background-color: khaki;
+  }
+
+  .navbar-nav {
+    margin-left: 0px;
+  }
+  .content-topic{
+    left: 0;
+  }
+  .content-layer{
+    left: 0;
+    margin-top: 20vw;
+  }
+  .content-layer2{
+    margin-top: 20vw;
+  }
+  .text-svgs-sub p {
+    /* font-size: 17px; */
+    line-height: 1.15em;
+    margin-top: -2vw;
+  }
+
+  .text-svgs-sub br{
+    display: none;
+  }
+
+
+}
+/* Color BG */
+
+.bg-darkbule {
+  background-color: #242f57;
+}
+
+.bg-orage {
+  background-color: #f56643;
+}
+
+.bg-cream {
+  background-color: #f1d9c4;
+}
+
+.bg-mint {
+  background-color: #4bb083;
+}
+
+.bg-purple {
+  background-color: #6459b6;
+}
+
+/* Color Text */
+.text-darkbule {
+  color: #242f57;
+}
+
+.text-orage {
+  color: #f56643;
+}
+
+.text-mint {
+  color: #4bb083;
+}
+
+.text-cream {
+  color: #f1d9c4;
+}
+
+.text-purple {
+  color: #6459b6;
+}
+
+.text-white {
+  color: #ffffff;
+}
+
+.ee-text {
+  color: #000000;
+}
+
+/* sticker */
+.sticker-green {
+  background-color: #4bb093;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  z-index: 0;
+}
+
+.sticker-orange {
+  background-color: #f56a48;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+}
+
+footer {
+  display: flex;
+  margin-left: auto;
+  margin-right: auto;
+  margin-top: 200px;
+  left: 0;
+  bottom: 0;
+  width: 100%;
+  color: white;
+  text-align: center;
+  padding: 2vw 0vw 0vw 12vw;
+}
+footer div div a div img {
+  display: block;
+  margin-left: auto;
+  margin-right: auto;
+  width: 100%;
+  height: auto;
+}
+
+.arrow{
+  font-family: 'Mondwest';
+  color: #ffffff;
+  font-size: min(3.75rem, 60px);
+  line-height: 30px;
+}
+.bg-img {
+  width: 100vw;
+  max-width: 1024px;
+  height: fit-content;
+}
+
+img {
+  vertical-align: middle;
+  border-style: none;
+}
+.layer1,
+.layer2,
+.layer3,
+.layer4,
+.layer5 {
+    position: fixed;
+    transition: all .1s linear;
+}
+
+#fig1 {
+    width: 100vw;
+    max-width: 1024px;
+    height: 768px;
+    position: absolute;
+    /* background: url(/img/SDGs/01.png); */
+    top: 2300px;
+    z-index: 1;
+}
+
+#fig2 {
+    width: 100vw;
+    max-width: 1024px;
+    position: absolute;
+    /* background: url(/img/SDGs/02.png); */
+    top: 1460px;
+    z-index: 2;
+}
+
+#fig3 {
+    width: 100vw;
+    max-width: 1024px;
+    position: absolute;
+    /* background: url(/img/SDGs/03.png); */
+    top: 900px;
+    /* margin-bottom: 50px; */
+    z-index: 3;
+}
+
+#fig4 {
+    width: 100vw;
+    max-width: 1024px;
+    position: absolute;
+    /* background: url(/img/SDGs/04.png); */
+    top: 680px;
+    z-index: 4;
+}
+
+#fig5 {
+    width: 100vw;
+    max-width: 1024px;
+    position: absolute;
+    top: 500px;
+    z-index: 5;
+}
+
+.text-header-1 * {
+    z-index: 1;
+    font-family: 'Mondwest';
+    font-size: min(7.5rem,190px);
+    line-height: min(15.625vw,160px);
+}
+
+.text-header-1 span {
+    display: block;
+}
+
+.text-svgs-sub {
+  font-family: 'Mondwest';
+}
+
+.sdgs p {
+  display: block;
+  margin-left: auto;
+  float: right;
+  padding-top: min(6vw,80px);
+}
+.content{
+
+  padding-left: min(6vw,500px);
+  padding-right: min(6vw,500px);
+  position: absolute;
+}
+.content-layer{
+  left: 5vw;
+  padding-top: 20vw;
+}
+.content-layer2{
+  right: 5vw;
+  padding-top: 20vw;
+ 
+}
+.content-layer3{
+  right: 5vw;
+  padding-top:30vw;
+ 
+}
+.content-topic{
+  margin-top: 5vw;
+  left: 5vw;
+  right: 5vw;
+}
+h1{
+  font-size: min(4.25rem,68px);
+}

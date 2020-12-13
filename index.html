@@ -21,12 +21,16 @@
 	<link rel="stylesheet" href="./css/loadingStyle.css">
 </head>
 
-<body>
+<body data-loading="loading">
 	<!-- loading page-->
 	<div class="loadingPage">
 		<div class="loadtitle">
-			<div id="student"><img src="./img/00 loading page/loading4.png"></div>
-			<div id="shair"><img src="./img/00 loading page/loading3.png"></div>
+			<div id="student">
+				<img src="./img/00 loading page/loading4.png">
+			</div>
+			<div id="shair">
+				<img src="./img/00 loading page/loading3.png">
+			</div>
 		</div>
 		<div class="loadbar">
 			<span id="statue1" class="circle"></span>
@@ -48,6 +52,7 @@
 				<span style="--i:11;">g</span>
 			</div>
 		</div>
+
 	</div>
 	<!-- END Loading -->
 	<div class="main">
@@ -55,11 +60,11 @@
 		<nav class="navbar navbar-expand-sm fixed-top navbar-dark">
 			<!-- Logo Just an image -->
 			<a class="navbar-brand m-0 d-none d-sm-block" href="#">
-				<img src="./img/icon/svg/00_icon_menubar.svg" alt="Logo" width="55px">
+				<img data-src="./img/icon/svg/00_icon_menubar.svg" alt="Logo" width="55px">
 			</a>
 			<!-- Navbar-Toggler -->
-			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav"
-				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
+				data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
 				<span class="navbar-toggler-icon"></span>
 			</button>
 			<div class="collapse navbar-collapse" id="navbar">
@@ -86,19 +91,19 @@
 		<div class="content">
 			<!-- section 01 -->
 			<section class="bg-darkblue" id="section-1">
-				<h1 class="text-header-1 text-orange" id="header-1" style="line-height: 4.25rem;">
+				<h1 class="text-header-1 text-orange" id="header-1">
 					inEquality<br />Pandemic</h1>
 				<div class="img-grid">
-					<img src="./img/GIF/01 above the flow _GIF/avt14.gif">
-					<img src="./img/GIF/01 above the flow _GIF/avt2.gif">
-					<img src="./img/01 above the flow/a4.png">
-					<img src="./img/GIF/01 above the flow _GIF/avt5.gif">
-					<img src="./img/GIF/01 above the flow _GIF/avt1.gif">
-					<img src="./img/01 above the flow/a6.png">
-					<img src="./img/01 above the flow/a8.png">
-					<img src="./img/01 above the flow/a11.png">
-					<img src="./img/01 above the flow/a3.png">
-					<img src="./img/GIF/01 above the flow _GIF/avt13.gif">
+					<img data-src="./img/GIF/01 above the flow _GIF/avt14.gif">
+					<img data-src="./img/GIF/01 above the flow _GIF/avt2.gif">
+					<img data-src="./img/01 above the flow/a4.png">
+					<img data-src="./img/GIF/01 above the flow _GIF/avt5.gif">
+					<img data-src="./img/GIF/01 above the flow _GIF/avt1.gif">
+					<img data-src="./img/01 above the flow/a6.png">
+					<img data-src="./img/01 above the flow/a8.png">
+					<img data-src="./img/01 above the flow/a11.png">
+					<img data-src="./img/01 above the flow/a3.png">
+					<img data-src="./img/GIF/01 above the flow _GIF/avt13.gif">
 					<img class="d-none d-sm-block" src="./img/GIF/01 above the flow _GIF/avt7.gif">
 					<img class="d-none d-sm-block" src="./img/01 above the flow/a12.png">
 					<img class="d-none d-sm-block" src="./img/01 above the flow/a9.png">
@@ -122,7 +127,8 @@
 								</h1>
 							</div>
 
-							<img class="d-block d-md-none w-100 h-auto" src="/img/GIF/student.gif" width="303" height="392">
+							<img class="d-block d-md-none w-100 h-auto" src="/img/GIF/student.gif" width="303"
+								height="392">
 						</div>
 						<div class="w-100"></div>
 						<div class="col text-sec02">
@@ -151,7 +157,7 @@
 							</p>
 						</div>
 						<div class="col d-none d-md-block img-sec02">
-							<img src="/img/GIF/student.gif" width="303" height="392">
+							<img data-src="/img/GIF/student.gif" width="303" height="392">
 						</div>
 					</div>
 				</div>
@@ -159,26 +165,25 @@
 
 			<!-- section 03 -->
 			<section id="section-3">
-				<div class="sticker-orange" style="transform: translate(-8vw, 48vw); z-index: 2;"></div>
 				<div id="box1" class="textbox bg-darkblue text-white">
 					<span>ทำไมคนรวยยิ่งรวย คนจนยิ่งจน</span>
-					<img src="./img/icon/iconQ.png">
+					<img data-src="./img/icon/iconQ.png">
 				</div>
 				<div id="box2" class="textbox bg-cream">
 					<span>ยิ่งเรียนยิ่งรวย</span>
-					<img src="./img/icon/iconQ.png">
+					<img data-src="./img/icon/iconQ.png">
 				</div>
 				<div id="box3" class="textbox bg-cream">
 					<span>บ้านไกลก็เรียนได้</span>
-					<img src="./img/icon/iconQ.png">
+					<img data-src="./img/icon/iconQ.png">
 				</div>
 				<div id="box4" class="textbox bg-darkblue text-white">
 					<span>ทุกคนเข้าถึงการศึกษาได้เพียงปลายนิ้ว</span>
-					<img src="./img/icon/iconQ.png">
+					<img data-src="./img/icon/iconQ.png">
 				</div>
 				<div id="box5" class="textbox bg-cream">
 					<span>เหลื่อมล้ำออนไลน์</span>
-					<img src="./img/icon/iconQ.png">
+					<img data-src="./img/icon/iconQ.png">
 				</div>
 			</section>
 
@@ -190,7 +195,7 @@
 							New Normal <br />
 							New Era !
 						</h1>
-						<img src="./img/icon/04_icon-computer.png" class="top-right-icon">
+						<img data-src="./img/icon/04_icon-computer.png" class="top-right-icon">
 					</div>
 
 					<div class="container-fluid">
@@ -233,32 +238,35 @@
 			<section id="section-5" class="bg-transparent">
 				<div class="row justify-content-center align-items-center sideContent">
 					<div class="col-12 col-md-6 bg-cream">
-						<div class="w-100" id="slide-section-5">
+						<div class="w-100 py-2" id="slide-section-5">
 							<div id="s5-1" class="active">
-								<img src="/img/GIF/05 should this be normal_ _GIF/abnormal-1.gif" width="100%">
+								<img data-src="/img/GIF/05 should this be normal_ _GIF/abnormal-1.gif" width="100%">
 								<p class="text-darkblue text-center">
 									ครูรุ่นเก่าที่งงกับการใช้อุปกรณ์
 								</p>
 							</div>
 							<div id="s5-2">
-								<img src="/img/GIF/05 should this be normal_ _GIF/abnormal-2.gif" width="100%">
+								<img data-src="/img/GIF/05 should this be normal_ _GIF/abnormal-2.gif" width="100%">
 								<p class="text-darkblue text-center">
 									เด็กเล็กระดับอนุบาลที่ต้องเรียนด้วยตัวเอง
 								</p>
 							</div>
 							<div id="s5-3" class="bg-cream">
-								<img src="/img/GIF/05 should this be normal_ _GIF/abnormal-3.gif" width="100%">
+								<img data-src="/img/GIF/05 should this be normal_ _GIF/abnormal-3.gif" width="100%">
 								<p class="text-darkblue text-center">
 									เด็กบนดอยที่ต้องเรียนผ่าน
 									โทรศัพท์มือถือ
 								</p>
 							</div>
 							<div id="slide-selector">
-								<div class="font-s18 font-bold rounded-circle p-3" onclick="slideShowOnSection5(1)">1
+								<div id="s5-btn-1" class="font-s18 font-bold rounded-circle p-3 active"
+									onclick="slideShowOnSection5(1)">1
 								</div>
-								<div class="font-s18 font-bold rounded-circle p-3" onclick="slideShowOnSection5(2)">2
+								<div id="s5-btn-2" class="font-s18 font-bold rounded-circle p-3"
+									onclick="slideShowOnSection5(2)">2
 								</div>
-								<div class="font-s18 font-bold rounded-circle p-3" onclick="slideShowOnSection5(3)">3
+								<div id="s5-btn-3" class="font-s18 font-bold rounded-circle p-3"
+									onclick="slideShowOnSection5(3)">3
 								</div>
 							</div>
 						</div>
@@ -370,7 +378,7 @@
 					<h1 class="text-header-2 font-mondwest">2412</h1>
 				</div>
 
-				<img class="background-overlay" src="./img/09-13 a brief history of education/01.png" alt="">
+				<img class="background-overlay" src="./img/09-13 a brief history of education/02.png" alt="">
 			</section>
 
 			<!-- section 10 -->
@@ -475,7 +483,7 @@
 			<section class="bg-mint" id="section-13">
 				<div class="sticker-orange" style="left: 75%;"></div>
 
-				<h1 class="text-darkblue font-s64 font-mondwest">Equality<br>Error</h1>
+				<h1 class="text-darkblue text-header-3 font-mondwest">Equality<br>Error</h1>
 
 				<div class="row font-s18">
 					<div class="col px-3">
@@ -490,8 +498,7 @@
 						</p>
 					</div>
 				</div>
-
-				<div class="sticker-orange" style="left: 5%; bottom: 40%;"></div>
+				<div class="sticker-orange" style="left: 5%; bottom: 45%;"></div>
 			</section>
 
 			<!-- section 14 -->
@@ -549,23 +556,23 @@
 						พ่อ 1 คน / แม่ 1 คน / ลูก 2 คน
 					</span>
 
-					<div class="container-fluid">
+					<div>
 						<div class="d-flex icon-grid">
-							<img src="./img/icon/purple icon (all)/icon-05.png" alt="TV">
-							<img src="./img/icon/purple icon (all)/icon-05.png" alt="TV">
-							<img src="./img/icon/purple icon (all)/icon-04.png" alt="Phone">
-							<img src="./img/icon/purple icon (all)/icon-04.png" alt="Phone">
+							<img data-src="./img/icon/purple icon (all)/icon-05.png" alt="TV">
+							<img data-src="./img/icon/purple icon (all)/icon-05.png" alt="TV">
+							<img data-src="./img/icon/purple icon (all)/icon-04.png" alt="Phone">
+							<img data-src="./img/icon/purple icon (all)/icon-04.png" alt="Phone">
 						</div>
 						<div class="d-flex icon-grid">
-							<img src="./img/icon/purple icon (all)/icon-04.png" alt="Phone">
-							<img src="./img/icon/purple icon (all)/icon-04.png" alt="Phone">
-							<img src="./img/icon/purple icon (all)/icon-03.png" alt="">
-							<img src="./img/icon/purple icon (all)/icon-03.png" alt="">
+							<img data-src="./img/icon/purple icon (all)/icon-04.png" alt="Phone">
+							<img data-src="./img/icon/purple icon (all)/icon-04.png" alt="Phone">
+							<img data-src="./img/icon/purple icon (all)/icon-03.png" alt="">
+							<img data-src="./img/icon/purple icon (all)/icon-03.png" alt="">
 						</div>
 						<div class="d-flex icon-grid">
-							<img src="./img/icon//purple icon (all)/icon-01.png" alt="">
-							<img src="./img/icon//purple icon (all)/icon-01.png" alt="">
-							<img src="./img/icon//purple icon (all)/icon-07.png" alt="">
+							<img data-src="./img/icon//purple icon (all)/icon-01.png" alt="">
+							<img data-src="./img/icon//purple icon (all)/icon-01.png" alt="">
+							<img data-src="./img/icon//purple icon (all)/icon-07.png" alt="">
 						</div>
 					</div>
 				</div>
@@ -579,9 +586,9 @@
 					</span>
 
 					<div class="d-flex icon-grid">
-						<img src="./img/icon/23_icon-tv.png" alt="">
-						<img src="./img/icon//purple icon (all)/icon-04.png" alt="">
-						<img src="./img/icon//purple icon (all)/icon-04.png" alt="">
+						<img data-src="./img/icon/23_icon-tv.png" alt="">
+						<img data-src="./img/icon//purple icon (all)/icon-04.png" alt="">
+						<img data-src="./img/icon//purple icon (all)/icon-04.png" alt="">
 					</div>
 				</div>
 
@@ -604,7 +611,8 @@
 								<div class="bg-darkblue">
 									<div class="row p-4">
 										<div class="col-md-6">
-											<img src="/img/GIF/15-18 technology _GIF/unable-access-1.gif" width="100%">
+											<img data-src="/img/GIF/15-18 technology _GIF/unable-access-1.gif"
+												width="100%">
 										</div>
 										<div class="col-md-6">
 
@@ -631,7 +639,8 @@
 								<div class="bg-darkblue">
 									<div class="row p-4">
 										<div class="col-md-6">
-											<img src="/img/GIF/15-18 technology _GIF/unable-access-2.gif" width="100%">
+											<img data-src="/img/GIF/15-18 technology _GIF/unable-access-2.gif"
+												width="100%">
 										</div>
 										<div class="col-md-6">
 											<p class="text-page-slide text-cream">
@@ -653,7 +662,8 @@
 								<div class="bg-darkblue">
 									<div class="row p-4">
 										<div class="col-md-6">
-											<img src="/img/GIF/15-18 technology _GIF/unable-access-3.gif" width="100%">
+											<img data-src="/img/GIF/15-18 technology _GIF/unable-access-3.gif"
+												width="100%">
 										</div>
 										<div class="col-md-6">
 											<p class="text-page-slide text-cream">
@@ -676,7 +686,8 @@
 								<div class="bg-darkblue">
 									<div class="row p-4">
 										<div class="col-md-6">
-											<img src="/img/GIF/15-18 technology _GIF/unable-access-4.gif" width="100%">
+											<img data-src="/img/GIF/15-18 technology _GIF/unable-access-4.gif"
+												width="100%">
 										</div>
 										<div class="col-md-6">
 											<p class="text-page-slide text-cream">
@@ -740,7 +751,8 @@
 							และต้องทำงานหลายงานเพื่อเลี้ยงครอบครัว
 						</span>
 						สภาพทางเศรษngeกิจของครัวเรอนเหล่านี้อาจจะไม่ได้สวยหรู
-						ทำให้ผู้ปกครองเองก็อาจ<span class="text-orange font-bold">ไม่สามารถดูแลบุตรหลานได้อย่างเต็มที่</span>
+						ทำให้ผู้ปกครองเองก็อาจ<span
+							class="text-orange font-bold">ไม่สามารถดูแลบุตรหลานได้อย่างเต็มที่</span>
 						และเด็กร้อยละ 70 ของครอบครัวที่ยากจนก็อยู่ในโครงการอาหารกลางวันของโรงเรียน
 						แสดงให้เห็นว่าไม่ใช่ทุกครอบครัวที่จะสามารถดูแลเรื่องอุปโภคและบริโภคของเด็กนักเรียนได้
 						และหากต้องเสียเงินในส่วนนี้ขณะที่ต้องเสียงค่าเทอมเท่าเดิมก็ถือว่าเป็นภาระทางการเงินสำหรับครอบครัวมากขึ้น
@@ -806,7 +818,7 @@
 				</div>
 
 				<div class="greenbox">
-					<img src="/img/19-21 family/family-newspaper.png" alt="">
+					<img data-src="/img/19-21 family/family-newspaper.png" alt="">
 					<p class="text-darkblue">
 						ปี 2562 เกิดความรุนแรงในครอบครัว 1,376 เหตุการณ์
 						สร้างความกังวลเกี่ยวกับความเสี่ยงที่เกิดขึ้นได้แม้แต่ในสถาบันครอบครัว
@@ -837,15 +849,15 @@
 						คือ
 						<div class="img-icons-course my-3">
 							<div class="img-icon">
-								<img src="./img/icon/23_icon-book.png" alt="">
+								<img data-src="./img/icon/23_icon-book.png" alt="">
 								<span class="text-darkblue font-w500">Onsite</span>
 							</div>
 							<div class="img-icon">
-								<img src="./img/icon/23_icon-tv.png" alt="">
+								<img data-src="./img/icon/23_icon-tv.png" alt="">
 								<span class="text-darkblue font-w500">Onair</span>
 							</div>
 							<div class="img-icon">
-								<img src="./img/icon/23_icon-computer.png" alt="">
+								<img data-src="./img/icon/23_icon-computer.png" alt="">
 								<span class="text-darkblue font-w500">Online</span>
 							</div>
 						</div>
@@ -866,7 +878,7 @@
 			<section id="section-22">
 				<div class="container pt-0">
 					<div class="img-dltv">
-						<img src="/img/GIF/22-25 course _GIF/dltv_2.gif" class="w-100 h-auto">
+						<img data-src="/img/GIF/22-25 course _GIF/dltv_2.gif" class="w-100 h-auto">
 					</div>
 					<div class="d-flex" style="justify-content: space-between;">
 						<div class="p-5 w-50">
@@ -901,7 +913,7 @@
 				<div class="container pt-0 bg-cream">
 					<div class="row">
 						<div class="col my-3">
-							<img src="/img/icon/25_icon-speaker.png" value="PLAY" onclick="play()"
+							<img data-src="/img/icon/25_icon-speaker.png" value="PLAY" onclick="play()"
 								class="d-block mx-auto mx-md-0 ml-md-auto bg-orange rounded-circle shadow"
 								style="width: 65px; height: auto; cursor:pointer;">
 							<audio id="audio" src="./sound/DLTV.mp3"></audio>
@@ -919,7 +931,7 @@
 						</div>
 					</div>
 
-					<img src="./img/GIF/22-25 course _GIF/teacher+blackboard_2.gif" class="d-block ml-auto"
+					<img data-src="./img/GIF/22-25 course _GIF/teacher+blackboard_2.gif" class="d-block ml-auto"
 						style="width: 40%; height: auto;">
 				</div>
 			</section>
@@ -961,7 +973,8 @@
 			<!-- section 26 -->
 			<section id="section-26">
 				<div class="container-fluid">
-					<img src="./img/GIF/26-29 time _GIF/calendar.gif" style="width: 100%; height: auto; max-width: 480px;">
+					<img data-src="./img/GIF/26-29 time _GIF/calendar.gif"
+						style="width: 100%; height: auto; max-width: 480px;">
 
 					<div class="row">
 						<div class="col d-flex justify-content-between text-right">
@@ -972,7 +985,8 @@
 							</div>
 							<div class="row">
 								<div class="col pt-4">
-									<img src="./img/GIF/26-29 time _GIF/book.gif" style="width: 100px; height: auto;">
+									<img data-src="./img/GIF/26-29 time _GIF/book.gif"
+										style="width: 100px; height: auto;">
 								</div>
 							</div>
 						</div>
@@ -1002,14 +1016,14 @@
 						</div>
 					</div>
 				</div>
-				<img src="/img/GIF/26-29 time _GIF/scientist.gif" class="overlay-bottom" />
+				<img data-src="/img/GIF/26-29 time _GIF/scientist.gif" class="overlay-bottom" />
 			</section>
 
 			<!-- section 27 -->
 			<section id="section-27">
 				<div class="container-fluid text-cream">
 					<div class="sticker-orange" style="transform: translate(60vw, 38vw);"></div>
-					<h1 class="font-size-64 font-mondwest">
+					<h1 class="text-header-2 font-mondwest">
 						New <br> Normal but<br> Not Normalize
 					</h1>
 					<span class="font-size-42">อย่าทำให้ความเหลื่อมล้ำเหล่านี้เป็นเรื่องปกติ</span>
@@ -1047,8 +1061,13 @@
 			document.querySelector(`#s5-1`).classList.remove("active");
 			document.querySelector(`#s5-2`).classList.remove("active");
 			document.querySelector(`#s5-3`).classList.remove("active");
+			document.querySelector(`#s5-btn-1`).classList.remove("active");
+			document.querySelector(`#s5-btn-2`).classList.remove("active");
+			document.querySelector(`#s5-btn-3`).classList.remove("active");
 			document.querySelector(`#s5-${index}`).classList.add("active");
+			document.querySelector(`#s5-btn-${index}`).classList.add("active");
 		}
+
 	</script>
 	<script type="text/javascript" src="./js/loading.js"></script>
 </body>
