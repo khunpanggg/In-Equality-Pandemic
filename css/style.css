@@ -710,7 +710,11 @@ a:hover .text-new {
         content: "FEB";
     }
 
-    75% {
+    0% {
+        content: "FEB";
+    }
+
+    100% {
         content: "SEP";
     }
 }
