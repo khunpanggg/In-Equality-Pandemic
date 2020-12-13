@@ -1,0 +1,588 @@
+:root {
+  --darkblue: #242f57;
+  --orange: #F56643;
+  --mint: #4BB083;
+  --cream: #F1D9C4;
+  --purple: #6459B6;
+  --white: #FFFFFF;
+  --black: #000000;
+}
+
+html {
+  /* Enable Safari touch scrolling physics which is needed for scroll snap */
+  /* -webkit-overflow-scrolling: auto; */
+  /* scroll-snap-type: y mandatory; */
+  /* suppress scroll anchoring to see the effect  */
+  overflow-anchor: none;
+  scroll-behavior: smooth !important;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  font-family: "ChulaCharasNew";
+  background: var(--darkblue);
+}
+
+.viewport {
+  /* overflow: hidden; */
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+.content {
+  position: relative;
+  width: 100%;
+}
+
+@media (min-width: 576px) {
+  .content {
+    margin-left: 80px;
+  }
+}
+
+section {
+  position: relative;
+  width: 100%;
+  min-height: 100vh;
+  padding: 3rem 1.25rem;
+  /* scroll-snap-align: center; */
+  /* scroll-snap-align: start; */
+}
+
+@media (min-width: 576px) {
+  section {
+    margin: 0;
+  }
+}
+
+/* section with leading text */
+
+section.leading-section {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+}
+
+/* section with box on top */
+
+section.topbox-section {
+  background: url("../img/15-18 technology/1_technology.png");
+  padding-top: 0;
+}
+
+section.topbox-section div.box {
+  width: 70%;
+  max-width: 420px;
+  text-align: left;
+}
+
+
+/* section with two side content */
+
+section.two-side-section {
+  display: flex;
+  justify-content: space-between;
+  overflow: hidden;
+  padding: 0;
+}
+
+section.two-side-section .background-overlay {
+  position: absolute;
+  top: 25%;
+  width: auto;
+  height: 65%;
+  z-index: 1;
+}
+
+section.two-side-section .bluebox {
+  position: relative;
+  background-color: var(--darkblue);
+  width: 65%;
+  min-height: 100vh;
+  padding: 1.25rem;
+  z-index: 10;
+}
+
+section.two-side-section .top-sticker {
+  position: relative;
+}
+
+section.two-side-section .top-sticker::before {
+  content: " ";
+  position: absolute;
+  border-radius: 50%;
+  width: 20px;
+  height: 20px;
+  top: -10px;
+  background: var(--orange);
+  z-index: 11 !important;
+}
+
+section.two-side-section .orangebox {
+  position: relative;
+  background-color: var(--orange);
+  width: 35%;
+  height: 100%;
+  padding: 1.25rem;
+  z-index: 10;
+  text-align: left;
+}
+
+section.two-side-section.orange-first {
+  flex-direction: row-reverse;
+}
+
+section.two-side-section.orange-first .orangebox {
+  text-align: right;
+}
+
+section.two-side-section.orange-first .background-overlay {
+  left: 0;
+}
+
+section.two-side-section:not(.orange-first) .background-overlay {
+  right: 0;
+}
+
+
+section.two-side-section:not(.orange-first) .top-sticker::before {
+  left: -10px;
+}
+
+section.two-side-section.orange-first .top-sticker::before {
+  right: -10px;
+}
+
+/* Setting Nav */
+
+.navbar {
+  width: 100%;
+  height: 80px;
+  position: fixed;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  flex-direction: row-reverse;
+  z-index: 1000;
+}
+
+.nav-link {
+  color: var(--white);
+  font-size: 22px;
+  width: 100px;
+}
+
+.nav-link:hover {
+  transform: translate(10%, 0);
+  transition: all .3s ease-in-out;
+}
+
+.nav-item {
+  text-align: right;
+  margin-left: auto;
+}
+
+a .text-new {
+  display: none;
+}
+
+a:hover .text-default {
+  display: none;
+}
+
+a:hover .text-new {
+  display: inline;
+  color: #4BB083;
+}
+
+/* Change navbar styling on small viewports */
+@media (min-width: 576px) {
+  .navbar {
+    width: 100vh;
+    -webkit-transform: rotate(-90deg) translateX(-100%);
+    transform: rotate(-90deg) translateX(-100%);
+    background: var(--purple) !important;
+  }
+
+  .navbar-brand {
+    transform: rotate(90deg);
+  }
+}
+
+/* sticker */
+
+div[class*="sticker-"] {
+  position: absolute;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+  z-index: 1 !important;
+}
+
+.sticker-green {
+  background-color: #4BB093;
+}
+
+.sticker-orange {
+  background-color: #F56A48;
+}
+
+/* section 01 */
+
+#header-1 {
+  position: absolute;
+  margin-top: 3vw;
+}
+
+#section-1 .img-grid {
+  width: 100%;
+  position: relative;
+  margin-top: 8rem;
+  display: flex;
+  flex-wrap: wrap;
+}
+
+#section-1 .img-grid img {
+  width: 50%;
+}
+
+
+@media (min-width: 576px) {
+  #section-1 .img-grid img {
+    width: 25%;
+  }
+}
+
+
+/* section 02 */
+
+#header-2 h1 {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.img-sec02 {
+  bottom: 0;
+  height: 500px;
+  justify-content: end;
+  display: flex;
+  align-items: flex-end;
+}
+
+.text-sec02 {
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+/* section 03 */
+
+#section-3 {
+  display: flex;
+  flex-direction: column;
+  justify-content: space-evenly;
+  align-items: center;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/img/03_question-bg.png");
+}
+
+
+#section-3 .textbox {
+  display: flex;
+  align-items: center;
+  justify-content: space-around;
+  width: 80%;
+  max-width: 320px;
+  text-align: center;
+  padding: 3px;
+  font-size: 1.25rem;
+}
+
+#section-3 .textbox span {
+  width: 60%;
+}
+
+#section-3 .textbox img {
+  width: 3rem !important;
+  height: 3rem !important;
+  padding: 3px;
+}
+
+
+#section-3 div#box1 {
+  transform-origin: center;
+  -ms-transform: rotate(-10deg);
+  transform: rotate(-10deg);
+}
+
+#section-3 div#box2 {
+  -ms-transform: rotate(5deg);
+  transform: rotate(5deg);
+}
+
+#section-3 div#box3 {
+  -ms-transform: rotate(10deg);
+  transform: rotate(10deg);
+}
+
+#section-3 div#box4 {
+  -ms-transform: rotate(1deg);
+  transform: rotate(1deg);
+}
+
+#section-3 div#box5 {
+  -ms-transform: rotate(-17deg);
+  transform: rotate(-17deg);
+}
+
+
+@media (min-width: 576px) {
+  #section-3 div#box1 {
+    transform-origin: center;
+  }
+
+  #section-3 div#box2 {
+    transform-origin: center;
+    -ms-transform-origin: 100% -700%;
+    transform-origin: 100% -700%;
+  }
+
+  #section-3 div#box3 {
+    transform-origin: center;
+    -ms-transform-origin: 350% 2200%;
+    transform-origin: 350% 2200%;
+  }
+
+  #section-3 div#box4 {
+    transform-origin: center;
+    transform: translate(50%);
+    -ms-transform: translate(50%);
+  }
+
+  #section-3 div#box5 {
+    transform-origin: center;
+    -ms-transform-origin: 80% 550%;
+    transform-origin: 80% 550%;
+  }
+}
+
+/* section 04 */
+#section-4 .header-4 {
+  position: relative;
+}
+
+#section-4 .header-4 h1 {
+  max-width: 85%;
+}
+
+#section-4 .top-right-icon {
+  position: absolute;
+  width: 70px;
+  height: 70px;
+  top: 0;
+  right: 0;
+
+}
+
+/* calender */
+
+.text-month::before {
+  content: "FEB";
+  animation: animate infinite 16s;
+  transition: width 3s ease 1s;
+}
+
+@keyframes animate {
+  0% {
+    content: "FEB";
+  }
+
+  0% {
+    content: "FEB";
+  }
+
+  100% {
+    content: "SEP";
+  }
+}
+
+/* section 5 */
+
+#section-5 #slide-section-5 div[id^="s5-"] {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#section-5 #slide-section-5 div[id^="s5-"].active {
+  display: flex;
+}
+
+#section-5 #slide-section-5 div[id^="s5-"] img {
+  width: 66%;
+  height: auto;
+}
+
+#section-5 #slide-section-5 #slide-selector {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#section-5 #slide-section-5 #slide-selector div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+
+/* section 16 */
+
+#section-16 .icon-grid img {
+  display: block;
+  width: 60px;
+  height: 60px;
+}
+
+/* section 19 */
+#section-19 .chart-grid {
+  display: grid;
+  height: 300px;
+  grid-template-rows: 40% 30% 10% 10% 5%;
+  grid-template-columns: auto;
+  justify-content: center;
+  row-gap: 3px;
+}
+
+#section-19 .chart-grid span {
+  border-left: 1.25rem solid var(--purple);
+  padding-left: 1.25rem;
+  width: 100%;
+  color: var(--black);
+}
+
+#section-19 .chart-grid span:last-child {
+  border-color: var(--orange);
+  color: var(--orange);
+}
+
+#section-19 .greenbox {
+  position: relative;
+  width: 60%;
+  margin-left: auto;
+  padding: 30% 15% 10px 12.5%;
+  background: var(--mint);
+}
+
+#section-19 .greenbox img {
+  position: absolute;
+  width: 60%;
+  max-width: 200px;
+  top: -25%;
+  left: 12.5%;
+}
+
+@media (min-width: 576px) {
+  #section-19 .greenbox {
+    position: relative;
+    width: 60%;
+    margin-top: 30px;
+    margin-left: auto;
+    padding: 8rem 7.5rem 1.5rem 5rem;
+    background: var(--mint);
+  }
+
+  #section-19 .greenbox img {
+    position: absolute;
+    width: 60%;
+    max-width: 160px;
+    top: -7.5rem;
+    left: 50%;
+  }
+}
+
+
+/* section 21 */
+
+#section-21 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/img/19-21 family/2_family.png");
+}
+
+#section-21 .img-icons-course {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+
+#section-21 .img-icons-course .img-icon {
+  width: 50%;
+  text-align: center;
+}
+
+#section-21 .img-icons-course .img-icon img {
+  width: 100%;
+  height: auto;
+}
+
+#section-21 .img-icons-course .img-icon span {
+  font-size: 1.25rem;
+}
+
+@media (min-width: 576px) {
+  #section-21 .img-icons-course {
+    flex-direction: row;
+  }
+
+  #section-21 .img-icons-course .img-icon {
+    width: 30%;
+  }
+}
+
+/* section 26 */
+#section-26 {
+  padding-bottom: 0;
+}
+
+#section-26 .overlay-bottom {
+  width: 100%;
+  height: auto;
+}
+
+/* section 27 */
+#section-27 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/img/new normal but not normalize.png");
+
+}
+
+footer a,
+footer a:hover {
+  color: var(--white);
+  cursor: pointer;
+}

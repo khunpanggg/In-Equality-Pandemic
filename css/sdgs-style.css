@@ -1,89 +1,89 @@
 @font-face {
-    font-family: 'ChulaCharasNew';
-    src: url('font/ChulaCharasNewReg.ttf') format('truetype');
+  font-family: 'ChulaCharasNew';
+  src: url('font/ChulaCharasNewReg.ttf') format('truetype');
 }
 
 @font-face {
-    font-family: 'ChulaCharasNew';
-    src: url('font/ChulaCharasNewBold.ttf') format('truetype');
-    font-weight: bold;
+  font-family: 'ChulaCharasNew';
+  src: url('font/ChulaCharasNewBold.ttf') format('truetype');
+  font-weight: bold;
 }
 
 @font-face {
-    font-family: 'ChulaCharasNew';
-    src: url('font/ChulaCharasNewIta.ttf') format('truetype');
-    font-style: italic;
+  font-family: 'ChulaCharasNew';
+  src: url('font/ChulaCharasNewIta.ttf') format('truetype');
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'ChulaCharasNew';
-    src: url('font/ChulaCharasNewBoldIta.ttf') format('truetype');
-    font-weight: bold;
-    font-style: italic;
+  font-family: 'ChulaCharasNew';
+  src: url('font/ChulaCharasNewBoldIta.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
 }
 
 @font-face {
-    font-family: 'Mondwest';
-    src: url('font/Mondwest-Regular.otf') format('opentype');
+  font-family: 'Mondwest';
+  src: url('font/Mondwest-Regular.otf') format('opentype');
 }
 
 * {
-    margin: 0;
-    padding: 0;
-    font-family: 'ChulaCharasNew';
-    color: #FFFFFF;
-    box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+  font-family: 'ChulaCharasNew';
+  color: #FFFFFF;
+  box-sizing: border-box;
 }
 
 html {
-    padding: 0;
-    margin: 0;
-    /* Enable Safari touch scrolling physics which is needed for scroll snap */
-    -webkit-overflow-scrolling: touch;
-    scroll-snap-type: y proximity;
-    /* suppress scroll anchoring to see the effect */
-    overflow-anchor: none;
-    scroll-behavior: smooth;
+  padding: 0;
+  margin: 0;
+  /* Enable Safari touch scrolling physics which is needed for scroll snap */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: y proximity;
+  /* suppress scroll anchoring to see the effect */
+  overflow-anchor: none;
+  scroll-behavior: smooth;
 }
 
 body {
-    background: #242f57;
-    height: auto;
-    overflow-x: hidden;
-    margin: 0;
-    font-size: 18px;
+  background: #242f57;
+  height: auto;
+  overflow-x: hidden;
+  margin: 0;
+  font-size: 18px;
 }
 
 section {
-    width: 100vw;
-    height: 100vh;
-    display: flex;
-    scroll-snap-align: start;
+  width: 100vw;
+  height: 100vh;
+  display: flex;
+  scroll-snap-align: start;
 }
 
 
 /* sticker */
 .sticker-green {
-    background-color: #4BB093;
-    border-radius: 50%;
-    width: 46px;
-    height: 46px;
+  background-color: #4BB093;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
 }
 
 .sticker-orange {
-    background-color: #F56A48;
-    border-radius: 50%;
-    width: 46px;
-    height: 46px;
+  background-color: #F56A48;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
 }
 
 /* ตั้งค่า ตำแหน่งข้อความ ทำเป็นตัวอย่าง */
 
 .row {
-    /* padding-top: 200px; */
-    margin-top: 100px;
-    margin-left: 150px;
-    position: absolute;
+  /* padding-top: 200px; */
+  margin-top: 100px;
+  margin-left: 150px;
+  position: absolute;
 }
 
 .layer1,
@@ -91,49 +91,49 @@ section {
 .layer3,
 .layer4,
 .layer5 {
-    position: fixed;
-    transition: all .2s linear;
+  position: fixed;
+  transition: all .2s linear;
 }
 
 #fig1 {
-    width: 100vw;
-    height: 800px;
-    position: absolute;
-    /* background: url(/img/SDGs/01.png); */
-    top: 2100px;
-    z-index: 1;
+  width: 100vw;
+  height: 800px;
+  position: absolute;
+  /* background: url(/img/SDGs/01.png); */
+  top: 2100px;
+  z-index: 1;
 }
 
 #fig2 {
-    width: 100vw;
-    position: absolute;
-    /* background: url(/img/SDGs/02.png); */
-    top: 1500px;
-    z-index: 2;
+  width: 100vw;
+  position: absolute;
+  /* background: url(/img/SDGs/02.png); */
+  top: 1500px;
+  z-index: 2;
 }
 
 #fig3 {
-    width: 100vw;
-    position: absolute;
-    /* background: url(/img/SDGs/03.png); */
-    top: 950px;
-    /* margin-bottom: 50px; */
-    z-index: 3;
+  width: 100vw;
+  position: absolute;
+  /* background: url(/img/SDGs/03.png); */
+  top: 950px;
+  /* margin-bottom: 50px; */
+  z-index: 3;
 }
 
 #fig4 {
-    width: 100vw;
-    position: absolute;
-    /* background: url(/img/SDGs/04.png); */
-    top: 660px;
-    z-index: 4;
+  width: 100vw;
+  position: absolute;
+  /* background: url(/img/SDGs/04.png); */
+  top: 660px;
+  z-index: 4;
 }
 
 #fig5 {
-    width: 100vw;
-    position: absolute;
-    top: 500px;
-    z-index: 5;
+  width: 100vw;
+  position: absolute;
+  top: 500px;
+  z-index: 5;
 }
 
 
@@ -145,58 +145,58 @@ section {
 /* Color Text */
 
 .text-darkbule {
-    color: #242f57;
+  color: #242f57;
 }
 
 .text-orage {
-    color: #F56643;
+  color: #F56643;
 }
 
 .text-mint {
-    color: #4BB083;
+  color: #4BB083;
 }
 
 .text-cream {
-    color: #F1D9C4;
+  color: #F1D9C4;
 }
 
 .text-purple {
-    color: #6459B6;
+  color: #6459B6;
 }
 
 .text-white {
-    color: #ffffff;
+  color: #ffffff;
 }
 
 .ee-text {
-    color: #000000;
+  color: #000000;
 }
 
 .text-weigth {
-    font-weight: bold;
+  font-weight: bold;
 }
 
 .text-header-1 * {
-    z-index: 1;
-    font-family: 'Mondwest';
-    font-size: 190px;
-    line-height: 160px;
+  z-index: 1;
+  font-family: 'Mondwest';
+  font-size: 190px;
+  line-height: 160px;
 }
 
 .text-header-1 span {
-    display: block;
+  display: block;
 }
 
 .text-svgs-sub {
-    font-family: 'Mondwest';
+  font-family: 'Mondwest';
 
 
 }
 
 .sdgs p {
-    display: block;
-    margin-left: 25%;
-    bottom: 0px;
+  display: block;
+  margin-left: 25%;
+  bottom: 0px;
 
 }
 
@@ -206,107 +206,107 @@ section {
 /* Color BG */
 
 .bg-darkbule {
-    background-color: #242f57;
+  background-color: #242f57;
 }
 
 .bg-orage {
-    background-color: #F56643;
+  background-color: #F56643;
 }
 
 .bg-cream {
-    background-color: #F1D9C4;
+  background-color: #F1D9C4;
 }
 
 .bg-mint {
-    background-color: #4BB083;
+  background-color: #4BB083;
 }
 
 .bg-purple {
-    background-color: #6459B6;
+  background-color: #6459B6;
 }
 
 .bg-img {
-    width: 100vw;
-    height: auto;
+  width: 100vw;
+  height: auto;
 }
 
 
 /* Setting Nav */
 
 .navbar {
-    width: 100vh;
-    height: 80px;
-    position: fixed;
-    -webkit-transform-origin: left top;
-    transform-origin: left top;
-    -webkit-transform: rotate(-90deg) translateX(-100%);
-    transform: rotate(-90deg) translateX(-100%);
-    flex-direction: row-reverse;
-    z-index: 1000;
+  width: 100vh;
+  height: 80px;
+  position: fixed;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: rotate(-90deg) translateX(-100%);
+  transform: rotate(-90deg) translateX(-100%);
+  flex-direction: row-reverse;
+  z-index: 1000;
 }
 
 .nav-link {
-    color: #FFFFFF;
-    font-size: 22px;
-    width: 100px;
+  color: #FFFFFF;
+  font-size: 22px;
+  width: 100px;
 }
 
 .nav-link:hover {
-    transform: translate(10%, 0);
-    transition: all .3s ease-in-out;
+  transform: translate(10%, 0);
+  transition: all .3s ease-in-out;
 }
 
 .navbar-nav {
-    margin-left: 30px;
+  margin-left: 30px;
 }
 
 a .text-new {
-    display: none;
+  display: none;
 }
 
 a:hover .text-defult {
-    display: none;
+  display: none;
 }
 
 a:hover .text-new {
-    display: inline;
-    color: #4BB083;
+  display: inline;
+  color: #4BB083;
 }
 
 
 /* Change navbar styling on small viewports */
 
 @media (max-width: 600px) {
-    .navbar {
-        background: transparent;
-        -webkit-transform: none;
-        transform: none;
-    }
+  .navbar {
+    background: transparent;
+    -webkit-transform: none;
+    transform: none;
+  }
 
-    /* setting icon navbar toggler to right */
-    .navbar-light {
-        left: 75vw;
-    }
+  /* setting icon navbar toggler to right */
+  .navbar-light {
+    left: 75vw;
+  }
 
-    /* setting hidden &#8594; Home */
-    a .text-new {
-        display: none;
-    }
+  /* setting hidden &#8594; Home */
+  a .text-new {
+    display: none;
+  }
 
-    a:hover .text-defult {
-        display: inline;
-        color: #4BB083;
-    }
+  a:hover .text-defult {
+    display: inline;
+    color: #4BB083;
+  }
 
-    a:hover .text-new {
-        display: none;
-    }
+  a:hover .text-new {
+    display: none;
+  }
 
-    .navbar-brand {
-        background-color: khaki;
-    }
+  .navbar-brand {
+    background-color: khaki;
+  }
 
-    .navbar-nav {
-        margin-left: 0px;
-    }
+  .navbar-nav {
+    margin-left: 0px;
+  }
 }

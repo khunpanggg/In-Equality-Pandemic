@@ -1,0 +1,959 @@
+html {
+  /* Enable Safari touch scrolling physics which is needed for scroll snap */
+  -webkit-overflow-scrolling: touch;
+  scroll-snap-type: y mandatory;
+  /* suppress scroll anchoring to see the effect  */
+  overflow-anchor: none;
+  scroll-behavior: smooth !important;
+}
+
+
+/* body {
+    margin: 0;
+    background-color: antiquewhite;
+}
+
+the-wrapper {
+    width: 100%;
+    height: 100vh;
+    background-color: black;
+    display: flex;
+}
+
+the-content {
+    margin: auto;
+    width: 100%;
+    height: 45vw;
+    background-color: cadetblue;
+    display: inline-block;
+} */
+
+@font-face {
+  font-family: 'ChulaCharasNew';
+  src: url('../font/ChulaCharasNewReg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ChulaCharasNew';
+  src: url('../font/ChulaCharasNewBold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'ChulaCharasNew';
+  src: url('../font/ChulaCharasNewIta.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ChulaCharasNew';
+  src: url('../font/ChulaCharasNewBoldIta.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mondwest';
+  src: url('../font/Mondwest-Regular.otf') format('opentype');
+}
+
+:root {
+  --scrollbar-size: 0px;
+}
+
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+
+.viewport {
+  overflow: hidden;
+  position: fixed;
+  height: 100%;
+  width: 100%;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+}
+
+body {
+  overflow-x: hidden;
+  overflow-y: scroll;
+  padding: 0;
+  margin: 0;
+  font-family: "ChulaCharasNew";
+}
+
+
+/* โค้ดเปลี่ยนสีข้อความเมื่อพื้นหลังตามคลาสที่วางไว้ */
+
+body *:not(.change_color_page) {
+  /*color: #fbe8ee;*/
+  transition: color 0.5s ease-in-out;
+  /*border-color: #fbe8ee;*/
+}
+
+
+/* โค้ดเปลี่ยน สีข้อความ เมื่อพื้นหลังตามคลาสที่วางไว้ */
+
+body.darkbule *:not(.change_color_page) {
+  /*color: #f8f4f4;*/
+  transition: color 0.5s ease-in-out;
+  /*border-color: #cfc7c7;*/
+}
+
+
+/*Pre loader*/
+
+.preloader {
+  width: 100%;
+  position: fixed;
+  /* content: 'x'; */
+  background: #242f57;
+  z-index: 10000;
+  min-height: 100vh;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.preloader h1 {
+  color: #4BB093;
+  text-align: center;
+  font-family: 'Mondwest';
+}
+
+.bar {
+  pointer-events: none;
+  user-select: none;
+  z-index: 2000;
+  position: fixed;
+  margin: auto;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  width: 400px;
+  border: 0px;
+  height: 3px;
+  overflow: hidden;
+  background: #4BB093;
+}
+
+.bar .bar-progress {
+  box-sizing: border-box;
+  transform: translate3d(0, 0, 0);
+  max-width: 400px;
+  position: fixed;
+  z-index: 2000;
+  display: block;
+  position: absolute;
+  top: 0;
+  right: 100%;
+  height: 100%;
+  width: 100%;
+  background: grey;
+}
+
+
+/* โค้ดเปลี่ยน สีพื้นหลัง เมื่อพื้นหลังตามคลาสที่วางไว้ */
+
+.change_color_page {
+  position: fixed;
+  display: block;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100vh;
+  background-color: #0a0a0a;
+  transition: background-color 0.5s ease;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+}
+
+.change_color_page.darkbule {
+  background-color: #242f57;
+}
+
+.change_color_page.orage {
+  background-color: #F56643;
+}
+
+.change_color_page.cream {
+  background-color: #F1D9C4;
+}
+
+.change_color_page.mint {
+  background-color: #4BB083;
+}
+
+.change_color_page.purple {
+  background-color: #6459B6;
+}
+
+.bg-purple {
+  background-color: #6459B6;
+}
+
+
+/*text-header*/
+
+.text-header-2 {
+  z-index: 1;
+  font-family: 'Mondwest';
+  font-size: 90px;
+  text-align: center;
+}
+
+.text-header-3 {
+  z-index: 1;
+  font-family: 'Mondwest';
+  font-size: 190px;
+}
+
+
+/* Color Text */
+
+.text-darkbule {
+  color: #242f57;
+}
+
+.text-orage {
+  color: #F56643;
+}
+
+.text-mint {
+  color: #4BB083;
+}
+
+.text-cream {
+  color: #F1D9C4;
+}
+
+.text-purple {
+  color: #6459B6;
+}
+
+.ee-text {
+  color: #000000;
+}
+
+.text-weigth {
+  font-weight: bold;
+}
+
+.b-darkbule {
+  background: linear-gradient(to top, #242f57, transparent);
+}
+
+.b-mint {
+  background: linear-gradient(to top, #4BB083, transparent);
+}
+
+.b-purple {
+  background: linear-gradient(to top, #6459B6, transparent);
+}
+
+
+/* อันนี้น่าจะเกี่ยวกับโค้ด js ไม่มีแสดงใน index.html */
+
+.scrollbar-test {
+  position: absolute;
+  visibility: hidden;
+  overflow: scroll;
+  width: 100px;
+  height: 100px;
+  top: -99999px;
+  left: -99999px;
+  pointer-events: none;
+  user-select: none;
+}
+
+.fixed-content {
+  position: absolute;
+  display: block;
+  top: 0;
+  left: 0;
+  right: var(--scrollbar-size, 0px);
+  bottom: 0;
+  z-index: 2;
+  pointer-events: none;
+}
+
+.scroll-container {
+  position: absolute;
+  overflow: hidden;
+  z-index: 10;
+  backface-visibility: hidden;
+  transform-style: preserve-3d;
+  width: 100%;
+}
+
+.content {
+  overflow: hidden;
+  position: relative;
+  width: 100%;
+}
+
+.spacer {
+  background: transparent;
+}
+
+
+/* ใช้แทน Section */
+
+.single-item {
+  flex: 0 0 100vw;
+  height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /* scroll-snap */
+  /* scroll-snap-align: start;
+    scroll-snap-stop: normal; */
+  /* snap align start */
+  /* scroll-snap-align: center; */
+  position: relative;
+}
+
+.single-item.left {
+  justify-content: flex-start;
+}
+
+
+/* p คือแสดงเส้นขอบเนื้อหา เปลี่ยนเป็นอย่างอื่นได้แล้วแต่ **จะย่อขยายสัดส่วนจะไม่เปลี่ยนจะเท่าเดิม */
+
+.single-item section {
+  width: 80vw;
+  /* ความสูงต้องใช้ vw เท่านั้น */
+  height: 50vw;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  /*border-width: 2px;
+    border-style: solid;*/
+}
+
+.horizontal-scroll-wrapper {
+  position: relative;
+}
+
+.horizontal-scroll {
+  display: flex;
+}
+
+.horizontal-scroll .single-item {
+  flex: 0 0 100vw;
+}
+
+
+/* p คือแสดงเส้นขอบเนื้อหา เปลี่ยนเป็นอย่างอื่นได้แล้วแต่ **จะย่อขยายสัดส่วนจะไม่เปลี่ยนจะเท่าเดิม */
+
+.horizontal-scroll .single-item section {
+  width: 100vw;
+  /* แก้ความสูงเอา แต่อย่าแก้หน่วย vw */
+  height: 60vw;
+  max-width: 100vw;
+  max-height: 60vw;
+}
+
+.container {
+  padding: 64px;
+  scroll-snap-align: center;
+}
+
+.img-header {
+  padding-top: 2.5em;
+}
+
+.img-grid-4 img {
+  width: 25%;
+  height: auto;
+}
+
+
+/* Page Question*/
+
+.question h1 {
+  font-size: 90px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* sec_01 */
+
+#header-1 {
+  top: -10vh;
+  position: absolute;
+  margin-top: 3vw;
+}
+
+.text-header-1 * {
+  z-index: 1;
+  font-family: 'Mondwest';
+  font-size: 190px;
+  line-height: 160px;
+}
+
+.text-header-1 span {
+  display: block;
+}
+
+
+/* sec_02 */
+
+#header-2 h1 {
+  font-weight: bold;
+  font-size: 32px;
+}
+
+.img-sec02 {
+  bottom: 0;
+  height: 500px;
+  justify-content: end;
+  display: flex;
+  align-items: flex-end;
+}
+
+.text-sec02 {
+  height: 500px;
+  display: flex;
+  align-items: center;
+}
+
+
+/* sec_04 */
+
+.sec_04 h1 {
+  font-size: 5.5em;
+}
+
+.sec_04 p {
+  color: #000000;
+}
+
+.box_sec04 {
+  background-color: #F1D9C4;
+  max-width: 882px;
+  max-height: 2391.42px;
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* sec_05 */
+
+.sec_05 {
+  padding-top: 243px;
+}
+
+.sec_05 .row {
+  margin: 0;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  margin-right: -50%;
+  transform: translate(-50%, -50%);
+}
+
+
+/* sec_07 */
+
+.sec_07 h1 {
+  font-size: 190px;
+}
+
+.sec_07 span {
+  padding-top: 114px;
+  position: absolute;
+}
+
+
+/* sec_13 */
+
+.sec_13 h1 {
+  font-size: 190px;
+}
+
+
+/*sec_22*/
+
+.img-dltv {
+  display: flex;
+  justify-content: center;
+}
+
+.img-dltv img {
+  width: 100%;
+  height: auto;
+}
+
+
+/* Text Box */
+
+.box {
+  width: 495px;
+  height: 671px;
+  background-color: #F1D9C4;
+}
+
+
+/*background image*/
+
+#sec_03 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/img/03_question-bg.png");
+}
+
+#sec_15 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/img/15-18 technology/1_technology.png");
+}
+
+#sec_18 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/img/19-21 family/2_family.png");
+}
+
+#sec_21 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/img/22-25 course/3_course.png");
+}
+
+.img-icon-course {
+  padding-top: 2.5em;
+  padding-bottom: 2.5em;
+  display: flex;
+  justify-content: center;
+}
+
+.img-icon-course img {
+  width: 300px;
+}
+
+#sec_25 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/img/26-29 time/4_time.png");
+}
+
+#sec_27 {
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: cover;
+  background-image: url("/img/new normal but not normalize.png");
+}
+
+
+/* Setting Nav */
+
+.navbar {
+  width: 100vh;
+  height: 80px;
+  position: fixed;
+  -webkit-transform-origin: left top;
+  transform-origin: left top;
+  -webkit-transform: rotate(-90deg) translateX(-100%);
+  transform: rotate(-90deg) translateX(-100%);
+  flex-direction: row-reverse;
+  z-index: 1000;
+}
+
+.nav-link {
+  color: #FFFFFF;
+  font-size: 22px;
+  width: 100px;
+}
+
+.nav-link:hover {
+  transform: translate(10%, 0);
+  transition: all .3s ease-in-out;
+}
+
+.navbar-nav {
+  margin-left: 30px;
+}
+
+a .text-new {
+  display: none;
+}
+
+a:hover .text-defult {
+  display: none;
+}
+
+a:hover .text-new {
+  display: inline;
+  color: #4BB083;
+}
+
+
+/* Change navbar styling on small viewports */
+
+@media (max-width: 600px) {
+  .navbar {
+    background: transparent;
+    -webkit-transform: none;
+    transform: none;
+  }
+
+  /* setting icon navbar toggler to right */
+  .navbar-light {
+    left: 75vw;
+  }
+
+  /* setting hidden &#8594; Home */
+  a .text-new {
+    display: none;
+  }
+
+  a:hover .text-defult {
+    display: inline;
+    color: #4BB083;
+  }
+
+  a:hover .text-new {
+    display: none;
+  }
+
+  .navbar-brand {
+    background-color: khaki;
+  }
+
+  .navbar-nav {
+    margin-left: 0px;
+  }
+
+  .viewport {
+    margin: 0 !important;
+  }
+
+  div#box1,
+  div#box2,
+  div#box3,
+  div#box4,
+  div#box5 {
+    transform: none !important;
+    -ms-transform: none !important;
+    margin: 10px;
+  }
+}
+
+
+/* On screens that are 600px or less, set the background color to olive */
+
+@media screen and (max-width: 800px) {
+  .single-item section {
+    height: 50vw;
+    font-size: 10;
+  }
+
+  .single-item section img {
+    height: 30vw;
+    width: 25vw;
+  }
+
+  .horizontal-scroll .single-item section {
+    height: 50vw;
+    max-height: 50vw;
+  }
+}
+
+
+/* sticker */
+
+.sticker-green {
+  background-color: #4BB093;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+}
+
+.sticker-orange {
+  background-color: #F56A48;
+  border-radius: 50%;
+  width: 46px;
+  height: 46px;
+}
+
+
+/* calender */
+
+.text-month::before {
+  content: "FEB";
+  animation: animate infinite 16s;
+  transition: width 3s ease 1s;
+}
+
+@keyframes animate {
+  0% {
+    content: "FEB";
+  }
+
+  0% {
+    content: "FEB";
+  }
+
+  100% {
+    content: "SEP";
+  }
+}
+
+
+/* font-size */
+
+.font-18 {
+  font-size: 1.125rem;
+}
+
+.font-21 {
+  font-size: 1.3125rem;
+}
+
+.font-24 {
+  font-size: 1.5rem;
+}
+
+.font-32 {
+  font-size: 2rem;
+}
+
+.font-56 {
+  font-size: 3.5rem;
+}
+
+.font-90 {
+  font-size: 5.625rem;
+}
+
+.font-190 {
+  font-size: 11.875rem;
+}
+
+div#box1 {
+  transform-origin: center;
+  -ms-transform: rotate(-20deg);
+  /* IE 9 */
+  transform: rotate(-20deg);
+  /* Standard syntax */
+}
+
+div#box2 {
+  transform-origin: center;
+  -ms-transform-origin: 100% 700%;
+  /* IE 9 */
+  transform-origin: 100% 700%;
+  -ms-transform: rotate(5deg);
+  /* IE 9 */
+  transform: rotate(5deg);
+  /* Standard syntax */
+}
+
+div#box3 {
+  transform-origin: center;
+  -ms-transform-origin: 350% 2200%;
+  /* IE 9 */
+  transform-origin: 350% 2200%;
+  -ms-transform: rotate(10deg);
+  /* IE 9 */
+  transform: rotate(10deg);
+  /* Standard syntax */
+}
+
+div#box4 {
+  transform-origin: center;
+  transform: translate(50%);
+  -ms-transform: translate(50%);
+}
+
+div#box5 {
+  transform-origin: center;
+  -ms-transform: rotate(-21deg);
+  /* IE 9 */
+  transform: rotate(-21deg);
+  /* Standard syntax */
+  -ms-transform-origin: 80% 550%;
+  /* IE 9 */
+  transform-origin: 80% 550%;
+}
+
+.frame {
+  margin: auto;
+}
+
+.textbox {
+  padding-top: 1.1vw;
+  width: max-content;
+  height: 6.5vw;
+  padding-left: 0.95vw;
+  font-size: 1.5vw;
+  justify-content: center;
+  text-align: center;
+}
+
+.textbox div {
+  margin-top: 1.25vw;
+  /* float: left; */
+  margin-right: 0.85vw;
+}
+
+
+/* Color BG */
+
+.bg-darkbule {
+  background-color: #242f57;
+}
+
+.bg-orage {
+  background-color: #F56643;
+}
+
+.bg-cream {
+  background-color: #F1D9C4;
+}
+
+.bg-mint {
+  background-color: #4BB083;
+}
+
+.bg-purple {
+  background-color: #6459B6;
+}
+
+.bg-darkbule {
+  background-color: #242f57;
+}
+
+.bg-orage {
+  background-color: #F56643;
+}
+
+.bg-cream {
+  background-color: #F1D9C4;
+}
+
+.bg-mint {
+  background-color: #4BB083;
+}
+
+
+/* Color Text */
+
+.text-darkbule {
+  color: #242f57;
+}
+
+.text-orage {
+  color: #F56643;
+}
+
+.text-mint {
+  color: #4BB083;
+}
+
+.text-cream {
+  color: #F1D9C4;
+}
+
+.text-purple {
+  color: #6459B6;
+}
+
+.ee-text {
+  color: #000000;
+}
+
+.text-weigth {
+  font-weight: bold;
+}
+
+.text-white {
+  color: #FFFFFF;
+}
+
+.b-darkbule {
+  background: linear-gradient(to top, #242f57, transparent);
+}
+
+.b-mint {
+  background: linear-gradient(to top, #4BB083, transparent);
+}
+
+.b-purple {
+  background: linear-gradient(to top, #6459B6, transparent);
+}
+
+.text-head {
+  z-index: 1;
+  font-family: 'Mondwest';
+  font-size: 68px;
+  text-align: center;
+  padding-top: 2vw;
+  display: block;
+}
+
+
+/* section 5 */
+
+.sideContent {
+  height: 75vw;
+}
+
+.side1,
+.side2 {
+  position: relative;
+  width: 50vw;
+  height: 50vw;
+}
+
+.sideLeft {
+  position: fixed;
+  padding-top: 0vw;
+  padding-left: 10vw;
+  float: left;
+}
+
+.sideLeft img {
+  width: 30vw;
+}
+
+.sideRight {
+  position: fixed;
+  padding-top: 10vw;
+  padding-left: 10vw;
+  float: left;
+}
+
+#s2 {
+  display: none;
+}
+
+#s3 {
+  display: none;
+}
+
+.subSide {
+  width: 50vw;
+  height: 75vw;
+  position: fixed;
+}

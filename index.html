@@ -2,1404 +2,1055 @@
 <html lang="en">
 
 <head>
-    <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>In Equality Pandemic</title>
-    <link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
-    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
-    <script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
-    <script src="https://code.jquery.com/jquery-3.4.1.js"></script>
-    <script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
-    <script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
+	<meta charset="UTF-8">
+	<meta name="viewport" content="width=device-width, initial-scale=1.0">
+	<title>In Equality Pandemic</title>
+	<link rel="stylesheet" href="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/css/bootstrap.min.css">
+	<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.5.1/jquery.min.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.16.0/umd/popper.min.js"></script>
+	<script src="https://maxcdn.bootstrapcdn.com/bootstrap/4.5.2/js/bootstrap.min.js"></script>
+	<script src="https://code.jquery.com/jquery-3.4.1.js"></script>
+	<script src="https://cdn.jsdelivr.net/npm/jquery-bez@1.0.11/src/jquery.bez.js"></script>
+	<script src="https://cdnjs.cloudflare.com/ajax/libs/gsap/2.1.2/TweenMax.min.js"></script>
 
-    <link rel="stylesheet" href="./css/style.css">
-    <link rel="stylesheet" href="./css/loadingStyle.css">
+	<script src="//ajax.googleapis.com/ajax/libs/jquery/1.11.1/jquery.min.js"></script>
 
-
+	<link rel="stylesheet" href="./css/style.fonts.css">
+	<link rel="stylesheet" href="./css/style.constants.css">
+	<link rel="stylesheet" href="./css/style.main.css">
+	<link rel="stylesheet" href="./css/loadingStyle.css">
 </head>
 
 <body>
-    <!-- loading page-->
-    <div class="loadingPage">
-        <div class="loadtitle">
-            <div id="student"><img src="./img/00 loading page/loading4.png"></div>
-            <div id="shair"><img src="./img/00 loading page/loading3.png"></div>
-        </div>
-        <div class="loadbar">
-            <span id="statue1" class="circle"></span>
-            <div id="fill"></div>
-            <span id="statue2" class="circle"></span>
-        </div>
-        <div class="loadtitle">
-            <div class="wavy">
-                <span style="--i:1;">N</span>
-                <span style="--i:2;">o</span>
-                <span style="--i:3;">w</span>
-                <span style="--i:4;">&nbsp;</span>
-                <span style="--i:5;">L</span>
-                <span style="--i:6;">o</span>
-                <span style="--i:7;">a</span>
-                <span style="--i:8;">d</span>
-                <span style="--i:9;">i</span>
-                <span style="--i:10;">n</span>
-                <span style="--i:11;">g</span>
-            </div>
-        </div>
-
-    </div>
-    <!-- End loading -->
-    <div class="main">
-        <!-- Navbar -->
-        <nav class="navbar fixed-top navbar-expand-sm bg-purple navbar-light">
-            <!-- Logo Just an image -->
-            <a class="navbar-brand m-0" href="#">
-                <img src="./img/icon/svg/00_icon_menubar.svg" alt="Logo" width="55px" style="transform:rotate(90deg)">
-            </a>
-            <!-- Navbar-Toggler -->
-            <button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse"
-                data-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
-                <span class="navbar-toggler-icon"></span>
-            </button>
-            <div class="collapse navbar-collapse" id="navbarNav">
-                <ul class="navbar-nav">
-                    <li class="nav-item active">
-                        <a class="nav-link" href="index.html">
-                            <span class="sr-only">(current)</span>
-                            <span class="text-defult" style="color: #FFFFFF;font-family: 'Mondwest';">Home</span>
-                            <span class="text-new" style="font-family: 'Mondwest';">&#8594; Home</span>
-                        </a>
-                    </li>
-                    <li class="nav-item ">
-                        <a class="nav-link" href="SDGs.html">
-                            <span class="text-defult" style="color: #FFFFFF;font-family: 'Mondwest';">SDGs</span>
-                            <span class="text-new" style="font-family: 'Mondwest';">&#8594; SDGs</span>
-                        </a>
-                    </li>
-                </ul>
-            </div>
-        </nav>
-        <!-- End Navbar -->
-
-
-        <!-- <the-wrapper>
-        <the-content>
-            <div>section 1</div>
-        </the-content>
-    </the-wrapper> -->
-
-        <div class="change_color_page">
-            <div class="viewport" style="margin-left: 80px;">
-                <div class="scroll-container">
-                    <div class="content">
-                        <div id="" class="single-item active" data-color="darkbule">
-                            <!-- Start Content -->
-                            <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                            <div class="container">
-                                <div class="row">
-                                    <div class="col-10">
-                                        <div class="text-header-1" id="header-1">
-                                            <h1>
-                                                <span class="text-orage">inEquality<br>Pandemic</span>
-                                            </h1>
-
-                                        </div>
-                                    </div>
-                                    <div class="col-2">
-                                        <div class="sticker-green" style="right: 135px;
-                                        position: fixed;
-                                        top: 20px;"></div>
-                                    </div>
-                                </div>
-
-                                <div class="img-header" ">
-                                    <div class=" d-flex justify-content img-grid-4 ">
-                                    <img src=" ./img/GIF/01 above the flow _GIF/avt14.gif ">
-                                    <img src=" ./img/GIF/01 above the flow _GIF/avt2.gif ">
-                                    <img src=" ./img/01 above the flow/a4.png ">
-                                    <img src=" ./img/GIF/01 above the flow _GIF/avt5.gif ">
-                                </div>
-                                <div class=" d-flex justify-content img-grid-4 ">
-                                    <img src=" ./img/GIF/01 above the flow _GIF/avt1.gif ">
-                                    <img src=" ./img/01 above the flow/a6.png ">
-                                    <img src=" ./img/01 above the flow/a8.png ">
-                                    <img src=" ./img/01 above the flow/a11.png ">
-                                </div>
-
-                                <div class=" d-flex justify-content img-grid-4 ">
-                                    <img src=" ./img/01 above the flow/a3.png ">
-                                    <img src=" ./img/GIF/01 above the flow _GIF/avt13.gif ">
-                                    <img src=" ./img/GIF/01 above the flow _GIF/avt7.gif ">
-                                    <img src=" ./img/01 above the flow/a12.png ">
-                                </div>
-                                <div class=" d-flex justify-content img-grid-4 ">
-                                    <img src=" ./img/01 above the flow/a9.png ">
-                                    <img src=" ./img/GIF/01 above the flow _GIF/avt15.gif ">
-                                    <img src=" ./img/01 above the flow/a10.png ">
-                                    <img src=" ./img/GIF/01 above the flow _GIF/avt_noise.gif ">
-                                </div>
-                            </div>
-                        </div>
-                    </div>
-
-                    <div class=" single-item " data-color=" darkbule " id=" sec02 ">
-                        <!-- Start Content Section 2 -->
-                        <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                        <section data-depth=" -7 " data-direction=" y ">
-                            <div class=" row " style=" position: absolute; ">
-                                <div class=" col pl-5 ">
-                                    <div class=" sticker-orange "></div>
-                                </div>
-                                <div class=" col ">
-                                    <div id=" header-2 ">
-                                        <h1>
-                                            <span class=" text-mint ">การศึกษาและความ<br>เหลื่อมล้ำในช่วง<br>
-                                                New normal<br>___</span>
-                                        </h1>
-                                    </div>
-                                </div>
-                                <div class=" w-100 "></div>
-                                <div class=" col text-sec02 ">
-                                    <p style=" color: white;max-width: 356px;font-size: 18px; "> ในยุค COVID-19
-                                        ไม่ว่าจะหันไปทางไหน
-                                        ก็มักจะได้ยินคำว่า
-                                        <span class=" text-mint ">New
-                                            Normal</span> หรือ
-                                        <span class=" text-mint ">'ความปกติรูปแบบใหม่'</span> กันบ่อยขึ้น
-                                        สถานการณ์การแพร่ระบาดของเชื้อ COVID-19
-                                        ได้เปลี่ยนแปลงวิถีชีวิตหลายอย่างในปัจจุบัน ทั้งด้านไลฟ์สไตล์ ธุรกิจ
-                                        สาธารณสุข
-                                        การท่องเที่ยว <span class=" text-mint ">รวมไปถึงด้านการศึกษา</span><br>
-                                        <br> หลายโรงเรียนต้องปิดชั่วคราว เพื่อป้องกันการแพร่ระบาดของเชื้อ
-                                        ทำให้เด็กในยุคนี้ต้องปรับเปลี่ยนวิธีการเรียนมาสู่ 'การเรียนออนไลน์'
-                                        ไม่ว่าจะผ่านแอพพลิเคชันต่างๆ เว็บไซต์ Youtube หรือทางช่องทีวีดาวเทียม DLTV
-                                        ก็ตาม
-                                        แล้ว
-                                        <span class=" text-mint ">การเรียนออนไลน์นั้นดีจริงหรือ?
-                                            หรือมันช่วยแพร่กระจายความเหลื่อมล้ำกันแน่?
-                                        </span>
-                                    </p>
-                                </div>
-                                <div class=" col img-sec02 "><img src=" /img/GIF/student.gif " width=" 303 " height="
-                                    392 ">
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-
-                    <div class=" single-item " data-color=" mint " id=" sec_03 ">
-                        <!-- Start Content Section 3 -->
-                        <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                        <section class=" item_to_move ">
-                            <div class=" frame ">
-                                <div class=" sticker-orange "
-                                    style=" position: relative;transform: translate(-8vw, 32vw); z-index: 2; "></div>
-                                <div id=" box1 " class=" row fade textbox bg-darkbule text-white "
-                                    style=" transform-origin: 0% 450%; -ms-transform-origin: 0% 750%; ">
-                                    <div class=" col ">ทำไมคนรวยยิ่งรวย คนจนยิ่งจน</div>
-                                    <img src=" ./img/icon/iconQ.png " class=" iconBox ">
-                                </div>
-                                <div id=" box2 " class=" row fade textbox bg-cream ">
-                                    <div class=" col ">ยิ่งเรียนยิ่งรวย</div>
-                                    <img src=" ./img/icon/iconQ.png " class=" iconBox ">
-                                </div>
-                                <div id=" box3 " class=" row fade textbox bg-cream ">
-                                    <div class=" col ">บ้านไกลก็เรียนได้</div>
-                                    <img src=" ./img/icon/iconQ.png " class=" iconBox ">
-                                </div>
-                                <div id=" box4 " class=" row fade textbox bg-darkbule text-white ">
-                                    <div class=" col ">ทุกคนเข้าถึงการศึกษาได้เพียงปลายนิ้ว</div>
-                                    <img src=" ./img/icon/iconQ.png " class=" iconBox ">
-                                </div>
-                                <div id=" box5 " class=" row fade textbox bg-cream ">
-                                    <div class=" col ">เหลื่อมล้ำออนไลน์</div>
-                                    <img src=" ./img/icon/iconQ.png " class=" iconBox ">
-                                </div>
-                            </div>
-                        </section>
-                        <!-- ลองตั้งค่าดู ทำแบบใส่classละไม่ได้ ใช้เป็น img -->
-                        <!-- <div id=" 3 " class=" item_to_move "> <img src=" img/03_question-bg.png " alt=" "></div> -->
-                    </div>
-                    <div class=" single-item " data-color=" darkbule " id=" sec04 ">
-                        <!-- Start Content Section 4 -->
-                        <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-
-                        <section data-depth=" -3 " data-direction=" y ">
-                            <div class=" box_sec04 p-5 ">
-                                <div class=" row ">
-                                    <div class=" col px-5 ">
-                                        <h1 class=" text-orage text-header-2 " style=" text-align: left; ">New Normal
-                                            <br> New Era !
-                                        </h1>
-                                    </div>
-                                    <div class=" col " style=" max-width: 150px; ">
-                                        <img src=" ./img/icon/04_icon-computer.png "
-                                            style=" width: 70px; height: 70px;position: absolute; ">
-                                    </div>
-                                    <div class=" w-100 "></div>
-                                    <div class=" col-8 pl-5 font-18 ">
-                                        <p style=" font-style: italic; max-width: 300px; ">“ สถานศึกษาปิดชั่วคราว
-                                            และปรับเปลี่ยนมาเรียนแบบ
-                                            online แทน
-                                            ทำให้ผู้คนได้เรียนรู้ว่าการเรียนแบบ offline
-                                            ไม่ใช่รูปแบบการเรียนที่ดีที่สุดอีกต่อไป
-                                            สิ่งนี้จะเป็น New Normal และเป็นทางรอดของระบบการศึกษาไทย
-                                            ที่จะช่วยลดความเหลื่อมล้ำในการเรียนรู้
-                                            เนื่องจากผู้คนสามารถเข้าถึงแหล่งข้อมูลความรู้ได้ง่ายขึ้นจากที่บ้าน
-                                            และยังช่วยลดการเสี่ยงติดเชื้อ เพิ่มระยะห่างทางสังคมได้ด้วย ”
-                                        </p>
-                                    </div>
-                                    <div class=" col-2 ">
-                                    </div>
-                                </div>
-                                <div class=" row px-5 ">
-                                    <div class=" col-8 "></div>
-                                    <div class=" col-4 " style=" border-bottom: 52px solid #232F57; border-left: 70px
-                                    solid transparent;display: flex;align-items: center; color: white;font-size: 14px; ">
-                                        <div style=" position: absolute; top: 15px; ">
-                                            <span style=" font-size:18px;font-family: 'Mondwest' ; ">SMS</span>&nbsp;(3
-                                            บาทต่อครั้ง)
-                                        </div>
-                                    </div>
-                                </div>
-                                <div class=" row px-5 ">
-                                    <div class=" col-2 " style=" width: 110px; height: 52px; background-color:
-                                    #F56A48;display: flex; justify-content: center; align-items: center; ">
-                                        <span
-                                            style=" font-size:18px;font-family: 'Mondwest' ;color: white; ">inEquality</span>
-                                    </div>
-                                    <div class=" col-10 " style=" width: 500px; height: 52px; background-color:
-                                    #ffffff;display: flex; align-items: center; ">
-                                        <span style=" font-size:18px; ">รัฐบาลแจงให้เรียนแบบ online แทน </span>
-                                    </div>
-                                </div>
-                            </div>
-                        </section>
-                    </div>
-
-                    <div class=" single-item " data-color=" cream ">
-                        <!-- Start Content Section 5 -->
-                        <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                        <div class=" row sideContent" data-depth="-3" data-direction="y">
-                                    <div style="display: flex;
-                                justify-content: center;
-                                align-items: center;">
-                                        <div class="col">
-                                            <div class="side1">
-                                                <div class="sideLeft">
-                                                    <div id="s1" class="subSide">
-                                                        <center>
-                                                            <img <img
-                                                                src="/img/GIF/05 should this be normal_ _GIF/abnormal-1.gif "
-                                                                width="100% ">
-                                                        </center>
-                                                        <p class="text-darkbule text-center ">
-                                                            ครูรุ่นเก่าที่งงกับการใช้อุปกรณ์
-                                                        </p>
-                                                    </div>
-                                                    <div id="s2 " class="subSide ">
-                                                        <div id="s1 " class="subSide bg-cream ">
-                                                            <center><img
-                                                                    src="/img/GIF/05 should this be normal_ _GIF/abnormal-2.gif "
-                                                                    width="100% "></center>
-                                                            <p class="text-darkbule text-center ">
-                                                                เด็กเล็กระดับอนุบาลที่ต้องเรียนด้วยตัวเอง
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                    <div id="s3 " class="subSide ">
-                                                        <div id="s1 " class="subSide bg-cream ">
-                                                            <center><img
-                                                                    src="/img/GIF/05 should this be normal_ _GIF/abnormal-3.gif "
-                                                                    width="100% "></center>
-                                                            <p class="text-darkbule text-center ">
-                                                                เด็กบนดอยที่ต้องเรียนผ่าน
-                                                                โทรศัพท์มือถือ
-                                                            </p>
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </div>
-
-                                    <div class="side2 ">
-                                        <div class="sideRight ">
-                                            <div>
-
-                                                <h1 class="text-orage text-header-2 " style="text-align: left; ">
-                                                    Should<br>this be<br>Normal?
-                                                </h1>
-                                                <p class="text-darkbule text-weigth ">สถานการณ์เหล่านี้
-                                                    ควรเป็นปกติจริงหรือ?
-                                                </p>
-
-                                            </div>
-
-                                        </div>
-                                    </div>
-                                </div>
-                            </div>
-
-                            <div class="single-item " data-color="darkbule ">
-                                <!-- Start Content Section 6 -->
-                                <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                <section data-depth="-3 " data-direction="y ">
-                                    <h1 class="text-orage text-header-2 ">NEW Normal<br>OLD Problem</h1>
-                                </section>
-                            </div>
-                            <!-- Section 7 horizontal-scroll-wrapper -->
-                            <div class="horizontal-scroll-wrapper " data-color="cream ">
-                                <div class="horizontal-scroll ">
-                                    <div class="single-item ">
-                                        <!-- Start Content Section 8 -->
-                                        <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                        <section><span data-depth-hor="-3 " data-direction="left ">
-                                                <div class="row ">
-                                                    <div class="col ">
-                                                        <div class="sticker-orange "
-                                                            style="position: fixed;left: 700px;bottom: 500px; "></div>
-                                                        <h1 class="text-darkbule text-header-3 "
-                                                            style="line-height: 160px; ">
-                                                            A Brief<br>History
-                                                            of<br>Education</h1>
-                                                        <div class="sticker-green "
-                                                            style="position: relative;left: 250px;bottom: 50px; "></div>
-                                                        <span
-                                                            class="text-darkbule text-weigth font-18 ">ประวัติศาสตร์วงการการศึกษาไทยและความเหลื่อมล้ำ</span>
-                                                    </div>
-
-                                                    <div><a href="#8 "
-                                                            style="position: fixed; transform: translate(-10vw,46vw); font-size: 90px;color: white;font-family: 'Mondwest'; ">&#8594;</a>
-                                                    </div>
-                                                </div>
-
-                                            </span>
-                                        </section>
-                                    </div>
-                                    <div class="single-item ">
-                                        <!-- Start Content Section 9 -->
-                                        <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                        <div class="container-fluid bg-darkbule h-100 " data-depth-hor="-3 "
-                                            data-direction="left ">
-                                            <div class="row h-50 " style="display:flex; ">
-                                                <div class="col-3 bg-cream " style="display:block; ">
-                                                    <div class="card mt-0 bg-orage "
-                                                        style="align-self: flex-end;height: 40%; width: 90%; top: 50%; margin-left:23%; border-radius:0% ">
-                                                        <a class="text-head text-cream ">1800</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-8 mt-0 bg-cream " style="display:block; ">
-                                                    <img style="position:relative; height:100%; width:100% "
-                                                        src="./img/09-13 a brief history of education/01.png " alt=" ">
-                                                </div>
-                                                <div class="col-1 bg-cream ">
-
-                                                </div>
-                                            </div>
-
-
-                                            <div class="row h-50 ">
-                                                <div class="col-3 bg-darkbule h-100 ">
-                                                    <b class="text-orage "
-                                                        style="position: relative; font-size: 3vw; padding-left:100px; ">ยุคโบราณ</b>
-                                                </div>
-                                                <div class="col-5 bg-darkbule h-100 "
-                                                    style="font-size:17px; padding-top: 4%; color:white; ">
-                                                    โดยส่วนมากมักจะจัดการศึกษาในวัด มีการบวชเรียน
-                                                    เนื้อหาในการ<br>เรียนการสอนประกอบด้วย วิชาความรู้สามัญ อ่าน เขียน
-                                                    เรียนเลข<br> สำหรับการประกอบสัมมาอาชีพ วิชาจริยศึกษา ศิลปะ
-                                                    ป้องกันตัว และ<br>วิชาการทหาร
-                                                    ส่วนผู้หญิงจะศึกษาวิชาการบ้านการเรือนที่บ้าน
-                                                    เพื่อ<br>เตรียมตัวเป็นแม่ศรีเรือนที่ดี
-                                                    ไม่ได้ศึกษาวิชาความรู้สามัญอย่างเช่น<br>เพศชาย<br>
-                                                    <br>ถัดมาในสมัยรัตนโกสินทร์ตอนต้น
-                                                    เนื่องจากยุโรปมีการปฏิวัติอุตสาหกรรม<br>
-                                                    และมีการเข้ามาของชนชาติตะวันตกในประเทศมากขึ้น
-                                                    จึงได้ส่งเสริม<br>การศึกษาด้านคณิตศาสตร์ วิทยาศาสตร์ และภาษาอังกฤษ
-                                                    มากขึ้น มี<br>การก่อตั้งโรงเรียน-โรงทานหลวงขึ้นในพระบรมมหาราชวัง
-                                                    สำหรับ<br>เป็นที่ให้การศึกษาแก่เหล่าบุตรหลานขุนนาง ข้าราชการ
-                                                    เจ้าขุนมูลนาย
-                                                </div>
-                                                <div class="col-4 bg-darkbule ">
-                                                    <div class="card mt-0 bg-mint "
-                                                        style="position: relative; height: 90%; width: 66%; top: 12%; margin-left: 6.5%; border-radius:0%; font-size:2vw; padding-top:13%; padding-left:8%; ">
-                                                        <div style="position:relative; margin:0%; ">
-                                                            <b>ปัญหาความเหลื่อมล้ำ</b><br><br><b>ด้านชนชั้น</b><br>วิชาภาษาอังกฤษถูกสอน<br>แค่ในราชสำนัก
-                                                            <br><b>ด้านเพศ</b><br>การศึกษาของสตรีไม่ได้รับ<br>การสนับสนุน
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </div>
-                                    <section class="single-item ">
-                                        <!-- Start Content Section 9 -->
-                                        <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                        <div class="container-fluid bg-darkbule h-100 " data-depth-hor="-3 "
-                                            data-direction="left ">
-                                            <div class="row h-50 ">
-                                                <div class="col-3 bg-darkbule h-100 ">
-
-                                                </div>
-                                                <div class="col-5 bg-darkbule h-100 "
-                                                    style="font-size:17px; padding-top: 7.5%; color:white; ">
-                                                    <div class="text-orage "
-                                                        style="position: relative; font-size: 3vw; font-weight:bold; ">
-                                                        ยุคปฏิรูปการศึกษา</div><br>
-                                                    ในสมัยของรัชกาลที่ 5
-                                                    ได้มีการเลิกทาสและปรับปรุงประเทศให้<br>ทัดเทียมกับนานา
-                                                    ประเทศ จึงมีการจัดระบบการศึกษาอย่างมี<br>ระเบียบแบบแผน
-                                                    มีโรงเรียนเกิดขึ้นในวัง
-                                                    และในวัด
-                                                    รวมถึงมีการตั้ง<br>โรงเรียนสำหรับสตรีขึ้นในพระบรมมหาราชวังด้วย
-                                                    เกิดพระราช<br>
-                                                    บัญญัติประถมศึกษาบังคับให้เด็กอายุ 7-8 อยู่เรียนฟรีจนครบอายุ<br> 14
-                                                    ปี
-                                                    และมีการก่อตั้งมหาวิทยาลัยแห่งแรกขึ้น
-                                                </div>
-                                                <div class="col-4 bg-darkbule ">
-                                                    <div class="card mt-0 bg-mint "
-                                                        style="position: relative; height: 85%; width: 66%; top: 0%; margin-left: 6.5%; border-radius:0%; font-size:18px; padding-top:26%; padding-left:8%; ">
-                                                        <div style="position:relative; margin:0%; ">
-                                                            <b>ปัญหาความเหลื่อมล้ำ</b><br><br><b>ด้านชนชั้น</b><br>แม้การศึกษาของสตรีกับ<br>เพศชายจะเริ่มเท่าเทียมขึ้น<br>แต่การศึกษายังคงกระจุก<br>อยู่ในเมือง
-                                                            ไม่กระจายไป<br>ตามชนบท
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                            <div class="row h-50 " style="display:flex; ">
-                                                <div class="col-3 bg-cream " style="display:block; ">
-                                                    <div class="card mt-0 bg-orage "
-                                                        style="height: 28%; width: 90%; top: 0%; margin-left:22%; border-radius:0% ">
-                                                        <a class="text-head text-cream ">2412</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-8 mt-0 bg-cream " style="display:block; ">
-                                                    <img style="position:relative; height:100%; width:100% "
-                                                        src="./img/09-13 a brief history of education/02.png " alt=" ">
-                                                </div>
-                                                <div class="col-1 bg-cream "></div>
-                                            </div>
-                                        </div>
-                                    </section>
-                                    <section class="single-item ">
-                                        <!-- Start Content Section 10 -->
-                                        <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                        <div class="container-fluid bg-darkbule h-100 " data-depth-hor="-3 "
-                                            data-direction="left ">
-                                            <div class="row h-50 " style="display:flex; ">
-                                                <div class="col-3 bg-cream " style="display:block; ">
-                                                    <div class="card mt-0 bg-orage "
-                                                        style="height: 42%; width: 90%; top: 55%; margin-left:23%; border-radius:0% ">
-                                                        <a class="text-head text-cream ">2475</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-8 mt-0 bg-cream " style="display:block; ">
-                                                    <img style="position:relative; height:100%; width:100% "
-                                                        src="./img/09-13 a brief history of education/03.png " alt=" ">
-                                                </div>
-                                                <div class="col-1 bg-cream ">
-
-                                                </div>
-                                            </div>
-                                            <div class="row h-50 ">
-                                                <div class="col-3 bg-darkbule h-100 ">
-
-                                                </div>
-                                                <div class="col-5 bg-darkbule h-100 "
-                                                    style="font-size:17px; padding-top: 8%; color:white; ">
-                                                    <div class="text-orage "
-                                                        style="position: relative; font-size: 3vw; font-weight:bold; ">
-                                                        ยุคเปลี่ยนแปลงการปกครอง</div><br>
-                                                    คณะราษฎร์รวมกลุ่มกันเปลี่ยนแปลงการปกครองมาสู่ระบอบ<br>ประชาธิปไตย
-                                                    โดยวาง
-                                                    เป้าหมายหนึ่งไว้ว่า ‘จะต้องให้การศึกษาแก่<br>ราษฎรอย่างเต็มที่’
-                                                    เพื่อให้เข้าใจระบอบการปกครองแบบใหม่นี้ การ<br>
-                                                    ศึกษาจึงได้ขยายตัวขึ้นทุกระดับ มีโครงการฝึกหัดครูชนบท
-                                                    และการ<br>ก่อตั้งมหาวิทยาลัยในส่วนกลางและส่วนภูมิภาคมากขึ้น เช่น<br>
-                                                    มหาวิทยาลัยเชียงใหม่ที่ภาคเหนือ มหาวิทยาลัยสงขลานครินทร์ในภาคใต้
-                                                </div>
-                                                <div class="col-4 bg-darkbule ">
-                                                    <div class="card mt-0 bg-mint "
-                                                        style="position: relative; height: 90%; width: 66%; top: 12%; margin-left: 6.5%; border-radius:0%; font-size:18px; padding-top:13%; padding-left:8%; ">
-                                                        <div style="position:relative; margin:0%; ">
-                                                            <b>ปัญหาความเหลื่อมล้ำ</b><br><br><b>ด้านคุณภาพ</b><br>
-                                                            คุณภาพการศึกษาในต่าง<br>จังหวัด
-                                                            ไม่เท่ากับคุณภาพ<br>การศึกษาในเมือง
-                                                        </div>
-                                                    </div>
-                                                </div>
-                                            </div>
-                                        </div>
-                                    </section>
-
-                                    <section class="single-item ">
-                                        <!-- Start Content Section 11 -->
-                                        <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                        <div class="container-fluid bg-darkbule h-100 " data-depth-hor="-3 "
-                                            data-direction="left ">
-                                            <div class="row h-50 ">
-                                                <div class="col-3 bg-darkbule h-100 ">
-
-                                                </div>
-                                                <div class="col-5 bg-darkbule h-100 "
-                                                    style="font-size:17px; padding-top: 7.5%; color:white; ">
-                                                    <div class="text-orage "
-                                                        style="position: relative; font-size: 3vw; font-weight:bold; ">
-                                                        ยุคพัฒนาการศึกษา</div><br>
-                                                    แผนพัฒนาการศึกษามีการปรับปรุงอยู่เรื่อยๆ
-                                                    เพื่อให้เหมาะสมกับ<br>กระแสโลก
-                                                    มีโรงเรียนกระจายอยู่ตามภูมิภาคต่างๆ ทำให้ประชาชน
-                                                    <br>เข้าถึงการศึกษาได้มากขึ้น สมัยนี้มีกระแสโลกยุคโลกาภิวัฒน์
-                                                    จึงเริ่ม<br>นำเอาเทคโนโลยีมาปรับใช้กับการศึกษา
-
-                                                </div>
-                                                <div class="col-4 bg-darkbule ">
-                                                    <div class="card mt-0 bg-mint "
-                                                        style="position: relative; height: 85%; width: 66%; top: 0%; margin-left: 6.5%; border-radius:0%; font-size:18px; padding-top:26%; padding-left:8%; ">
-                                                        <div style="position:relative; margin:0%; ">
-                                                            <b>ปัญหาความเหลื่อมล้ำ</b>
-                                                            <br><br>
-                                                            <b>ด้านการเข้าถึง</b><br>
-                                                            บางบ้านไม่สามารถเข้าถึง<br>เทคโนโลยีได้<br>
-                                                            <b>ด้านคุณภาพ</b><br>
-                                                            คุณภาพการศึกษาในต่าง<br>จังหวัด ไม่เท่ากับในเมือง
-
-                                                        </div>
-                                                    </div>
-
-                                                </div>
-
-                                                <div class="row h-50 " style="display:flex; ">
-                                                    <div class="col-3 bg-cream " style="display:block; ">
-                                                        <div class="card mt-0 bg-orage "
-                                                            style="height: 38%; width: 90%; top: 0%; margin-left:22%; border-radius:0% ">
-                                                            <a class="text-head text-cream ">2503</a>
-                                                        </div>
-                                                    </div>
-                                                    <div class="col-8 mt-0 bg-cream " style="display:block; ">
-                                                        <img style="position:relative; height:100%; width:100% "
-                                                            src="./img/09-13 a brief history of education/04.png "
-                                                            alt=" ">
-                                                    </div>
-                                                    <div class="col-1 bg-cream ">
-
-                                                    </div>
-                                                </div>
-                                            </div>
-                                    </section>
-
-                                    <section class="single-item ">
-                                        <!-- Start Content Section 12 -->
-                                        <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                        <div class="container-fluid bg-darkbule h-100 " data-depth-hor="-3 "
-                                            data-direction="left ">
-                                            <div class="row h-50 " style="display:flex; ">
-                                                <div class="col-3 bg-cream " style="display:block; ">
-                                                    <div class="card mt-0 bg-orage "
-                                                        style="height: 40%; width: 90%; top: 55%; margin-left:23%; border-radius:0% ">
-                                                        <a class="text-head text-cream ">2563</a>
-                                                    </div>
-                                                </div>
-                                                <div class="col-8 mt-0 bg-cream " style="display:block; ">
-                                                    <img style="position:relative; height:100%; width:100% "
-                                                        src="./img/09-13 a brief history of education/03.png " alt=" ">
-                                                </div>
-                                                <div class="col-1 bg-cream ">
-
-                                                </div>
-                                            </div>
-                                            <div class="row h-50 ">
-                                                <div class="col-3 bg-darkbule h-100 ">
-
-                                                </div>
-                                                <div class="col-5 bg-darkbule h-100 "
-                                                    style="font-size:17px; padding-top: 8%; color:white; ">
-                                                    <div class="text-orage "
-                                                        style="position: relative; font-size: 3vw; font-weight:bold; ">
-                                                        ยุค
-                                                        New Normal</div><br>
-                                                    ปัจจุบัน เกิดโรคระบาด COIVD-19 ที่แพร่กระจายไปทั่วโลก เป็นเหตุ
-                                                    <br>ให้สถานศึกษาต้องปิดเรียนชั่วคราว เพื่อป้องกันการติดต่อของโรค<br>
-                                                    และได้เปลี่ยนมาใช้วิธีการเรียนการสอนจากที่บ้านแทน(Study-from-<br>
-                                                    home) ผ่านอุปกรณ์ต่างๆ เช่น มือถือ คอมพิวเตอร์ หรือทีวี(DLTV)
-                                                    ปัญหาความเหลื่อมล้ำ
-                                                </div>
-                                                <div class="col-4 bg-darkbule ">
-                                                    <div class="card mt-0 bg-mint "
-                                                        style="position: relative; height: 87%; width: 66%; top: 13%; margin-left: 6.5%; border-radius:0%; font-size:18px; padding-top:13%; padding-left:8%; ">
-                                                        <div style="position:relative; margin:0%; ">
-                                                            <b>ด้านการเข้าถึง</b>
-                                                            <br><br>
-                                                            บางบ้านไม่สามารถเข้า<br>
-                                                            ถึงเทคโนโลยีได้<br>
-                                                            <b>ด้านคุณภาพ</b>
-                                                            คุณภาพการศึกษาในต่าง<br>จังหวัด ไม่เท่ากับในเมือง
-                                                        </div>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                    </section>
-                                </div>
-                            </div>
-
-                            <div class="single-item " data-color="mint ">
-                                <!-- Start Content Section 13 -->
-                                <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                <section data-depth="-3 " data-direction="y ">
-                                    <div class="row ">
-                                        <div class="col px-3 ">
-                                            <div class="sticker-orange " style="position: relative;left: 140px; "></div>
-                                            <h1 class="text-darkbule text-header-3 ">Equality<br>Error</h1>
-                                        </div>
-                                        <div class="row " style="font-size:18px; ">
-                                            <div class="col px-3 "><span class="text-darkbule "
-                                                    style="font-weight: bold; ">ความเท่าเทียมที่บกพร่อง</span></div>
-
-                                            <div class="col p-5 ">
-                                                <p class="text-darkbule ">
-                                                    การเรียนออนไลน์ในยุค New Normal นั้นยากกว่าที่คิด
-                                                    การเรียนในยุคนี้จำเป็นต้องใช้อะไรบ้าง?
-                                                    เมื่อลองแยกดูจะพบกับปัจจัย 4 อย่างที่ประกอบกันเป็นการเรียนในยุคนี้
-                                                    และนำไปสู่ความเหลื่อมล้ำทางการศึกษาของไทย
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-
-                            <div class="single-item " data-color="darkbule ">
-                                <!-- Start Content Section 14 -->
-                                <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                <section data-depth="-3 " data-direction="y ">
-                                    <h1 class="text-orage text-header-2 ">Now learning or<br>Now loading?</h1>
-                                </section>
-                            </div>
-                            <div class="single-item " data-color="mint " id="sec_15 ">
-                                <!-- Start Content Section 15 -->
-                                <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-
-                                <div class="box p-5 " style="height: 595px; ">
-                                    <span class="text-darkbule "
-                                        style="font-family: 'Mondwest'; font-size: 24px; ">1</span>
-                                    <h1 class="text-orage text-header-2 " style="text-align: inherit; ">TECH- NOLOGY
-                                    </h1>
-                                    <p class="text-orage text-weigth font-18 ">เทคโนโลยี</p>
-                                    <span class="font-18 ">เพราะสถานการณ์ในช่วง COVID-19
-                                        ทำให้นักเรียนต้องเรียนออนไลน์ผ่านแพลตฟอร์มต่างๆ
-                                        มี<span class="text-orage ">การนำเทคโนโลยี</span>เข้ามาช่วยในการเรียนการสอน
-                                        ไม่ว่าจะเป็น Zoom, Line,
-                                        หรือ Google Meet โดยการที่จะเรียนผ่านแพลตฟอร์มต่างๆ
-                                        ได้นั้นจำเป็นต้องมีอุปกรณ์ในการรับสารก่อนไม่ว่าจะเป็นโทรทัศน์ มือถือ แท็บเล็ต
-                                        หรือคอมพิวเตอร์
-                                        ท้ายที่สุดยังต้องมี
-                                        <span
-                                            class="text-orage ">สัญญาณที่ดีพอ</span>ที่จะสามารถเชื่อมต่อตัวเองเข้าสู่โลกออนไลน์ได้</span>
-                                    <p class="text-orage text-weigth pt-2 pb-2 ">
-                                        แต่ปัญหาคือไม่ใช่ทุกครัวเรือนจะเข้าถึงเทคโนโลยีได้</p>
-                                </div>
-                            </div>
-
-                            <div class="single-item " data-color="cream " style="height: 1500px; ">
-                                <!-- Start Content Section 16 -->
-                                <!--การเข้าถึงที่ไม่ทั่วถึง-->
-                                <section data-depth="-3 " data-direction="y " style="position: absolute; ">
-                                    <div class="container ">
-                                        <div class="row " t>
-                                            <div class="col-md-6 ">
-                                                <div class="text-header-2 " id="header-2 ">
-                                                    <h1 style="font-family: 'ChulaCharasNew'; ">
-                                                        <span
-                                                            class="text-mint ">การเข้าถึง<br>ที่ไม่ทั่วถึง<br>___</span>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                            <div class="col-md-6 "></div>
-                                        </div>
-                                        <br>
-
-                                        <div class="row ">
-                                            <div class="col-md-6 ">
-                                                <span class="ee-text ">เปรียบเทียบจำนวนอุปกรณ์และเทคโนโลยีที่
-                                                    <br>กลุ่มครอบครัวแต่ละแบบมี</span><br>
-                                            </div>
-                                            <div class="col-md-6 "></div>
-                                        </div>
-                                        <br>
-
-                                        <div class="row ">
-                                            <div class="col-md-6 ">
-                                                <div class="text-header-2 " id="header-2 ">
-                                                    <h1 style="font-family: 'ChulaCharasNew'; ">
-                                                        <span class="text-orage ">กลุ่มครอบครัวฐานะ <br> ปานกลาง -
-                                                            ร่ำรวย</span>
-                                                    </h1>
-                                                    <span class="ee-text "
-                                                        style="font-size: 18px;font-family: 'ChulaCharasNew'; ">พ่อ 1 คน
-                                                        /
-                                                        แม่ 1 คน / ลูก
-                                                        2คน</span><br><br>
-
-                                                    <div class="row ">
-                                                        <table>
-                                                            <tr>
-                                                                <td>
-                                                                    <img src="./img/icon/purple icon (all)/icon-05.png "
-                                                                        alt=" " width="60 ">
-                                                                    <img src="./img/icon/purple icon (all)/icon-05.png "
-                                                                        alt=" " width="60 " height="60 ">
-                                                                    <img src="./img/icon/purple icon (all)/icon-04.png "
-                                                                        alt=" " width="60 " height="60 ">
-                                                                    <img src="./img/icon/purple icon (all)/icon-04.png "
-                                                                        alt=" " width="60 " height="60 "> <br>
-                                                                </td>
-
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td>
-                                                                    <img src="./img/icon/purple icon (all)/icon-04.png "
-                                                                        alt=" " width="60 " height="60 ">
-                                                                    <img src="./img/icon/purple icon (all)/icon-04.png "
-                                                                        alt=" " width="60 " height="60 ">
-                                                                    <img src="./img/icon/purple icon (all)/icon-03.png "
-                                                                        alt=" " width="60 " height="60 ">
-                                                                    <img src="./img/icon/purple icon (all)/icon-03.png "
-                                                                        alt=" " width="60 " height="60 ">
-                                                                </td>
-
-                                                            </tr>
-
-                                                            <tr>
-                                                                <td>
-                                                                    <img src="./img/icon//purple icon (all)/icon-05.png "
-                                                                        alt=" " width="60 " height="60 ">
-                                                                    <img src="./img/icon//purple icon (all)/icon-04.png "
-                                                                        alt=" " width="60 " height="60 ">
-                                                                    <img src="./img/icon//purple icon (all)/icon-04.png "
-                                                                        alt=" " width="60 " height="60 ">
-                                                                </td>
-
-                                                            </tr>
-                                                        </table>
-
-
-
-                                                    </div>
-                                                </div>
-
-
-
-
-                                            </div>
-
-                                            <div class="col-md-6 ">
-                                                <div class="text-header-2 " id="header-2 ">
-                                                    <h1 style="font-family: 'ChulaCharasNew'; ">
-                                                        <span class="text-orage ">กลุ่มครอบครัวฐานะ <br>ยากจน</span>
-                                                    </h1>
-                                                    <span class="ee-text "
-                                                        style="font-size: 18px;font-family: 'ChulaCharasNew'; ">พ่อ 1 คน
-                                                        /
-                                                        แม่ 1 คน / ลูก
-                                                        2คน</span><br><br>
-
-                                                    <div class="row ">
-                                                        <img src="./img/icon/23_icon-tv.png " alt=" " width="60 "
-                                                            height="60 ">
-                                                        <img src="./img/icon//purple icon (all)/icon-04.png " alt=" "
-                                                            width="60 " height="60 ">
-                                                        <img src="./img/icon//purple icon (all)/icon-04.png " alt=" "
-                                                            width="60 " height="60 ">
-                                                    </div>
-
-                                                </div>
-
-                                            </div>
-                                        </div>
-                                        <br>
-                                        <br>
-
-                                        <div class="row ">
-                                            <div class="col-md-12 ">
-                                                <div class="text-header-2 " id="header-2 ">
-                                                    <h1 style="font-family: 'ChulaCharasNew'; ">
-                                                        <span class="text-mint "
-                                                            style="display: flex; justify-content: end; text-align: initial; ">ปัญหาที่เกิดขึ้น<br>___</span>
-                                                    </h1>
-                                                </div>
-                                            </div>
-                                            <br><br>
-
-                                            <div class="col-md-12 ">
-                                                <div id="carouselExampleIndicators " class="carousel slide "
-                                                    data-ride="carousel ">
-                                                    <ol class="carousel-indicators ">
-                                                        <li data-target="#carouselExampleIndicators " data-slide-to="0 "
-                                                            class="active ">
-                                                        </li>
-                                                        <li data-target="#carouselExampleIndicators "
-                                                            data-slide-to="1 "></li>
-                                                        <li data-target="#carouselExampleIndicators "
-                                                            data-slide-to="2 "></li>
-                                                        <li data-target="#carouselExampleIndicators "
-                                                            data-slide-to="3 "></li>
-                                                    </ol>
-                                                    <div class="carousel-inner ">
-                                                        <div class="carousel-item active ">
-
-                                                            <div class="bg-darkbule ">
-                                                                <div class="row p-4 ">
-                                                                    <div class="col-md-6 ">
-                                                                        <img src="/img/GIF/15-18 technology _GIF/unable-access-1.gif "
-                                                                            width="100% ">
-                                                                    </div>
-                                                                    <div class="col-md-6 ">
-
-                                                                        <p class="text-page-slide text-white ">โทรทัศน์์
-                                                                            <br><br>
-                                                                            การเรียนผ่านช่องการศึกษาทางไกลหรือ DLTV
-                                                                            <br>ทำให้โทรทัศน์เป็นหนึ่งในอุปกรณ์รับสารในการ
-                                                                            <br>เรียนยุคนี้
-                                                                            หากครอบครัวนั้นมีเด็กที่ต้องเรียนผ่าน
-                                                                            <br> DLTV มากกว่า 1
-                                                                            คนและอยู่คนละระดับชั้นกัน
-                                                                            <br>
-                                                                            สำหรับครอบครัวที่มีฐานะที่มีโทรทัศน์มากกว่า
-                                                                            1
-                                                                            <br>เครื่องก็จะไม่เกิดปัญหาใด
-                                                                            แต่หากครอบครัวใดที่
-                                                                            <br>มีโทรทัศน์เพียงเครื่องเดียว
-                                                                            จะทำให้ไม่สามารถ
-                                                                            <br>เรียนได้ในเวลาพร้อมๆ กัน
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-
-                                                        </div>
-                                                        <div class="carousel-item ">
-                                                            <div class="bg-darkbule ">
-                                                                <div class="row p-4 ">
-                                                                    <div class="col-md-6 ">
-                                                                        <img src="/img/GIF/15-18 technology _GIF/unable-access-2.gif "
-                                                                            width="100% ">
-                                                                    </div>
-                                                                    <div class="col-md-6 ">
-
-                                                                        <p class="text-page-slide text-white ">
-                                                                            มือถือ<br><br>
-                                                                            แม้จะเป็นอุปกรณ์พื้นฐานที่ทุกคนในยุคนี้ต้องมีกัน
-
-
-                                                                            <br>อย่างน้อย 1 เครื่อง แต่จากสถิติแล้ว
-                                                                            กลุ่มครอบ<br>ครัวยากจน 10 ครอบครัว
-                                                                            จะมีมือถือเพียง
-                                                                            <br>แแค่ 2-4 เครื่องเท่านั้น
-                                                                            บางครอบครัวจึงไม่สามารถเข้า
-                                                                            <br>ถึงการศึกษาผ่านออนไลน์ได้
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="carousel-item ">
-                                                            <div class="bg-darkbule ">
-                                                                <div class="row p-4 ">
-                                                                    <div class="col-md-6 ">
-                                                                        <img src="/img/GIF/15-18 technology _GIF/unable-access-3.gif "
-                                                                            width="100% ">
-                                                                    </div>
-                                                                    <div class="col-md-6 ">
-
-                                                                        <p class="text-page-slide text-white ">
-                                                                            คอมพิวเตอร์และ
-                                                                            tablet
-                                                                            <br><br> แม้จะมีโครงการแจกคอมพิวเตอร์และ
-                                                                            Tablet
-                                                                            เพื่อ
-                                                                            <br>การศึกษาจากภาครัฐ
-                                                                            แต่เด็กนักเรียนกลับใช้งาน
-                                                                            <br>ได้อย่างไม่เต็มประสิทธิภาพ
-                                                                            เนื่องจากเครื่องที่จัด
-                                                                            <br>ซื้อมีสเปกต่ำ ทำให้แท็บเล็ตอืด ช้า
-                                                                            แบตเตอรี่หมด<br>เร็ว
-                                                                            สุดท้ายแล้วโครงการนี้จึงถูกพับเก็บไปในที่สุด
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                        <div class="carousel-item ">
-                                                            <div class="bg-darkbule ">
-                                                                <div class="row p-4 ">
-                                                                    <div class="col-md-6 ">
-                                                                        <img src="/img/GIF/15-18 technology _GIF/unable-access-4.gif "
-                                                                            width="100% ">
-                                                                    </div>
-                                                                    <div class="col-md-6 ">
-
-                                                                        <p class="text-page-slide text-white "> สัญญาณ
-                                                                            Internet<br><br>
-                                                                            นอกจากอุปกรณ์ที่พร้อมแล้ว ยังต้องมีสัญญาณที่
-                                                                            <br>ดีและเสถียรพอด้วย
-                                                                            ปัญหาจึงตกอยู่ที่กลุ่มคนชาย
-                                                                            <br>ขอบดังเดิม
-                                                                            ครอบครัวที่ฐานะไม่ดีพอที่จะจ่ายค่า
-                                                                            <br>สัญญาณอินเทอร์เน็ต
-                                                                            และกลุ่มคนที่อยู่ห่างไกล
-                                                                            <br>จากความเจริญ
-                                                                        </p>
-                                                                    </div>
-                                                                </div>
-                                                            </div>
-                                                        </div>
-                                                    </div>
-                                                    <a class="carousel-control-prev " href="#carouselExampleIndicators "
-                                                        role="button " data-slide="prev ">
-                                                        <span class="carousel-control-prev-icon "
-                                                            aria-hidden="true "></span>
-                                                        <span class="sr-only ">Previous</span>
-                                                    </a>
-                                                    <a class="carousel-control-next " href="#carouselExampleIndicators "
-                                                        role="button " data-slide="next ">
-                                                        <span class="carousel-control-next-icon "
-                                                            aria-hidden="true "></span>
-                                                        <span class="sr-only ">Next</span>
-                                                    </a>
-                                                </div>
-                                            </div>
-
-                                        </div>
-                                    </div>
-
-                                </section>
-
-                            </div>
-                            <div class="single-item " data-color="darkbule ">
-                                <!-- Start Content Section 17 -->
-                                <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                <h1 class="text-orage text-header-2 ">Afford or Effort ?</h1>
-                            </div>
-                            <div class="single-item " data-color="darkbule " id="sec_18 ">
-                                <!-- Start Content Section 18 -->
-                                <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                <section data-depth="-3 " data-direction="y ">
-                                    <div class="box p-5 ">
-                                        <span class="text-darkbule "
-                                            style="font-family: 'Mondwest'; font-size: 24px; ">2</span>
-                                        <h1 class="text-orage text-header-2 " style="text-align: inherit; ">FAMILY
-                                        </h1>
-                                        <p class="text-orage text-weigth font-18 ">ครอบครัว</p>
-                                        <span class="font-18 ">การที่จะเรียนได้อย่างมีประสิทธิภาพจำเป็นจะต้อง
-                                            มีครอบครัวคอยสนับสนุน ยิ่งในช่วงที่เด็ก ๆ
-                                            จำเป็นต้องเรียนที่บ้านแทนที่จะไปโรงเรียน
-                                            ครอบครัวที่มีฐานะพอ
-                                            อาจมีเวลาเพียงพอที่จะดูแลเด็กภายในบ้าน
-                                            หรือหากมีเวลาไม่มากพอก็สามารถจ่ายเงินให้พี่เลี้ยงได้
-                                            แล้วกับครอบครัวที่ยากจนล่ะ?
-
-                                            งานวิจัยล่าสุดพบว่า <span
-                                                class="text-orage text-weigth ">กลุ่มครอบครัวที่ยากจนกว่า
-                                                50%
-                                                เป็นครอบครัวเลี้ยงเดี่ยว
-                                                มีความเสี่ยงที่จะได้ผลกระทบจากวิกฤต
-                                                COVID-19 มากที่สุด เนื่องจากมีรายได้ต่ำ
-                                                และต้องทำงานหลายงานเพื่อเลี้ยงครอบครัว</span>
-                                            สภาพทางเศรษฐกิจของครัวเรือนเหล่านี้อาจจะไม่ได้สวยหรู
-                                            ทำให้ผู้ปกครองเองก็อาจ<span
-                                                class="text-orage text-weigth ">ไม่สามารถดูแลบุตรหลานได้อย่างเต็มที่</span>
-                                            และเด็กร้อยละ 70 ของครอบครัวที่ยากจนก็อยู่ในโครงการอาหารกลางวันของโรงเรียน
-                                            แสดงให้เห็นว่าไม่ใช่ทุกครอบครัวที่จะสามารถดูแลเรื่องอุปโภคและบริโภคของเด็กนักเรียนได้
-                                            และหากต้องเสียเงินในส่วนนี้ขณะที่ต้องเสียงค่าเทอมเท่าเดิมก็ถือว่าเป็นภาระทางการเงินสำหรับครอบครัวมากขึ้น
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="single-item " data-color="mint ">
-                                <!-- Start Content Section 19 -->
-                                <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                <p data-depth="-3 " data-direction="y ">19</p>
-                            </div>
-                            <div class="single-item " data-color="darkbule ">
-                                <!-- Start Content Section 20 -->
-                                <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                <div data-depth="-3 " data-direction="y " style="width: 100vw; height: 75vw; ">
-
-                                    <div class="container ">
-                                        <div class="row ">
-
-                                            <div class="col-md-12 ">
-                                                <div class="text-header-2 " id="graphheader ">
-                                                    <h1>
-                                                        <span
-                                                            class="text-mint ">รายได้หมดไป<br>กับอะไรบ้าง<br>___</span>
-                                                    </h1>
-                                                    <div class="whattospend ">
-                                                        <p>รายได้ของกลุ่ม<span
-                                                                style="color: #F56642; ">ครอบครัวยากจน</span>
-                                                            หมดไปกับอะไรบ้าง</p>
-                                                    </div>
-                                                </div>
-
-                                            </div>
-
-                                        </div>
-
-                                        <div class="col ">
-                                            <table style="width: 50vw; transform: rotate(-90deg); ">
-                                                <tr class="colBar1 ">
-                                                    <td id="myProgress ">
-                                                        <div id="myBar "></div>
-                                                    </td>
-                                                    <td id="myProgress1 ">
-                                                        <div id="myBar1 "></div>
-                                                    </td>
-
-                                                    <td id="myProgress2 ">
-                                                        <div id="myBar2 "></div>
-                                                    </td>
-
-                                                    <td id="myProgress3 ">
-                                                        <div id="myBar3 "></div>
-                                                    </td>
-
-                                                    <td id="myProgress4 ">
-                                                        <div id="myBar4 "></div>
-                                                    </td>
-                                                </tr>
-                                            </table>
-                                        </div>
-
-                                        <!-- <div class="flex-container "> -->
-                                        <table class="textchart ">
-                                            <tr>
-                                                <td class="loc1 ">อาหาร 51%</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="loc2 ">อื่นๆ 41%</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="loc3 ">รถ 3%</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="loc4 ">สุขภาพ 3%</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="loc5 ">การศึกษา 2%</td>
-                                            </tr>
-                                        </table>
-                                        <!-- </div> -->
-
-                                        <table class="textspend ">
-                                            <tr>
-                                                <td class="budget ">10,080</td>
-                                                <td class="fstrow ">บาท/เดือน<br>ค่าแรงขั้นต่ำ (336 บาท/วัน)</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="spendpurple ">-5,241</td>
-                                                <td>บาท/เดือน<br>ค่าอาหาร</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="color: #f1d9c4; ">1</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="spendpurple ">-4,132</td>
-                                                <td>บาท/เดือน<br>ค่าอื่นๆ</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="color: #f1d9c4; ">1</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="spendpurple ">-302</td>
-                                                <td>บาท/เดือน<br>ค่ารถ</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="color: #f1d9c4; ">1</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="spendpurple ">-302</td>
-                                                <td>บาท/เดือน<br>ค่าสุขภาพ</td>
-                                            </tr>
-                                            <tr>
-                                                <td style="color: #f1d9c4; ">1</td>
-                                            </tr>
-                                            <tr>
-                                                <td class="spendorange ">-202</td>
-                                                <td>บาท/เดือน<br>ค่าการศึกษา</td>
-                                            </tr>
-                                        </table>
-                                    </div>
-
-                                    <div class="whatthebox ">
-                                        <p> <br>ปี 2562 เกิดความรุนแรงใน<br>ครอบครัว 1,376
-                                            เหตุการณ์<br>สร้างความกังวลเกี่ยวกับ<br>ความเสี่ยงที่เกิดขึ้นได้แม้แต่<br>ในสถาบันครอบครัว
-                                            การไป<br><span style="color: #4bb093; ">2</span></p>
-                                    </div>
-
-                                </div>
-                                <h1 class="text-orage text-header-2 ">Free Course or<br>Course Fee ?</h1>
-                            </div>
-                            <div class="single-item " data-color="cream " id="sec_21 ">
-                                <!-- Start Content Section 21 -->
-                                <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                <section data-depth="-3 " data-direction="y ">
-                                    <div class="box p-5 ">
-                                        <span class="text-darkbule "
-                                            style="font-family: 'Mondwest'; font-size: 24px; ">3</span>
-                                        <h1 class="text-orage text-header-2 " style="text-align: inherit; ">COURSE</h1>
-                                        <p class="text-orage text-weigth font-18 ">หลักสูตร</p>
-                                        <span
-                                            class="font-18 ">เด็กทุกคนจำเป็นต้องมีหลักสูตรการเรียนที่ดีพอเพื่อให้การศึกษาดำเนินไปได้อย่างมีประสิทธิภาพ
-                                            แต่สถานการณ์ในช่วง COVID-19 ทำให้กระทรวงศึกษาธิการออกมาตรการการเรียน 3
-                                            รูปแบบ
-                                            คือ
-                                            <div class="img-icon-course ">
-                                                <img src="/img/icon/three-icon.png ">
-                                            </div>
-                                            แต่<span
-                                                class="text-orage text-weigth ">ไม่ใช่ทุกโรงเรียนที่จะสามารถสอนผ่านสื่อออนไลน์
-                                                และไม่ใช่เด็กทุกคนที่มีอุปกรณ์ที่พร้อม</span>สำหรับการเรียน
-                                            ทางเลือกเดียวที่จะเกิดขึ้นได้สำหรับเด็กที่มีฐานะทางบ้านไม่ดีคือ <span
-                                                class="text-orage text-weigth ">การเรียนผ่านระบบโทรทัศน์</span>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="single-item " data-color="darkbule " style="height: 1000px; ">
-                                <!-- Start Content Section 22 -->
-                                <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                <section data-depth="-3 " data-direction="y ">
-                                    <div class="container pt-0 ">
-                                        <div class="img-dltv ">
-                                            <img src="/img/GIF/22-25 course _GIF/dltv_2.gif " style="width: 100%; ">
-                                        </div>
-                                        <div class="d-flex " style="justify-content: space-between; ">
-                                            <div class="p-5 w-50 "">
-                                    <span class=" text-mint" style="font-size: 32px; font-weight: bold;display: flex;
-                                    justify-content: flex-end;">DLTV ดีจริง<br>หรือ?
-                                                <br>___</span>
-                                            </div>
-                                            <div class="pt-5 pb-5 w-50 font-18">
-                                                <p style="color: white;">การเรียนการสอนผ่าน DLTV ดีจริงหรือไม่?
-                                                    จากที่มีการเรียนผ่านโทรทัศน์เมื่อวันที่ 18 พฤษภาคม 2563
-                                                    พบว่าหลักสูตรที่นำมาใช้สอนนั้นไม่มีการอัพเดต อีกทั้ง<span
-                                                        class="text-mint">เนื้อหาที่สอนยังมีความผิดพลาด</span>
-                                                    มีการอ่านออกเสียงภาษาอังกฤษ
-                                                    (Pronunciation) และใช้ Grammar ที่ผิดในการสอน
-                                                    เด็กในเมืองที่ไม่เข้าใจการสอนอาจมีครูที่คอยเน้นย้ำบทเรียน แต่เด็กๆ
-                                                    ที่อยู่ในพื้นที่ห่างไกลจะทำอย่างไร การเรียนแบบ New normal
-                                                    นี้ท้ายที่สุด
-                                                    <span
-                                                        class="text-mint">อาจทำให้ความแตกต่างด้านการศึกษาของเด็กที่มีฐานะและไม่มีฐานะยิ่งห่างออกมากกว่าเดิม</span>
-                                                </p>
-                                            </div>
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="single-item" data-color="cream">
-                                <!-- Start Content Section 23 -->
-                                <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                <section data-depth="-3" data-direction="y">
-                                    <div class="container pt-0">
-                                        <div class="row p-5">
-                                            <div class="col"></div>
-                                            <img src="/img/icon/25_icon-speaker.png" value="PLAY" onclick="play()"
-                                                style="width: 65px; height: auto; text-align: right; cursor:pointer; background-color: #F56642;border-radius: 50%;">
-                                            <audio id="audio" src="./sound/DLTV.mp3"></audio>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col">
-                                                <h1 class="text-darkbule"
-                                                    style="font-size: 56px;font-family: 'Mondwest';">I come to English
-                                                    Class,<br> My class's so nice , lovely,<br> so fine , so fresh . so
-                                                    free.<br> We are happy happy today.</h1>
-                                            </div>
-                                        </div>
-                                        <div class="row">
-                                            <div class="col"></div>
-                                            <img src="/img/GIF/22-25 course _GIF/teacher+blackboard_2.gif"
-                                                style="width: 40%; height: auto; text-align: right;">
-                                        </div>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="single-item" data-color="darkbule">
-                                <!-- Start Content Section 24 -->
-                                <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                <h1 class="text-orage text-header-2">More Time or<br> More Tired ?</h1>
-                            </div>
-                            <div class="single-item" data-color="cream" id="sec_25">
-                                <!-- Start Content Section 25 -->
-                                <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                <section data-depth="-3" data-direction="y">
-                                    <div class="box p-5" style="height: 542px;">
-                                        <span class="text-darkbule"
-                                            style="font-family:'Mondwest'; font-size: 24px;">4</span>
-                                        <h1 class="text-orage text-header-2" style="text-align: inherit;">TIME
-                                        </h1>
-                                        <p class="text-orage text-weigth font-18">เวลา</p>
-                                        <span class="font-18">เพราะการเรียนออนไลน์ อาจทำให้เด็ก<span
-                                                class="text-orage text-weigth">เข้าใจเนื้อหาการเรียนไม่ได้เท่าที่ควร</span>
-                                            สำหรับเด็กมัธยมจำเป็นต้องปิดเทอมก่อนกำหนด
-                                            ต้องยกเนื้อหามาเรียนในช่วงที่เปิดเทอม โดยต้องเรียนติดต่อกันถึง
-                                            6 เดือน ได้หยุดในช่วงสิ้นปี และอาจจะต้องเรียนต่ออีก 4
-                                            เดือนเพื่อให้ตามทันเนื้อหาทั้งหมด และเพราะการศึกษาที่ไม่ครอบคลุม
-                                            ความเหลื่อมล้ำที่เกิดขึ้นจาก
-                                            <span class="text-orage text-weigth">อุปกรณ์ที่ไม่พร้อม</span> หรือ
-                                            <span class="text-orag text-weigthe">หลักสูตรที่ไม่ดีพอ</span>
-                                            ช่วงที่หยุดไปนั้นอาจทำให้นักเรียนจาก
-                                            <span
-                                                class="text-orage text-weigth">ครอบครัวที่ยากจนไม่สามารถประคองตัวเองให้ผ่านวิกฤตินี้ไปได้</span>
-                                            ยิ่งสำหรับเด็กมัธยมศึกษาปีที่ 3 และมัธยมศึกษาปีที่ 6
-                                            ที่ต้องสอบวัดผลและเรียนต่ออาจเตรียมตัวไม่ทัน
-                                            ส่งผลกระทบต่อทั้งชีวิตของเด็กนักเรียน
-                                        </span>
-                                    </div>
-                                </section>
-                            </div>
-                            <div class="single-item" data-color="darkbule" style="height: 1315px;">
-                                <!-- Start Content Section 26 -->
-                                <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                                <section data-depth="-3" data-direction="y">
-                                    <div class="container">
-                                        <div class="row">
-                                            <div class="col">
-                                                <img src="/img/GIF/26-29 time _GIF/calendar.gif"
-                                                    style="width: 500px; height: auto;">
-                                            </div>
-                                            <div class="col" style="display: flex;
-                                flex-direction: column;
-                                justify-content: space-between;text-align: end;">
-                                                <div class="row">
-                                                    <div class="col"><span class="text-cream text-month"
-                                                            style="font-size: 68px;font-family: 'Mondwest';"></span>
-                                                    </div>
-                                                </div>
-                                                <div class="row" ">
-                                        <div class=" col "><img src=" /img/GIF/26-29 time _GIF/book.gif "
-                                                style=" width: 100px; height: auto; ">
-                                        </div>
-                                    </div>
-                                </div>
-
-
-                            </div>
-                            <div class=" row py-5 ">
-                                <div class=" col ">
-                                    <span class=" text-mint " style=" font-size: 32px; font-weight: bold;display: flex;
-                                                    justify-content: flex-end; ">เรียนชดเชย
-                                        <br>___</span>
-                                </div>
-                                <div class=" col font-18 ">
-                                    <p style=" color: white; ">สำหรับเด็กที่เรียนมหาวิทยาลัย
-                                        มีการเรียนการสอนที่เจาะจงมากขึ้น
-                                        นักศึกษาที่เรียนอยู่ในคณะที่จำเป็นต้องอาศัยการปฏิบัติเป็นส่วนใหญ่อาจจะไม่สามารถเข้าร่วมกิจกรรมในส่วนนี้
-                                        และท้ายที่สุดก็อาจไม่ได้ประสบการณ์ที่มากพอ
-                                        เช่นเดียวกับนักเรียนชั้นประถมและมัธยมที่ต้องปิดเทอมก่อนกำหนด
-                                        ทำให้นักศึกษาบางคณะไม่สามารถเรียนบางวิชาในช่วง New Normal
-                                        จำเป็นต้อง
-                                        <span
-                                            class=" text-mint ">เรียนชดเชย</span>ในช่วงวันเสาร์หรือช่วงปิดเทอมที่อาจทำให้เรียนและทำงานในวิชาอื่นในช่วงเปิดเทอมได้อย่างไม่เต็มประสิทธิภาพ
-                                        และด้วยความแตกต่างทางด้านฐานะ
-                                        อาจทำให้สาเหตุเรื่องเวลาที่ถูกลิดรอนและเพิ่มขึ้นมานี้ช่วยตอกย้ำความเหลื่อมล้ำให้แก่นักเรียนที่มีฐานะยากจนให้มากยิ่งขึ้นกว่าที่เคยเป็นมา
-                                    </p>
-                                </div>
-                            </div>
-                            <div class=" row ">
-                                <div class=" col ">
-                                    <img src=" /img/GIF/26-29 time _GIF/scientist.gif "
-                                        style=" width: 425px; height: auto; text-align: left; ">
-                                </div>
-                            </div>
-                    </div>
-                    </section>
-                </div>
-                <div class=" single-item " data-color=" mint " id=" sec_27 ">
-                    <!-- Start Content Section 27 -->
-                    <!-- เปลี่ยน p เป็นอย่างอื่นได้ ไปแก้ตรง css ด้วย ตามความพึงพอใจ จะต้องเริ่มโค้ดภายใน <p> -->
-                    <div class=" container p-5 ">
-                        <div class=" row ">
-                            <h1 class=" text-cream font-190 " style=" line-height: 160px;font-family: 'Mondwest' ; ">
-                                New <br> Normal but<br> Not Normalize
-                            </h1>
-                            <div class=" sticker-orange " style=" position: fixed;right: 345px;bottom: 580px; "></div>
-                            <span class=" text-cream "
-                                style=" position: absolute;font-size: 21px;font-weight: bold;transform:
-                                                    translate(370px, 94.8px); ">อย่าทำให้ความเหลื่อมล้ำเหล่านี้เป็นเรื่องปกติ</span>
-                        </div>
-                        <div class=" sticker-orange "></div>
-                    </div>
-
-                </div>
-                <!-- footer 31-->
-                <footer class=" jumbotron text-center bg-purple " style=" margin-bottom:0; z-index: 10000; ">
-                    <div class=" row px-2 ">
-                        <div class=" col-8 ">
-                            <p style=" text-align: left; color: white; ">
-                                <span class=" font-21 " style=" font-family: 'Mondwest' ; ">inEquality Pandemic <br></span>
-                                เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์
-                                คณะสถาปัตยกรรมศาสตร์และการโปรแกรมและสื่อประสม แขนงวิชาการพัฒนาสื่อประสมและเกม
-                                คณะเทคโนโลยีสารสนเทศ สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2020
-                            </p>
-                        </div>
-                        <div class=" col-3 ">
-                            <a href=" ">
-                                <div><img src=" /img/↑.png "></div>
-
-                                <div><span class=" text-white " style=" font-family: 'Mondwest' ;font-size: 25px; ">
-                                        back to top
-                                    </span></div>
-
-                            </a>
-
-                        </div>
-                    </div>
-
-                </footer>
-            </div>
-        </div>
-    </div>
-    </div>
+	<!-- loading page-->
+	<div class="loadingPage">
+		<div class="loadtitle">
+			<div id="student"><img src="./img/00 loading page/loading4.png"></div>
+			<div id="shair"><img src="./img/00 loading page/loading3.png"></div>
+		</div>
+		<div class="loadbar">
+			<span id="statue1" class="circle"></span>
+			<div id="fill"></div>
+			<span id="statue2" class="circle"></span>
+		</div>
+		<div class="loadtitle">
+			<div class="wavy">
+				<span style="--i:1;">N</span>
+				<span style="--i:2;">o</span>
+				<span style="--i:3;">w</span>
+				<span style="--i:4;">&nbsp;</span>
+				<span style="--i:5;">L</span>
+				<span style="--i:6;">o</span>
+				<span style="--i:7;">a</span>
+				<span style="--i:8;">d</span>
+				<span style="--i:9;">i</span>
+				<span style="--i:10;">n</span>
+				<span style="--i:11;">g</span>
+			</div>
+		</div>
+	</div>
+	<!-- END Loading -->
+	<div class="main">
+		<!-- Navbar -->
+		<nav class="navbar navbar-expand-sm fixed-top navbar-dark">
+			<!-- Logo Just an image -->
+			<a class="navbar-brand m-0 d-none d-sm-block" href="#">
+				<img src="./img/icon/svg/00_icon_menubar.svg" alt="Logo" width="55px">
+			</a>
+			<!-- Navbar-Toggler -->
+			<button class="navbar-toggler navbar-toggler-right" type="button" data-toggle="collapse" data-target="#navbarNav"
+				aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+				<span class="navbar-toggler-icon"></span>
+			</button>
+			<div class="collapse navbar-collapse" id="navbar">
+				<ul class="navbar-nav">
+					<li class="nav-item active">
+						<a class="nav-link" href="index.html">
+							<span class="sr-only">(current)</span>
+							<span class="text-default text-white font-mondwest">Home</span>
+							<span class="text-new font-mondwest">&#8594; Home</span>
+						</a>
+					</li>
+					<li class="nav-item">
+						<a class="nav-link" href="SDGs.html">
+							<span class="text-default text-white font-mondwest">SDGs</span>
+							<span class="text-new font-mondwest">&#8594; SDGs</span>
+						</a>
+					</li>
+				</ul>
+			</div>
+		</nav>
+		<!-- End Navbar -->
+
+		<!-- Start Content -->
+		<div class="content">
+			<!-- section 01 -->
+			<section class="bg-darkblue" id="section-1">
+				<h1 class="text-header-1 text-orange" id="header-1" style="line-height: 4.25rem;">
+					inEquality<br />Pandemic</h1>
+				<div class="img-grid">
+					<img src="./img/GIF/01 above the flow _GIF/avt14.gif">
+					<img src="./img/GIF/01 above the flow _GIF/avt2.gif">
+					<img src="./img/01 above the flow/a4.png">
+					<img src="./img/GIF/01 above the flow _GIF/avt5.gif">
+					<img src="./img/GIF/01 above the flow _GIF/avt1.gif">
+					<img src="./img/01 above the flow/a6.png">
+					<img src="./img/01 above the flow/a8.png">
+					<img src="./img/01 above the flow/a11.png">
+					<img src="./img/01 above the flow/a3.png">
+					<img src="./img/GIF/01 above the flow _GIF/avt13.gif">
+					<img class="d-none d-sm-block" src="./img/GIF/01 above the flow _GIF/avt7.gif">
+					<img class="d-none d-sm-block" src="./img/01 above the flow/a12.png">
+					<img class="d-none d-sm-block" src="./img/01 above the flow/a9.png">
+					<img class="d-none d-sm-block" src="./img/GIF/01 above the flow _GIF/avt15.gif">
+					<img class="d-none d-sm-block" src="./img/01 above the flow/a10.png">
+					<img class="d-none d-sm-block" src="./img/GIF/01 above the flow _GIF/avt_noise.gif">
+				</div>
+			</section>
+			<!-- section 02 -->
+			<section id="section-2">
+				<div class="sticker-orange"></div>
+				<div class="container-flex">
+					<div class="row justify-content-end">
+						<div class="col-6">
+							<div id="header-2">
+								<h1>
+									<span class="text-mint">
+										การศึกษาและความ<br>เหลื่อมล้ำในช่วง<br>
+										New normal<br>___
+									</span>
+								</h1>
+							</div>
+
+							<img class="d-block d-md-none w-100 h-auto" src="/img/GIF/student.gif" width="303" height="392">
+						</div>
+						<div class="w-100"></div>
+						<div class="col text-sec02">
+							<p class="text-white font-s18" style="max-width: 356px">
+								ในยุค COVID-19
+								ไม่ว่าจะหันไปทางไหน
+								ก็มักจะได้ยินคำว่า
+								<span class="text-mint">
+									New
+									Normal
+								</span> หรือ
+								<span class="text-mint">'ความปกติรูปแบบใหม่'</span> กันบ่อยขึ้น
+								สถานการณ์การแพร่ระบาดของเชื้อ COVID-19
+								ได้เปลี่ยนแปลงวิถีชีวิตหลายอย่างในปัจจุบัน ทั้งด้านไลฟ์สไตล์ ธุรกิจ
+								สาธารณสุข
+								การท่องเที่ยว <span class="text-mint">รวมไปถึงด้านการศึกษา</span><br>
+								<br> หลายโรงเรียนต้องปิดชั่วคราว เพื่อป้องกันการแพร่ระบาดของเชื้อ
+								ทำให้เด็กในยุคนี้ต้องปรับเปลี่ยนวิธีการเรียนมาสู่ 'การเรียนออนไลน์'
+								ไม่ว่าจะผ่านแอพพลิเคชันต่างๆ เว็บไซต์ Youtube หรือทางช่องทีวีดาวเทียม DLTV
+								ก็ตาม
+								แล้ว
+								<span class="text-mint">
+									การเรียนออนไลน์นั้นดีจริงหรือ?
+									หรือมันช่วยแพร่กระจายความเหลื่อมล้ำกันแน่?
+								</span>
+							</p>
+						</div>
+						<div class="col d-none d-md-block img-sec02">
+							<img src="/img/GIF/student.gif" width="303" height="392">
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- section 03 -->
+			<section id="section-3">
+				<div class="sticker-orange" style="transform: translate(-8vw, 48vw); z-index: 2;"></div>
+				<div id="box1" class="textbox bg-darkblue text-white">
+					<span>ทำไมคนรวยยิ่งรวย คนจนยิ่งจน</span>
+					<img src="./img/icon/iconQ.png">
+				</div>
+				<div id="box2" class="textbox bg-cream">
+					<span>ยิ่งเรียนยิ่งรวย</span>
+					<img src="./img/icon/iconQ.png">
+				</div>
+				<div id="box3" class="textbox bg-cream">
+					<span>บ้านไกลก็เรียนได้</span>
+					<img src="./img/icon/iconQ.png">
+				</div>
+				<div id="box4" class="textbox bg-darkblue text-white">
+					<span>ทุกคนเข้าถึงการศึกษาได้เพียงปลายนิ้ว</span>
+					<img src="./img/icon/iconQ.png">
+				</div>
+				<div id="box5" class="textbox bg-cream">
+					<span>เหลื่อมล้ำออนไลน์</span>
+					<img src="./img/icon/iconQ.png">
+				</div>
+			</section>
+
+			<!-- section 04 -->
+			<section id="section-4">
+				<div class="bg-cream py-2">
+					<div class="container-fluid header-4">
+						<h1 class="text-orange text-header-2 text-left">
+							New Normal <br />
+							New Era !
+						</h1>
+						<img src="./img/icon/04_icon-computer.png" class="top-right-icon">
+					</div>
+
+					<div class="container-fluid">
+						<p class="font-italic pl-md-5 font-s18" style="max-width: 300px;">
+							“ สถานศึกษาปิดชั่วคราว
+							และปรับเปลี่ยนมาเรียนแบบ
+							online แทน
+							ทำให้ผู้คนได้เรียนรู้ว่าการเรียนแบบ offline
+							ไม่ใช่รูปแบบการเรียนที่ดีที่สุดอีกต่อไป
+							สิ่งนี้จะเป็น New Normal และเป็นทางรอดของระบบการศึกษาไทย
+							ที่จะช่วยลดความเหลื่อมล้ำในการเรียนรู้
+							เนื่องจากผู้คนสามารถเข้าถึงแหล่งข้อมูลความรู้ได้ง่ายขึ้นจากที่บ้าน
+							และยังช่วยลดการเสี่ยงติดเชื้อ เพิ่มระยะห่างทางสังคมได้ด้วย ”
+						</p>
+					</div>
+
+					<div class="row px-5">
+						<div class="col-4"></div>
+						<div class="col-8 d-flex align-items-end text-white font-s14" style="border-bottom: 52px solid #232F57;
+                                    border-left: 70px solid transparent;">
+							<div style="position: absolute; top: 10px;">
+								<span class="font-s18 font-mondwest">SMS</span>&nbsp;(3
+								บาทต่อครั้ง)
+							</div>
+						</div>
+					</div>
+					<div class="row px-5">
+						<div class="col-4 w-100 d-flex justify-content-center align-items-center"
+							style="height: 52px; background-color: #F56A48;">
+							<span class="font-mondwest font-s18 text-white">inEquality</span>
+						</div>
+						<div class="col-8 w-100 bg-white d-flex align-items-center" style="height: 52px">
+							<span class="font-s18">รัฐบาลแจงให้เรียนแบบ online แทน </span>
+						</div>
+					</div>
+				</div>
+			</section>
+
+			<!-- section 05 -->
+			<section id="section-5" class="bg-transparent">
+				<div class="row justify-content-center align-items-center sideContent">
+					<div class="col-12 col-md-6 bg-cream">
+						<div class="w-100" id="slide-section-5">
+							<div id="s5-1" class="active">
+								<img src="/img/GIF/05 should this be normal_ _GIF/abnormal-1.gif" width="100%">
+								<p class="text-darkblue text-center">
+									ครูรุ่นเก่าที่งงกับการใช้อุปกรณ์
+								</p>
+							</div>
+							<div id="s5-2">
+								<img src="/img/GIF/05 should this be normal_ _GIF/abnormal-2.gif" width="100%">
+								<p class="text-darkblue text-center">
+									เด็กเล็กระดับอนุบาลที่ต้องเรียนด้วยตัวเอง
+								</p>
+							</div>
+							<div id="s5-3" class="bg-cream">
+								<img src="/img/GIF/05 should this be normal_ _GIF/abnormal-3.gif" width="100%">
+								<p class="text-darkblue text-center">
+									เด็กบนดอยที่ต้องเรียนผ่าน
+									โทรศัพท์มือถือ
+								</p>
+							</div>
+							<div id="slide-selector">
+								<div class="font-s18 font-bold rounded-circle p-3" onclick="slideShowOnSection5(1)">1
+								</div>
+								<div class="font-s18 font-bold rounded-circle p-3" onclick="slideShowOnSection5(2)">2
+								</div>
+								<div class="font-s18 font-bold rounded-circle p-3" onclick="slideShowOnSection5(3)">3
+								</div>
+							</div>
+						</div>
+					</div>
+
+					<div class="col-12 col-md-6" style="text-align-last: center;">
+						<h1 class="text-orange text-header-2 text-left">
+							Should<br />
+							this be<br />
+							Normal?
+						</h1>
+						<p class="text-cream font-bold mt-1">สถานการณ์เหล่านี้ ควรเป็นปกติจริงหรือ?</p>
+					</div>
+				</div>
+			</section>
+
+			<!-- section 06 -->
+			<section id="section-6" class="leading-section">
+				<h1 class="text-orange text-header-2">NEW Normal<br>OLD Problem</h1>
+			</section>
+
+			<!-- section 07 -->
+			<section id="section-7" class="bg-cream">
+				<div class="container-fluid">
+					<div class="sticker-green" style="right:20%;top: 5%"></div>
+					<h1 class="text-darkblue text-header-3">
+						A Brief<br />
+						History of<br />
+						Education
+					</h1>
+					<div class="sticker-orange" style="left:15%;bottom:15%;"></div>
+					<span class="text-darkblue font-bold font-s18">ประวัติศาสตร์วงการการศึกษาไทยและความเหลื่อมล้ำ</span>
+					<!--<a href="#section-8" class="text-white font-s90 font-mondwest"
+						style="transform: translate(-10vw,46vw);">&#8594;</a>-->
+				</div>
+			</section>
+
+			<!-- section 08 -->
+			<section id="section-8" class="two-side-section bg-cream">
+				<div class="bluebox">
+					<b class="text-orange font-s24">ยุคโบราณ</b>
+
+					<div class="font-s16 pt-2 text-white">
+						โดยส่วนมากมักจะจัดการศึกษาในวัด มีการบวชเรียน
+						เนื้อหาในการ<br>เรียนการสอนประกอบด้วย วิชาความรู้สามัญ อ่าน เขียน
+						เรียนเลข<br> สำหรับการประกอบสัมมาอาชีพ วิชาจริยศึกษา ศิลปะ
+						ป้องกันตัว และ<br>วิชาการทหาร
+						ส่วนผู้หญิงจะศึกษาวิชาการบ้านการเรือนที่บ้าน
+						เพื่อ<br>เตรียมตัวเป็นแม่ศรีเรือนที่ดี
+						ไม่ได้ศึกษาวิชาความรู้สามัญอย่างเช่น<br>เพศชาย<br>
+						<br>ถัดมาในสมัยรัตนโกสินทร์ตอนต้น
+						เนื่องจากยุโรปมีการปฏิวัติอุตสาหกรรม<br>
+						และมีการเข้ามาของชนชาติตะวันตกในประเทศมากขึ้น
+						จึงได้ส่งเสริม<br>การศึกษาด้านคณิตศาสตร์ วิทยาศาสตร์ และภาษาอังกฤษ
+						มากขึ้น มี<br>การก่อตั้งโรงเรียน-โรงทานหลวงขึ้นในพระบรมมหาราชวัง
+						สำหรับ<br>เป็นที่ให้การศึกษาแก่เหล่าบุตรหลานขุนนาง ข้าราชการ
+						เจ้าขุนมูลนาย
+					</div>
+
+					<div class="bg-mint mt-4 p-2 top-sticker">
+						<div class="font-s21 my-2 font-bold">ปัญหาความเหลื่อมล้ำ</div>
+						<div>
+							<span class="d-block font-bold font-s18">ด้านชนชั้น</span>
+							วิชาภาษาอังกฤษถูกสอน<br>
+							แค่ในราชสำนัก<br>
+						</div>
+						<div>
+							<span class="d-block font-bold font-s18">ด้านเพศ</span>
+							การศึกษาของสตรีไม่ได้รับ<br>
+							การสนับสนุน
+						</div>
+					</div>
+				</div>
+
+				<div class="orangebox">
+					<h1 class="text-header-2 font-mondwest">1800</h1>
+				</div>
+
+				<img class="background-overlay" src="./img/09-13 a brief history of education/01.png" alt="">
+			</section>
+
+			<!-- section 09 -->
+			<section id="section-9" class="two-side-section orange-first bg-cream">
+				<div class="bluebox">
+					<b class="text-orange font-s24">ยุคปฏิรูปการศึกษา</b>
+
+					<div class="font-s16 pt-2 text-white">
+						ในสมัยของรัชกาลที่ 5
+						ได้มีการเลิกทาสและปรับปรุงประเทศให้<br>ทัดเทียมกับนานา
+						ประเทศ จึงมีการจัดระบบการศึกษาอย่างมี<br>ระเบียบแบบแผน
+						มีโรงเรียนเกิดขึ้นในวัง
+						และในวัด รวมถึงมีการตั้ง<br>โรงเรียนสำหรับสตรีขึ้นในพระบรมมหาราชวังด้วย
+						เกิดพระราช<br>
+						บัญญัติประถมศึกษาบังคับให้เด็กอายุ 7-8 อยู่เรียนฟรีจนครบอายุ<br> 14 ปี
+						และมีการก่อตั้งมหาวิทยาลัยแห่งแรกขึ้น
+					</div>
+
+					<div class="bg-mint mt-4 p-2 top-sticker">
+						<div class="font-s21 my-2 font-bold">ปัญหาความเหลื่อมล้ำ</div>
+						<div>
+							<span class="d-block font-bold font-s18">ด้านชนชั้น</span>
+							แม้การศึกษาของสตรีกับ<br>เพศชายจะเริ่มเท่าเทียมขึ้น<br>แต่การศึกษายังคงกระจุก<br>อยู่ในเมือง
+							ไม่กระจายไป<br>ตามชนบท
+						</div>
+					</div>
+				</div>
+
+				<div class="orangebox">
+					<h1 class="text-header-2 font-mondwest">2412</h1>
+				</div>
+
+				<img class="background-overlay" src="./img/09-13 a brief history of education/01.png" alt="">
+			</section>
+
+			<!-- section 10 -->
+			<section id="section-8" class="two-side-section bg-cream">
+				<div class="bluebox">
+					<b class="text-orange font-s24">ยุคเปลี่ยนแปลงการปกครอง</b>
+
+					<div class="font-s16 pt-2 text-white">
+						คณะราษฎร์รวมกลุ่มกันเปลี่ยนแปลงการปกครองมาสู่ระบอบ<br>ประชาธิปไตย โดยวาง
+						เป้าหมายหนึ่งไว้ว่า ‘จะต้องให้การศึกษาแก่<br>ราษฎรอย่างเต็มที่’
+						เพื่อให้เข้าใจระบอบการปกครองแบบใหม่นี้ การ<br>
+						ศึกษาจึงได้ขยายตัวขึ้นทุกระดับ มีโครงการฝึกหัดครูชนบท
+						และการ<br>ก่อตั้งมหาวิทยาลัยในส่วนกลางและส่วนภูมิภาคมากขึ้น เช่น<br>
+						มหาวิทยาลัยเชียงใหม่ที่ภาคเหนือ มหาวิทยาลัยสงขลานครินทร์ในภาคใต้
+					</div>
+
+					<div class="bg-mint mt-4 p-2 top-sticker">
+						<div class="font-s21 my-2 font-bold">ปัญหาความเหลื่อมล้ำ</div>
+						<div>
+							<span class="d-block font-bold font-s18">ด้านคุณภาพ</span>
+							คุณภาพการศึกษาในต่างจังหวัด<br>
+							ไม่เท่ากับคุณภาพการศึกษา<br>ในเมือง
+						</div>
+					</div>
+				</div>
+
+				<div class="orangebox">
+					<h1 class="text-header-2 font-mondwest">2475</h1>
+				</div>
+
+				<img class="background-overlay" src="./img/09-13 a brief history of education/03.png" alt="">
+			</section>
+
+			<!-- section 11 -->
+			<section id="section-9" class="two-side-section orange-first bg-cream">
+				<div class="bluebox">
+					<b class="text-orange font-s24">ยุคพัฒนาการศึกษา</b>
+
+					<div class="font-s16 pt-2 text-white">
+						แผนพัฒนาการศึกษามีการปรับปรุงอยู่เรื่อยๆ เพื่อให้เหมาะสมกับ<br>กระแสโลก
+						มีโรงเรียนกระจายอยู่ตามภูมิภาคต่างๆ ทำให้ประชาชน
+						<br>เข้าถึงการศึกษาได้มากขึ้น สมัยนี้มีกระแสโลกยุคโลกาภิวัฒน์
+						จึงเริ่ม<br>นำเอาเทคโนโลยีมาปรับใช้กับการศึกษา
+					</div>
+
+					<div class="bg-mint mt-4 p-2 top-sticker">
+						<div class="font-s21 my-2 font-bold">ปัญหาความเหลื่อมล้ำ</div>
+						<div>
+							<span class="d-block font-bold font-s18">ด้านการเข้าถึง</span>
+							บางบ้านไม่สามารถเข้าถึง<br>เทคโนโลยีได้<br>
+						</div>
+						<div>
+							<span class="d-block font-bold font-s18">ด้านคุณภาพ</span>
+							คุณภาพการศึกษาในต่าง<br>จังหวัด ไม่เท่ากับในเมือง
+						</div>
+					</div>
+				</div>
+
+				<div class="orangebox">
+					<h1 class="text-header-2 font-mondwest">2503</h1>
+				</div>
+
+				<img class="background-overlay" src="./img/09-13 a brief history of education/04.png" alt="">
+			</section>
+			<!-- section 12 -->
+			<section id="section-8" class="two-side-section bg-cream">
+				<div class="bluebox">
+					<b class="text-orange font-s24">ยุค New Normal</b>
+
+					<div class="font-s16 pt-2 text-white">
+						ปัจจุบัน เกิดโรคระบาด COIVD-19 ที่แพร่กระจายไปทั่วโลก เป็นเหตุ
+						<br>ให้สถานศึกษาต้องปิดเรียนชั่วคราว เพื่อป้องกันการติดต่อของโรค<br>
+						และได้เปลี่ยนมาใช้วิธีการเรียนการสอนจากที่บ้านแทน(Study-from-<br>
+						home) ผ่านอุปกรณ์ต่างๆ เช่น มือถือ คอมพิวเตอร์ หรือทีวี(DLTV)
+						ปัญหาความเหลื่อมล้ำ
+					</div>
+
+					<div class="bg-mint mt-4 p-2 top-sticker">
+						<div class="font-s21 my-2 font-bold">ปัญหาความเหลื่อมล้ำ</div>
+						<div>
+							<span class="d-block font-bold font-s18">ด้านการเข้าถึง</span>
+							บางบ้านไม่สามารถเข้าถึง<br>
+							เทคโนโลยีได้<br>
+						</div>
+						<div>
+							<span class="d-block font-bold font-s18">ด้านคุณภาพ</span>
+							คุณภาพการศึกษาในต่างจังหวัด<br>
+							ไม่เท่ากับในเมือง
+						</div>
+					</div>
+				</div>
+
+				<div class="orangebox">
+					<h1 class="text-header-2 font-mondwest">2563</h1>
+				</div>
+
+				<img class="background-overlay" src="./img/09-13 a brief history of education/05.png" alt="">
+			</section>
+
+
+			<!-- section 13 -->
+			<section class="bg-mint" id="section-13">
+				<div class="sticker-orange" style="left: 75%;"></div>
+
+				<h1 class="text-darkblue font-s64 font-mondwest">Equality<br>Error</h1>
+
+				<div class="row font-s18">
+					<div class="col px-3">
+						<span class="text-darkblue font-bold">ความเท่าเทียมที่บกพร่อง</span>
+					</div>
+					<div class="col p-2">
+						<p class="text-darkblue">
+							การเรียนออนไลน์ในยุค New Normal นั้นยากกว่าที่คิด
+							การเรียนในยุคนี้จำเป็นต้องใช้อะไรบ้าง?
+							เมื่อลองแยกดูจะพบกับปัจจัย 4 อย่างที่ประกอบกันเป็นการเรียนในยุคนี้
+							และนำไปสู่ความเหลื่อมล้ำทางการศึกษาของไทย
+						</p>
+					</div>
+				</div>
+
+				<div class="sticker-orange" style="left: 5%; bottom: 40%;"></div>
+			</section>
+
+			<!-- section 14 -->
+			<section id="section-14" class="leading-section">
+				<h1 class="text-orange text-header-2">Now learning or<br>Now loading?</h1>
+			</section>
+
+			<!-- section 15 -->
+			<section id="section-15" class="topbox-section">
+				<div class="box bg-cream p-2">
+					<span class="text-darkblue font-mondwest font-s24">1</span>
+					<h1 class="text-orange text-header-2 text-left">
+						TECH- NOLOGY
+					</h1>
+
+					<p class="text-orange font-bold font-s18">เทคโนโลยี</p>
+
+					<span class="font-s18">
+						เพราะสถานการณ์ในช่วง COVID-19
+						ทำให้นักเรียนต้องเรียนออนไลน์ผ่านแพลตฟอร์มต่างๆ
+						มี<span class="text-orange">การนำเทคโนโลยี</span>เข้ามาช่วยในการเรียนการสอน
+						ไม่ว่าจะเป็น Zoom, Line,
+						หรือ Google Meet โดยการที่จะเรียนผ่านแพลตฟอร์มต่างๆ
+						ได้นั้นจำเป็นต้องมีอุปกรณ์ในการรับสารก่อนไม่ว่าจะเป็นโทรทัศน์ มือถือ แท็บเล็ต
+						หรือคอมพิวเตอร์
+						ท้ายที่สุดยังต้องมี
+						<span class="text-orange">สัญญาณที่ดีพอ</span>ที่จะสามารถเชื่อมต่อตัวเองเข้าสู่โลกออนไลน์ได้
+					</span>
+
+					<p class="text-orange font-bold pt-2 pb-2">
+						แต่ปัญหาคือไม่ใช่ทุกครัวเรือนจะเข้าถึงเทคโนโลยีได้
+					</p>
+				</div>
+			</section>
+
+			<!-- section 16 -->
+			<section id="section-16" class="bg-cream">
+				<div class="container-fluid">
+					<h1 class="text-mint font-chula font-bold">
+						การเข้าถึง<br />
+						ที่ไม่ทั่วถึง<br />
+						___
+					</h1>
+					<span class="font-s18">
+						เปรียบเทียบจำนวนอุปกรณ์และเทคโนโลยีที่<br />
+						กลุ่มครอบครัวแต่ละแบบมี
+					</span>
+				</div>
+
+				<div class="container-fluid">
+					<h1 class="text-orange font-chula font-bold pt-4">
+						กลุ่มครอบครัวฐานะ <br /> ปานกลาง - ร่ำรวย
+					</h1>
+					<span class="font-chula font-s18">
+						พ่อ 1 คน / แม่ 1 คน / ลูก 2 คน
+					</span>
+
+					<div class="container-fluid">
+						<div class="d-flex icon-grid">
+							<img src="./img/icon/purple icon (all)/icon-05.png" alt="TV">
+							<img src="./img/icon/purple icon (all)/icon-05.png" alt="TV">
+							<img src="./img/icon/purple icon (all)/icon-04.png" alt="Phone">
+							<img src="./img/icon/purple icon (all)/icon-04.png" alt="Phone">
+						</div>
+						<div class="d-flex icon-grid">
+							<img src="./img/icon/purple icon (all)/icon-04.png" alt="Phone">
+							<img src="./img/icon/purple icon (all)/icon-04.png" alt="Phone">
+							<img src="./img/icon/purple icon (all)/icon-03.png" alt="">
+							<img src="./img/icon/purple icon (all)/icon-03.png" alt="">
+						</div>
+						<div class="d-flex icon-grid">
+							<img src="./img/icon//purple icon (all)/icon-01.png" alt="">
+							<img src="./img/icon//purple icon (all)/icon-01.png" alt="">
+							<img src="./img/icon//purple icon (all)/icon-07.png" alt="">
+						</div>
+					</div>
+				</div>
+
+				<div class="container-fluid">
+					<h1 class="text-orange font-chula font-bold pt-4">
+						กลุ่มครอบครัวฐานะ <br />ยากจน
+					</h1>
+					<span class="font-bold font-s18 font-chula">
+						พ่อ 1 คน / แม่ 1 คน / ลูก 2 คน
+					</span>
+
+					<div class="d-flex icon-grid">
+						<img src="./img/icon/23_icon-tv.png" alt="">
+						<img src="./img/icon//purple icon (all)/icon-04.png" alt="">
+						<img src="./img/icon//purple icon (all)/icon-04.png" alt="">
+					</div>
+				</div>
+
+				<div class="container-fluid">
+					<h1 class="text-mint font-chula font-bold pt-4">
+						ปัญหาที่เกิดขึ้น<br />
+						___
+					</h1>
+
+					<div id="carouselProblems" class="carousel slide" data-ride="carousel">
+						<ol class="carousel-indicators">
+							<li data-target="#carouselProblems" data-slide-to="0" class="active"></li>
+							<li data-target="#carouselProblems" data-slide-to="1"></li>
+							<li data-target="#carouselProblems" data-slide-to="2"></li>
+							<li data-target="#carouselProblems" data-slide-to="3"></li>
+						</ol>
+
+						<div class="carousel-inner">
+							<div class="carousel-item active">
+								<div class="bg-darkblue">
+									<div class="row p-4">
+										<div class="col-md-6">
+											<img src="/img/GIF/15-18 technology _GIF/unable-access-1.gif" width="100%">
+										</div>
+										<div class="col-md-6">
+
+											<p class="text-page-slide text-cream">
+												<b>โทรทัศน์</b><br><br>
+												การเรียนผ่านช่องการศึกษาทางไกลหรือ DLTV
+												<br>ทำให้โทรทัศน์เป็นหนึ่งในอุปกรณ์รับสารในการ
+												<br>เรียนยุคนี้
+												หากครอบครัวนั้นมีเด็กที่ต้องเรียนผ่าน
+												<br> DLTV มากกว่า 1 คนและอยู่คนละระดับชั้นกัน
+												<br> สำหรับครอบครัวที่มีฐานะที่มีโทรทัศน์มากกว่า
+												1
+												<br>เครื่องก็จะไม่เกิดปัญหาใด
+												แต่หากครอบครัวใดที่
+												<br>มีโทรทัศน์เพียงเครื่องเดียว จะทำให้ไม่สามารถ
+												<br>เรียนได้ในเวลาพร้อมๆ กัน
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+
+							<div class="carousel-item">
+								<div class="bg-darkblue">
+									<div class="row p-4">
+										<div class="col-md-6">
+											<img src="/img/GIF/15-18 technology _GIF/unable-access-2.gif" width="100%">
+										</div>
+										<div class="col-md-6">
+											<p class="text-page-slide text-cream">
+												<b>มือถือ</b><br><br>
+												แม้จะเป็นอุปกรณ์พื้นฐานที่ทุกคนในยุคนี้ต้องมีกัน
+
+												<br>อย่างน้อย 1 เครื่อง แต่จากสถิติแล้ว
+												กลุ่มครอบ<br>ครัวยากจน 10 ครอบครัว
+												จะมีมือถือเพียง
+												<br>แแค่ 2-4 เครื่องเท่านั้น
+												บางครอบครัวจึงไม่สามารถเข้า
+												<br>ถึงการศึกษาผ่านออนไลน์ได้
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="bg-darkblue">
+									<div class="row p-4">
+										<div class="col-md-6">
+											<img src="/img/GIF/15-18 technology _GIF/unable-access-3.gif" width="100%">
+										</div>
+										<div class="col-md-6">
+											<p class="text-page-slide text-cream">
+												<b>คอมพิวเตอร์และ
+													tablet</b>
+												<br><br> แม้จะมีโครงการแจกคอมพิวเตอร์และ Tablet
+												เพื่อ
+												<br>การศึกษาจากภาครัฐ แต่เด็กนักเรียนกลับใช้งาน
+												<br>ได้อย่างไม่เต็มประสิทธิภาพ
+												เนื่องจากเครื่องที่จัด
+												<br>ซื้อมีสเปกต่ำ ทำให้แท็บเล็ตอืด ช้า
+												แบตเตอรี่หมด<br>เร็ว
+												สุดท้ายแล้วโครงการนี้จึงถูกพับเก็บไปในที่สุด
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+							<div class="carousel-item">
+								<div class="bg-darkblue">
+									<div class="row p-4">
+										<div class="col-md-6">
+											<img src="/img/GIF/15-18 technology _GIF/unable-access-4.gif" width="100%">
+										</div>
+										<div class="col-md-6">
+											<p class="text-page-slide text-cream">
+												<b>สัญญาณ
+													Internet</b><br><br>
+												นอกจากอุปกรณ์ที่พร้อมแล้ว ยังต้องมีสัญญาณที่
+												<br>ดีและเสถียรพอด้วย
+												ปัญหาจึงตกอยู่ที่กลุ่มคนชาย
+												<br>ขอบดังเดิม
+												ครอบครัวที่ฐานะไม่ดีพอที่จะจ่ายค่า
+												<br>สัญญาณอินเทอร์เน็ต และกลุ่มคนที่อยู่ห่างไกล
+												<br>จากความเจริญ
+											</p>
+										</div>
+									</div>
+								</div>
+							</div>
+						</div>
+						<a class="carousel-control-prev" href="#carouselProblems" role="button" data-slide="prev">
+							<span class="carousel-control-prev-icon" aria-hidden="true"></span>
+							<span class="sr-only">Previous</span>
+						</a>
+						<a class="carousel-control-next" href="#carouselProblems" role="button" data-slide="next">
+							<span class="carousel-control-next-icon" aria-hidden="true"></span>
+							<span class="sr-only">Next</span>
+						</a>
+					</div>
+				</div>
+			</section>
+			<!-- section 17 -->
+			<section id="section-17" class="leading-section">
+				<h1 class="text-orange text-header-2">Afford or Effort ?</h1>
+			</section>
+
+			<!-- section 18 -->
+			<section id="section-18" class="topbox-section">
+				<div class="box bg-cream p-2">
+					<span class="text-darkblue font-mondwest font-s24">2</span>
+
+					<h1 class="text-orange text-header-2 text-left">
+						FAMILY
+					</h1>
+
+					<p class="text-orange font-bold font-s18">ครอบครัว</p>
+
+					<span class="font-s18">
+						การที่จะเรียนได้อย่างมีประสิทธิภาพจำเป็นจะต้อง
+						มีครอบครัวคอยสนับสนุน ยิ่งในช่วงที่เด็ก ๆ
+						จำเป็นต้องเรียนที่บ้านแทนที่จะไปโรงเรียน
+						ครอบครัวที่มีฐานะพอ
+						อาจมีเวลาเพียงพอที่จะดูแลเด็กภายในบ้าน
+						หรือหากมีเวลาไม่มากพอก็สามารถจ่ายเงินให้พี่เลี้ยงได้
+						nge ล้วกับครอบครัวที่ยากจนล่ะ?
+
+						งานวิจัยล่าสุดพบว่า <span class="text-orange font-bold">
+							กลุ่มครอบครัวที่ยากจนกว่า
+							50%
+							เป็นครอบครัวเลี้ยงเดี่ยว
+							มีความเสี่ยงที่จะได้ผลกระทบจากวิกฤต
+							COVID-19 มากที่สุด เนื่องจากมีรายได้ต่ำ
+							และต้องทำงานหลายงานเพื่อเลี้ยงครอบครัว
+						</span>
+						สภาพทางเศรษngeกิจของครัวเรอนเหล่านี้อาจจะไม่ได้สวยหรู
+						ทำให้ผู้ปกครองเองก็อาจ<span class="text-orange font-bold">ไม่สามารถดูแลบุตรหลานได้อย่างเต็มที่</span>
+						และเด็กร้อยละ 70 ของครอบครัวที่ยากจนก็อยู่ในโครงการอาหารกลางวันของโรงเรียน
+						แสดงให้เห็นว่าไม่ใช่ทุกครอบครัวที่จะสามารถดูแลเรื่องอุปโภคและบริโภคของเด็กนักเรียนได้
+						และหากต้องเสียเงินในส่วนนี้ขณะที่ต้องเสียงค่าเทอมเท่าเดิมก็ถือว่าเป็นภาระทางการเงินสำหรับครอบครัวมากขึ้น
+					</span>
+				</div>
+			</section>
+
+			<!-- section 19 -->
+			<section id="section-19" class="bg-cream">
+				<div class="container-fluid">
+					<h1 class="text-mint font-chula font-bold">
+						รายได้หมดไป<br>กับอะไรบ้าง<br>___
+					</h1>
+					<span class="font-s18">
+						รายได้ของกลุ่ม
+						<span class="text-orange font-bold">ครอบครัวยากจน</span>
+						หมดไปกับอะไรบ้าง
+					</span>
+				</div>
+
+				<div class="container-fluid">
+					<div class="row">
+						<div class="col-12 col-md-6">
+							<div class="container-fluid my-2">
+								<div class="chart-grid mx-auto">
+									<span>อาหาร 51%</span>
+									<span>อื่นๆ 41%</span>
+									<span>รถ 3%</span>
+									<span>สุขภาพ 3%</span>
+									<span>การศึกษา 2%</span>
+								</div>
+							</div>
+						</div>
+						<div class="col-12 col-md-6 mt-2 mt-md-0">
+							<div class="w-100">
+								<h1 class="text-mint font-s56 mb-0 font-mondwest">10,080</h1>
+								<span>บาท/เดือน<br><b>ค่าแรงขั้นต่ำ (336 บาท/วัน)</b></span>
+							</div>
+							<div class="w-100 d-flex flex-wrap">
+								<div class="w-50">
+									<h1 class="text-purple font-s56 mb-0 font-mondwest">-5,241</h1>
+									<span>บาท/เดือน<br><b>ค่าอาหาร</b></span>
+								</div>
+								<div class="w-50">
+									<h1 class="text-purple font-s56 mb-0 font-mondwest">-4,233</h1>
+									<span>บาท/เดือน<br><b>ค่าอื่นๆ</b></span>
+								</div>
+								<div class="w-50">
+									<h1 class="text-purple font-s56 mb-0 font-mondwest">-302</h1>
+									<span>บาท/เดือน<br><b>ค่ารถ</b></span>
+								</div>
+								<div class="w-50">
+									<h1 class="text-purple font-s56 mb-0 font-mondwest">-302</h1>
+									<span>บาท/เดือน<br><b>ค่าสุขภาพ</b></span>
+								</div>
+								<div class="w-50">
+									<h1 class="text-orange font-s56 mb-0 font-mondwest">-202</h1>
+									<span>บาท/เดือน<br><b>ค่าการศึกษา</b></span>
+								</div>
+							</div>
+						</div>
+					</div>
+				</div>
+
+				<div class="greenbox">
+					<img src="/img/19-21 family/family-newspaper.png" alt="">
+					<p class="text-darkblue">
+						ปี 2562 เกิดความรุนแรงในครอบครัว 1,376 เหตุการณ์
+						สร้างความกังวลเกี่ยวกับความเสี่ยงที่เกิดขึ้นได้แม้แต่ในสถาบันครอบครัว
+						การไปโรงเรียนก็ถือว่าเป็นการคุ้มครองเด็กเช่นกัน
+					</p>
+				</div>
+			</section>
+
+			<!-- section 20 -->
+			<section id="section-20" class="leading-section">
+				<h1 class="text-orange text-header-2">Free Course or<br>Course Fee ?</h1>
+			</section>
+
+			<!-- section 21 -->
+			<section id="section-21" class="topbox-section">
+				<div class="box bg-cream p-2">
+					<span class="text-darkblue font-mondwest font-s24">3</span>
+
+					<h1 class="text-orange text-header-2 text-left">
+						COURSE
+					</h1>
+
+					<p class="text-orange font-bold font-s18">หลักสูตร</p>
+
+					<span class="font-s18">
+						เด็กทุกคนจำเป็นต้องมีหลักสูตรการเรียนที่ดีพอเพื่อให้การศึกษาดำเนินไปได้อย่างมีประสิทธิภาพ
+						แต่สถานการณ์ในช่วง COVID-19 ทำให้กระทรวงศึกษาธิการออกมาตรการการเรียน 3 รูปแบบ
+						คือ
+						<div class="img-icons-course my-3">
+							<div class="img-icon">
+								<img src="./img/icon/23_icon-book.png" alt="">
+								<span class="text-darkblue font-w500">Onsite</span>
+							</div>
+							<div class="img-icon">
+								<img src="./img/icon/23_icon-tv.png" alt="">
+								<span class="text-darkblue font-w500">Onair</span>
+							</div>
+							<div class="img-icon">
+								<img src="./img/icon/23_icon-computer.png" alt="">
+								<span class="text-darkblue font-w500">Online</span>
+							</div>
+						</div>
+						แต่
+						<span class="text-orange font-bold">
+							ไม่ใช่ทุกโรงเรียนที่จะสามารถสอนผ่านสื่อออนไลน์
+							และไม่ใช่เด็กทุกคนที่มีอุปกรณ์ที่พร้อม
+						</span>
+						สำหรับการเรียน
+						ทางเลือกเดียวที่จะเกิดขึ้นได้สำหรับเด็กที่มีฐานะทางบ้านไม่ดีคือ
+						<span class="text-orange font-bold">
+							การเรียนผ่านระบบโทรทัศน์
+						</span>
+					</span>
+				</div>
+			</section>
+			<!-- section 22 -->
+			<section id="section-22">
+				<div class="container pt-0">
+					<div class="img-dltv">
+						<img src="/img/GIF/22-25 course _GIF/dltv_2.gif" class="w-100 h-auto">
+					</div>
+					<div class="d-flex" style="justify-content: space-between;">
+						<div class="p-5 w-50">
+							<span class="text-mint font-s32 font-bold">
+								DLTV ดีจริง <br />
+								หรือ? <br />
+								___
+							</span>
+						</div>
+						<div class="pt-5 pb-5 w-50 font-18">
+							<p class="text-white">
+								การเรียนการสอนผ่าน DLTV ดีจริงหรือไม่?
+								จากที่มีการเรียนผ่านโทรทัศน์เมื่อวันที่ 18
+								พฤษภาคม 2563
+								พบว่าหลักสูตรที่นำมาใช้สอนนั้นไม่มีการอัพเดต อีกทั้ง
+								<span class="text-mint">เนื้อหาที่สอนยังมีความผิดพลาด</span>
+								มีการอ่านออกเสียงภาษาอังกฤษ
+								(Pronunciation) และใช้ Grammar ที่ผิดในการสอน
+								เด็กในเมืองที่ไม่เข้าใจการสอนอาจมีครูที่คอยเน้นย้ำบทเรียน
+								แต่เด็กๆ
+								ที่อยู่ในพื้นที่ห่างไกลจะทำอย่างไร การเรียนแบบ New normal
+								นี้ท้ายที่สุด
+								<span
+									class="text-mint">อาจทำให้ความแตกต่างด้านการศึกษาของเด็กที่มีฐานะและไม่มีฐานะยิ่งห่างออกมากกว่าเดิม</span>
+							</p>
+						</div>
+					</div>
+				</div>
+			</section>
+			<!-- section 23 -->
+			<section id="section-23">
+				<div class="container pt-0 bg-cream">
+					<div class="row">
+						<div class="col my-3">
+							<img src="/img/icon/25_icon-speaker.png" value="PLAY" onclick="play()"
+								class="d-block mx-auto mx-md-0 ml-md-auto bg-orange rounded-circle shadow"
+								style="width: 65px; height: auto; cursor:pointer;">
+							<audio id="audio" src="./sound/DLTV.mp3"></audio>
+						</div>
+					</div>
+					<div class="row">
+						<div class="col">
+							<h1 class="text-darkblue font-mondwest font-s56">
+								I
+								come to English Class,<br>
+								My class's so nice , lovely,<br>
+								so fine , so fresh . so free.<br>
+								We are happy happy today.
+							</h1>
+						</div>
+					</div>
+
+					<img src="./img/GIF/22-25 course _GIF/teacher+blackboard_2.gif" class="d-block ml-auto"
+						style="width: 40%; height: auto;">
+				</div>
+			</section>
+
+			<!-- section 24 -->
+			<section id="section-24" class="leading-section">
+				<h1 class="text-orange text-header-2">More Time or More Tired ?</h1>
+			</section>
+
+			<!-- section 25 -->
+			<section id="section-25" class="topbox-section">
+				<div class="box bg-cream p-2">
+					<span class="text-darkblue font-mondwest font-s24">4</span>
+
+					<h1 class="text-orange text-header-2 text-left">
+						TIME
+					</h1>
+
+					<p class="text-orange font-bold font-s18">เวลา</p>
+
+					<span class="font-s18">
+						เข้าใจเนื้อหาการเรียนไม่ได้เท่าที่ควร
+						สำหรับเด็กมัธยมจำเป็นต้องปิดเทอมก่อนกำหนด ต้องยกเนื้อหามาเรียนในช่วงที่เปิดเทอม
+						โดยต้องเรียนติดต่อกันถึง 6
+						เดือน
+						ได้หยุดในช่วงสิ้นปี และอาจจะต้องเรียนต่ออีก 4 เดือนเพื่อให้ตามทันเนื้อหาทั้งหมด
+						และเพราะการศึกษาที่ไม่ครอบคลุม
+						ความเหลื่อมล้ำที่เกิดขึ้นจาก<span class="text-orange font-bold">อุปกรณ์ที่ไม่พร้อม</span>
+						หรือ<span class="text-orange font-bold">หลักสูตรที่ไม่ดีพอ</span>
+						ช่วงที่หยุดไปนั้นอาจทำให้นักเรียนจาก<span
+							class="text-orange font-bold">ครอบครัวที่ยากจนไม่สามารถประคองตัวเองให้ผ่านวิกฤตินี้ไปได้</span>
+						ยิ่งสำหรับเด็กมัธยมศึกษาปีที่ 3 และมัธยมศึกษาปีที่ 6
+						ที่ต้องสอบวัดผลและเรียนต่ออาจเตรียมตัวไม่ทัน
+						ส่งผลกระทบต่อทั้งชีวิตของเด็กนักเรียน
+					</span>
+				</div>
+			</section>
+
+			<!-- section 26 -->
+			<section id="section-26">
+				<div class="container-fluid">
+					<img src="./img/GIF/26-29 time _GIF/calendar.gif" style="width: 100%; height: auto; max-width: 480px;">
+
+					<div class="row">
+						<div class="col d-flex justify-content-between text-right">
+							<div class="row">
+								<div class="col">
+									<span class="text-cream text-month font-mondwest" style="font-size: 68px;"></span>
+								</div>
+							</div>
+							<div class="row">
+								<div class="col pt-4">
+									<img src="./img/GIF/26-29 time _GIF/book.gif" style="width: 100px; height: auto;">
+								</div>
+							</div>
+						</div>
+					</div>
+					<div class="row py-5">
+						<div class="col">
+							<span class="text-mint font-s32 font-bold">
+								เรียนชดเชย
+								<br>___
+							</span>
+						</div>
+						<div class="col font-s18">
+							<p class="text-white">
+								สำหรับเด็กที่เรียนมหาวิทยาลัย
+								มีการเรียนการสอนที่เจาะจงมากขึ้น
+								นักศึกษาที่เรียนอยู่ในคณะที่จำเป็นต้องอาศัยการปฏิบัติเป็นส่วนใหญ่อาจจะไม่สามารถเข้าร่วมกิจกรรมในส่วนนี้
+								และท้ายที่สุดก็อาจไม่ได้ประสบการณ์ที่มากพอ
+								เช่นเดียวกับนักเรียนชั้นประถมและมัธยมที่ต้องปิดเทอมก่อนกำหนด
+								ทำให้นักศึกษาบางคณะไม่สามารถเรียนบางวิชาในช่วง New Normal
+								จำเป็นต้อง
+								<span
+									class="text-mint">เรียนชดเชย</span>ในช่วงวันเสาร์หรือช่วงปิดเทอมที่อาจทำให้เรียนและทำงานในวิชาอื่นในช่วงเปิดเทอมได้อย่างไม่เต็มประสิทธิภาพ
+								และด้วยความแตกต่างทางด้านฐานะ
+								spn
+								อาจทำให้สาเหตุเรื่องเวลาที่ถูกลิดรอนและเพิ่มขึ้นมานี้ช่วยตอกย้ำความเหลื่อมล้ำให้แก่นักเรียนที่มีฐานะยากจนให้มากยิ่งขึ้นกว่าที่เคยเป็นมา
+							</p>
+						</div>
+					</div>
+				</div>
+				<img src="/img/GIF/26-29 time _GIF/scientist.gif" class="overlay-bottom" />
+			</section>
+
+			<!-- section 27 -->
+			<section id="section-27">
+				<div class="container-fluid text-cream">
+					<div class="sticker-orange" style="transform: translate(60vw, 38vw);"></div>
+					<h1 class="font-size-64 font-mondwest">
+						New <br> Normal but<br> Not Normalize
+					</h1>
+					<span class="font-size-42">อย่าทำให้ความเหลื่อมล้ำเหล่านี้เป็นเรื่องปกติ</span>
+					<div class="sticker-orange" style="transform: translate(20vw, 5vw);"></div>
+			</section>
+
+			<!-- footer 31-->
+			<footer class="jumbotron text-center bg-purple" style="margin-bottom:0; z-index: 10000;">
+				<div class="row">
+					<div class="col-8">
+						<p style="text-align: left; color: white;">
+							<span class="d-block font-s21 font-mondwest">inEquality Pandemic</span>
+							เว็บไซต์นี้เป็นส่วนหนึ่งของวิชาออกแบบเว็บไซต์ หลักสูตรนิเทศศิลป์</br>
+							คณะสถาปัตยกรรมศาสตร์และการโปรแกรมและสื่อประสม<br />
+							แขนงวิชาการพัฒนาสื่อประสมและเกม คณะเทคโนโลยีสารสนเทศ<br />
+							สถาบันเทคโนโลยีพระจอมเกล้าเจ้าคุณทหารลาดกระบัง ©2020
+						</p>
+					</div>
+					<div class="col-4">
+						<a href="#" class="text-center">
+							<div class="d-block p-3 border rounded-circle text-center mx-auto my-2"
+								style="width: 44px; height: 44px;">↑</div>
+							<span class="text-white font-mondwest font-s24">
+								back to top
+							</span>
+						</a>
+					</div>
+				</div>
+			</footer>
+		</div>
+	</div>
+
+	<script>
+		function slideShowOnSection5(index) {
+			document.querySelector(`#s5-1`).classList.remove("active");
+			document.querySelector(`#s5-2`).classList.remove("active");
+			document.querySelector(`#s5-3`).classList.remove("active");
+			document.querySelector(`#s5-${index}`).classList.add("active");
+		}
+	</script>
+	<script type="text/javascript" src="./js/loading.js"></script>
 </body>
-
-<script type=" text/javascript " src=" ./js/script.js "></script>
-<script type=" text/javascript " src=" ./js/page5_2.js "></script>
-
-<script>
-    /*unhiding the session part will enable browser session storage, try it.*/
-
-    /*if (!sessionStorage.isVisited) {
-      sessionStorage.isVisited = 'true';*/
-    var progress = 0;
-    document.onreadystatechange = function () {
-        if (document.readyState == " interactive") {
-            var allElement = $("*"); var length = allElement.length; for (var i = 0;
-                i < length; i++) { set_element(allElement[i], length); }
-        }
-    }
-    function set_element(element, totalElement) {
-        var percentage = 100 /
-            totalElement; if ($(element).length == 1) {
-                $("#fill").animate({
-                    width: progress + percentage + "%"
-                }, 500, function () {
-                    if
-                        (document.getElementById("fill").style.width == "100%") {
-                        $(".loadingPage").fadeOut(500);
-                    }
-                }); progress = progress +
-                    percentage;
-            }
-    } /*unhide this else part too to enable browser
-                                                    cookie*/ /*}else { $(".loadingPage ").hide();
-}*/
-</script>
 
 </html>

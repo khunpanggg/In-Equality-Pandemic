@@ -1,0 +1,247 @@
+:root {
+  --darkblue: #242f57;
+  --orange: #F56643;
+  --mint: #4BB083;
+  --cream: #F1D9C4;
+  --purple: #6459B6;
+  --white: #FFFFFF;
+  --black: #000000;
+  font-size: 14px;
+}
+
+/* Small devices (sm) (landscape phones, 576px and up) */
+@media (min-width: 576px) {
+  :root {
+    font-size: 14px;
+  }
+}
+
+/* Medium devices (md) (tablets, 768px and up) */
+@media (min-width: 768px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+/* Large devices (lg) (desktops, 992px and up) */
+@media (min-width: 992px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+/* Extra large devices (xl) (large desktops, 1200px and up) */
+@media (min-width: 1200px) {
+  :root {
+    font-size: 16px;
+  }
+}
+
+/* Color Text */
+
+.text-darkblue {
+  color: var(--darkblue);
+}
+
+.text-orange {
+  color: var(--orange);
+}
+
+.text-mint {
+  color: var(--mint);
+}
+
+.text-cream {
+  color: var(--cream);
+}
+
+.text-purple {
+  color: var(--purple);
+}
+
+.text-white {
+  color: var(--white);
+}
+
+.text-black {
+  color: var(--black);
+}
+
+/* Color BG */
+
+.bg-darkblue {
+  background-color: var(--darkblue);
+}
+
+.bg-orange {
+  background-color: var(--orange);
+}
+
+.bg-mint {
+  background-color: var(--mint);
+}
+
+.bg-cream {
+  background-color: var(--cream);
+}
+
+.bg-purple {
+  background-color: var(--purple);
+}
+
+.bg-white {
+  background-color: var(--white);
+}
+
+.bg-transparent {
+  background: transparent;
+}
+
+.linear-bg-darkblue {
+  background: linear-gradient(to top, var(--darkblue), transparent);
+}
+
+.linear-bg-mint {
+  background: linear-gradient(to top, var(--mint), transparent);
+}
+
+.linear-bg-purple {
+  background: linear-gradient(to top, var(--purple), transparent);
+}
+
+/* font-size */
+
+.font-s14,
+.font-size-14 {
+  font-size: 0.875rem;
+}
+
+.font-s16,
+.font-size-16 {
+  font-size: 1rem;
+}
+
+.font-s18,
+.font-size-18 {
+  font-size: 1.125rem;
+}
+
+.font-s21,
+.font-size-21 {
+  font-size: 1.3125rem;
+}
+
+.font-s24,
+.font-size-24 {
+  font-size: 1.5rem;
+}
+
+.font-s32,
+.font-size-32 {
+  font-size: 2rem;
+}
+
+.font-s42,
+.font-size-42 {
+  font-size: 2.625rem;
+}
+
+.font-s56,
+.font-size-56 {
+  font-size: 3.5rem;
+}
+
+.font-s64,
+.font-size-64 {
+  font-size: 4rem;
+}
+
+.font-s90,
+.font-size-90 {
+  font-size: 5.625rem;
+}
+
+.font-140 {
+  font-size: 8.75rem;
+}
+
+.font-190 {
+  font-size: 11.875rem;
+}
+
+/* font weight */
+
+.font-w100 {
+  font-weight: 100;
+}
+
+.font-w200 {
+  font-weight: 200;
+}
+
+.font-w300 {
+  font-weight: 300;
+}
+
+.font-w400,
+.font-w-normal {
+  font-weight: 400;
+}
+
+.font-w500 {
+  font-weight: 500;
+}
+
+.font-w600 {
+  font-weight: 600;
+}
+
+.font-w700 {
+  font-weight: 700;
+}
+
+.font-w800 {
+  font-weight: 800;
+}
+
+.font-w900 {
+  font-weight: 900;
+}
+
+.font-bold {
+  font-weight: bold;
+}
+
+.font-italic {
+  font-style: italic;
+}
+
+/* font face */
+.font-mondwest {
+  font-family: 'Mondwest' !important;
+}
+
+.font-chula {
+  font-family: 'ChulaCharasNew' !important;
+}
+
+/*text-header*/
+
+*[class*="text-header"] {
+  z-index: 1;
+  font-family: 'Mondwest';
+  line-height: 5.5rem;
+}
+
+.text-header-1 {
+  display: block;
+  font-size: 4rem;
+}
+
+.text-header-2 {
+  font-size: 4rem;
+}
+
+.text-header-3 {
+  font-size: 4rem;
+}

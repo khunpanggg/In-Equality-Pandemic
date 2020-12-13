@@ -1,0 +1,28 @@
+@font-face {
+  font-family: 'ChulaCharasNew';
+  src: url('../font/ChulaCharasNewReg.ttf') format('truetype');
+}
+
+@font-face {
+  font-family: 'ChulaCharasNew';
+  src: url('../font/ChulaCharasNewBold.ttf') format('truetype');
+  font-weight: bold;
+}
+
+@font-face {
+  font-family: 'ChulaCharasNew';
+  src: url('../font/ChulaCharasNewIta.ttf') format('truetype');
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'ChulaCharasNew';
+  src: url('../font/ChulaCharasNewBoldIta.ttf') format('truetype');
+  font-weight: bold;
+  font-style: italic;
+}
+
+@font-face {
+  font-family: 'Mondwest';
+  src: url('../font/Mondwest-Regular.otf') format('opentype');
+}
