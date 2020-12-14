@@ -16,6 +16,11 @@ body[data-loading="loading"] {
   z-index: 9999;
 }
 
+
+body[data-loading="false"] .loadingPage {
+  display: none;
+}
+
 @keyframes animate3 {
   from {
     color: #4BB083;
