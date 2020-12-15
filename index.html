@@ -91,7 +91,7 @@
 		<div class="content">
 			<!-- section 01 -->
 			<section class="bg-darkblue" id="section-1">
-				<div class="sticker-green" style="left: 60%;"></div>
+				<div class="sticker-green" style="transform: translate(75vw, 2vw);"></div>
 				<h1 class="text-header-1 text-orange" id="header-1">
 					inEquality<br />Pandemic</h1>
 				<div class="img-grid">
@@ -955,13 +955,16 @@
 			<!-- section 26 -->
 			<section id="section-26">
 				<div class="container-fluid">
-					<img data-src="./img/GIF/26-29 time _GIF/calendar.gif" style="width: 100%; height: auto; max-width: 480px;">
+					<!--<img data-src="./img/GIF/26-29 time _GIF/calendar.gif" style="width: 100%; height: auto; max-width: 480px;">-->
+					<video id="myVideo" style="width: 100%; height: auto; max-width: 480px;">
+						<source src="./img/GIF/26-29 time _GIF/calendar_1.mp4" type="video/mp4">
+					</video>
 
 					<div class="row">
 						<div class="col d-flex justify-content-between text-right">
 							<div class="row">
 								<div class="col">
-									<span class="text-cream text-month font-mondwest" style="font-size: 68px;"></span>
+									<span class="text-cream text-month font-mondwest" id="month" style="font-size: 68px;">FEB</span>
 								</div>
 							</div>
 							<div class="row">
@@ -1065,6 +1068,45 @@
 		myAudio.onpause = function () {
 			isPlaying = false;
 		};
+
+		/*video
+
+		var vid = document.getElementById("myVideo");
+		vid.onended = function () {
+			alert("The video has ended");
+		};*/
+
+		$(document).ready(function () {
+			// Get media - with autoplay disabled (audio or video)
+			var media = $('video').not("[autoplay='autoplay']");
+			var tolerancePixel = 40;
+
+			function checkMedia() {
+				// Get current browser top and bottom
+				var scrollTop = $(window).scrollTop() + tolerancePixel;
+				var scrollBottom = $(window).scrollTop() + $(window).height() - tolerancePixel;
+
+				media.each(function (index, el) {
+					var yTopMedia = $(this).offset().top;
+					var yBottomMedia = $(this).height() + yTopMedia;
+
+					if (scrollTop < yBottomMedia && scrollBottom > yTopMedia) { //view explaination in `In brief` section above
+						$(this).get(0).play();
+					} else {
+						$(this).get(0).pause();
+					}
+					document.getElementById("month").innerHTML = "FEB";
+				});
+
+				//}
+			}
+			$(document).on('scroll', checkMedia);
+		});
+		var vid = document.getElementById("myVideo");
+		vid.onended = function () {
+			document.getElementById("month").innerHTML = "SEP";
+		};
+
 	</script>
 	<script type="text/javascript" src="./js/loading.js"></script>
 </body>

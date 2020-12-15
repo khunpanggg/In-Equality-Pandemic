@@ -437,28 +437,6 @@ div[class*="sticker-"] {
 
 }
 
-/* calender */
-
-.text-month::before {
-  content: "FEB";
-  animation: animate infinite 16s;
-  transition: width 3s ease 1s;
-}
-
-@keyframes animate {
-  0% {
-    content: "FEB";
-  }
-
-  0% {
-    content: "FEB";
-  }
-
-  100% {
-    content: "SEP";
-  }
-}
-
 /* section 5 */
 
 #section-5 #slide-section-5 div[id^="s5-d-"] {
