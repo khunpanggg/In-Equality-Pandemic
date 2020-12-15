@@ -1,41 +1,41 @@
 section {
-  position: absolute;
-  background-size: cover;
-  padding-bottom: 15rem;
+	position: absolute;
+	background-size: cover;
+	padding-bottom: 15rem;
 }
 
 .sdgs {
-  display: flex;
-  width: 100%;
+	display: flex;
+	width: 100%;
 }
 
 .sdgs p {
-  display: block;
-  margin-left: auto;
-  padding-top: min(6vw, 80px);
+	display: block;
+	margin-left: auto;
+	padding-top: min(6vw, 80px);
 }
 
 div[class*="layer"] {
-  left: 0;
-  flex-direction: column;
-  transition: all .1s linear;
-  padding-top: 180px;
+	left: 0;
+	flex-direction: column;
+	transition: all .1s linear;
+	padding-top: 180px;
 }
 
 .layer1 {
-  top: 2150px;
+	top: 2150px;
 }
 
 .layer2 {
-  top: 1400px;
+	top: 1400px;
 }
 
 .layer3 {
-  top: 900px;
+	top: 900px;
 }
 
 .layer4 {
-  top: 600px;
+	top: 600px;
 }
 
 /* footer {
@@ -53,13 +53,13 @@ div[class*="layer"] {
 } */
 
 div[class*="layer"] .layer-text {
-  position: relative;
+	position: relative;
 }
 
 h1 {
-  font-size: min(4.25rem, 68px);
+	font-size: min(4.25rem, 68px);
 }
 
 .content {
-  position: relative;
+	position: relative;
 }

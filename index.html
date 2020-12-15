@@ -905,10 +905,10 @@
 				<div class="container pt-0 bg-cream">
 					<div class="row">
 						<div class="col my-3">
-							<img data-src="/img/icon/25_icon-speaker.png" value="PLAY" onclick="play()"
+							<img data-src="/img/icon/25_icon-speaker.png" onClick="togglePlay()"
 								class="d-block mx-auto mx-md-0 ml-md-auto bg-orange rounded-circle shadow"
 								style="width: 65px; height: auto; cursor:pointer;">
-							<audio id="audio" src="./sound/DLTV.mp3"></audio>
+							<audio id="myAudio" src="./sound/DLTV.mp3" preload="auto"></audio>
 						</div>
 					</div>
 					<div class="row">
@@ -1057,7 +1057,20 @@
 			document.querySelector(`#s5-${index}`).classList.add("active");
 			document.querySelector(`#s5-btn-${index}`).classList.add("active");
 		}
+		/*sound*/
+		var myAudio = document.getElementById("myAudio");
+		var isPlaying = false;
 
+		function togglePlay() {
+			isPlaying ? myAudio.pause() : myAudio.play();
+		};
+
+		myAudio.onplaying = function () {
+			isPlaying = true;
+		};
+		myAudio.onpause = function () {
+			isPlaying = false;
+		};
 	</script>
 	<script type="text/javascript" src="./js/loading.js"></script>
 </body>
