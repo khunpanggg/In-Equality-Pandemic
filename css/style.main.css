@@ -53,7 +53,8 @@ body {
   }
 }
 
-section {
+section,
+footer {
   position: relative;
   width: 100%;
   min-height: 100vh;
@@ -62,8 +63,24 @@ section {
   /* scroll-snap-align: start; */
 }
 
+footer {
+  min-height: fit-content;
+}
+
+footer a,
+footer a:hover {
+  color: var(--white);
+  cursor: pointer;
+}
+
 @media (min-width: 576px) {
   section {
+    width: calc(100% - 80px);
+    margin: 0;
+    padding: 3rem 5rem;
+  }
+
+  footer {
     width: calc(100% - 80px);
     margin: 0;
     padding: 3rem 5rem;
@@ -231,7 +248,7 @@ div[class*="sticker-"] {
   border-radius: 50%;
   width: 44px;
   height: 44px;
-  z-index: 1 !important;
+  z-index: 0;
 }
 
 .sticker-green {
@@ -391,8 +408,8 @@ div[class*="sticker-"] {
 
   #section-3 div#box4 {
     transform-origin: center;
-    transform: translateX(75%) translateY(-10%) rotate(0deg);
-    -ms-transform: translateX(75%) translateY(-10%) rotate(0deg);
+    transform: translateX(55%) translateY(-10%) rotate(0deg);
+    -ms-transform: translateX(55%) translateY(-10%) rotate(0deg);
   }
 
   #section-3 div#box5 {
@@ -444,18 +461,18 @@ div[class*="sticker-"] {
 
 /* section 5 */
 
-#section-5 #slide-section-5 div[id^="s5-"] {
+#section-5 #slide-section-5 div[id^="s5-d-"] {
   display: none;
   justify-content: center;
   align-items: center;
   flex-direction: column;
 }
 
-#section-5 #slide-section-5 div[id^="s5-"].active {
+#section-5 #slide-section-5 div[id^="s5-d-"].active {
   display: flex;
 }
 
-#section-5 #slide-section-5 div[id^="s5-"] img {
+#section-5 #slide-section-5 div[id^="s5-d-"] img {
   width: 66%;
   height: auto;
 }
@@ -487,6 +504,49 @@ div[class*="sticker-"] {
   width: 60px;
   height: 60px;
 }
+
+#section-16 #slide-section-16 div[id^="s16-"] {
+  display: none;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+#section-16 #slide-section-16 div[id^="s16-"].active {
+  display: flex;
+}
+
+#section-16 #slide-section-16 div[id^="s16-"] img {
+  width: 66%;
+  height: auto;
+}
+
+#section-16 #slide-section-16 #slide-selector div[id^="s16-btn-"] {
+  color: var(--white);
+}
+
+
+#section-16 #slide-section-16 #slide-selector div[id^="s16-btn-"].active {
+  color: var(--orange);
+}
+
+#section-16 #slide-section-16 #slide-selector {
+  display: flex;
+  justify-content: center;
+  flex-direction: row;
+}
+
+#section-16 #slide-section-16 #slide-selector div {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  width: 44px;
+  height: 44px;
+  cursor: pointer;
+}
+
+
 
 /* section 18 */
 #section-18 {
@@ -609,6 +669,7 @@ div[class*="sticker-"] {
 
 #section-26 .overlay-bottom {
   width: 100%;
+  max-width: 512px;
   height: auto;
 }
 
@@ -619,10 +680,4 @@ div[class*="sticker-"] {
   background-size: cover;
   background-image: url("/img/new normal but not normalize.png");
 
-}
-
-footer a,
-footer a:hover {
-  color: var(--white);
-  cursor: pointer;
 }
